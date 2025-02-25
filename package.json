@@ -7,18 +7,36 @@
     "vscode": "^1.97.0"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Visualization",
+    "Themes"
   ],
   "contributes": {
     "snippets": [
       {
         "language": "html",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/auto-complete.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/snippets.code-snippets"
-    }
+        "path": "./snippets/auto-complete.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/button-snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/button-snippets.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/speed-dial.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/speed-dial.code-snippets"
+      }
     ]
   }
 }

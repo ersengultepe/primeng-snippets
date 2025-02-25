@@ -7,7 +7,7 @@
         "description": "Imports PrimeNG ButtonModule in TypeScript"
     },
     "PrimeNG Button": {
-        "prefix": "p-button",
+        "prefix": "p-button-basic",
         "body": [
             "<p-button label=\"${1:Click Me}\" (onClick)=\"${2:onClick()}\"></p-button>"
         ],
