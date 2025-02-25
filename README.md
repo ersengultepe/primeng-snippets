@@ -1,6 +1,6 @@
-# PrimeNg 19 Snippets for VS Code
+# PrimeNG Quickly for VS Code
 
-**Created for PrimeNG 19 release**
+**Created for rimeNG Quickly release**
 
 This extension for Visual Studio Code adds snippets for PrimeNG for Angular for TypeScript and HTML.
 Currently only snippets for buttons are prepared, but it will be updated frequently for other primgn tags. 
@@ -8,17 +8,71 @@ Stay tuned!!!
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
+## Download
+
+Download the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ErsenGultepe.primeng-quikcly).
+
 ## Usage
 
 Type part of a snippet, press `tab`, and the snippet unfolds.
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
 
-### Command Palette Commands
+## Features
 
-| Command                                              | Purpose                     |
-| ---------------------------------------------------- | --------------------------- |
-| express: Add simple Express server file to workspace | Adds Node.js express server |
+- **Quick Access**: Quickly add PrimeNG components to your project.
+- **Ease of Use**: Snippets automatically generate the basic usage of components.
+- **Up-to-Date PrimeNG Support**: Compatible with the latest versions of PrimeNG.
+
+## Requirements
+
+- **Visual Studio Code**: Version 1.40.0 or higher.
+- **Angular Project**: An Angular project with PrimeNG installed (snippets will work, but PrimeNG dependency is required for components to render).
+
+## Installing PrimeNG
+
+To use the extension, you need to install PrimeNG in your project. Follow these steps:
+
+1. Open a terminal and navigate to your project directory.
+2. Run the following command to install PrimeNG and PrimeIcons:
+
+# Using npm
+```sh
+npm install primeng @primeng/themes
+```
+
+# Using yarn
+
+```sh
+yarn add primeng @primeng/themes
+```
+# Using pnpm
+
+```sh
+pnpm add primeng @primeng/themes 
+```
+
+## Configuring PrimeNG
+
+To configure PrimeNG with animations and a theme, update your application configuration as follows:
+
+```typescript
+import { ApplicationConfig } from '@angular/core';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
+import Aura from '@primeng/themes/aura';
+
+export const appConfig: ApplicationConfig = {
+    providers: [
+        provideAnimationsAsync(),
+        providePrimeNG({
+            theme: {
+                preset: Aura
+            }
+        })
+    ]
+};
+```
 
 ### TypeScript Angular Snippets
 
@@ -131,7 +185,16 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 
 ## Credits
 
-Thanks to the following contributors for the snippets:
+This plugin was created with artificial intelligence support. Thanks to the free services of the following AI language models, the laborious work is made much easier.
 
-- [ChatGpt](https://chatgpt.com/)
 - [Grok 3](https://grok.com/)
+- [ChatGpt](https://chatgpt.com/)
+- [Deepseek](https://chat.deepseek.com/)
+
+##
+
+Plugin logo created by Canva
+
+- [Canva - Free Online AI Image Generator](https://www.canva.com/ai-image-generator/)
+![Logo](images/logo.png)
+
