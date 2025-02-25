@@ -1,10 +1,16 @@
-# PrimeNg HTML & TypeScript Snippets for VS Code
+# PrimeNg 19 Snippets for VS Code
 
 **Created for PrimeNG 19 release**
 
 This extension for Visual Studio Code adds snippets for PrimeNG for Angular for TypeScript and HTML.
 Currently only snippets for buttons are prepared, but it will be updated frequently for other primgn tags. 
 Stay tuned!!!
+
+See the [CHANGELOG](CHANGELOG.md) for the latest changes
+
+## Angular Essentials
+
+Check out the [Angular Essentials extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials&WT.mc_id=javascript-0000-jopapa) for more great extensions for developing with JavaScript and Angular.
 
 ## Usage
 
