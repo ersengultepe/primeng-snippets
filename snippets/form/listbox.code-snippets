@@ -1,0 +1,82 @@
+{
+    "PrimeNG Listbox Basic": {
+        "prefix": "p-listbox-basic",
+        "body": [
+            "<p-listbox [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" optionLabel=\"name\" [style]=\"{ 'height': '250px' }\" class=\"w-full md:w-56\" />"
+        ],
+        "description": "Basic PrimeNG Listbox"
+    },
+    "PrimeNG Listbox Filter": {
+        "prefix": "p-listbox-filter",
+        "body": [
+            "<p-listbox [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" optionLabel=\"name\" [filter]=\"true\" filterPlaceHolder=\"${3:Search}\" [style]=\"{ 'height': '250px' }\" class=\"w-full md:w-56\" />"
+        ],
+        "description": "PrimeNG Listbox with filter"
+    },
+    "PrimeNG Listbox Multiple": {
+        "prefix": "p-listbox-multiple",
+        "body": [
+            "<p-listbox [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" optionLabel=\"name\" [multiple]=\"true\" [style]=\"{ 'height': '250px' }\" class=\"w-full md:w-56\" />"
+        ],
+        "description": "PrimeNG Listbox with multiple selection"
+    },
+    "PrimeNG Listbox Checkbox": {
+        "prefix": "p-listbox-checkbox",
+        "body": [
+            "<p-listbox [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" optionLabel=\"name\" [multiple]=\"true\" [checkbox]=\"true\" [style]=\"{ 'height': '250px' }\" class=\"w-full md:w-56\" />"
+        ],
+        "description": "PrimeNG Listbox with checkbox selection"
+    },
+    "PrimeNG Listbox Templated": {
+        "prefix": "p-listbox-templated",
+        "body": [
+            "<p-listbox [options]=\"${1:countries}\" [(ngModel)]=\"${2:selectedCountry}\" optionLabel=\"name\" [style]=\"{ 'height': '250px' }\" class=\"w-full md:w-56\">",
+            "    <ng-template let-country pTemplate=\"item\">",
+            "        <div class=\"flex items-center gap-2\">",
+            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + country.code.toLowerCase()\" style=\"width: 18px\" />",
+            "            <div>{{ country.name }}</div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-listbox>"
+        ],
+        "description": "PrimeNG Listbox with custom template"
+    },
+    "PrimeNG Listbox Grouped": {
+        "prefix": "p-listbox-grouped",
+        "body": [
+            "<p-listbox [options]=\"${1:groupedCities}\" [(ngModel)]=\"${2:selectedCity}\" [group]=\"true\" [style]=\"{ 'height': '250px' }\" class=\"w-full md:w-56\">",
+            "    <ng-template let-group pTemplate=\"group\">",
+            "        <div class=\"flex items-center gap-2\">",
+            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + group.value\" style=\"width: 18px\" />",
+            "            <span>{{ group.label }}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "    <ng-template let-city pTemplate=\"item\">",
+            "        <div class=\"ml-6\">{{ city.label }}</div>",
+            "    </ng-template>",
+            "</p-listbox>"
+        ],
+        "description": "PrimeNG Listbox with grouped options"
+    },
+    "PrimeNG Listbox Disabled": {
+        "prefix": "p-listbox-disabled",
+        "body": [
+            "<p-listbox [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" optionLabel=\"name\" [disabled]=\"true\" [style]=\"{ 'height': '250px' }\" class=\"w-full md:w-56\" />"
+        ],
+        "description": "PrimeNG Listbox in disabled state"
+    },
+    "PrimeNG Listbox Invalid": {
+        "prefix": "p-listbox-invalid",
+        "body": [
+            "<p-listbox [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" optionLabel=\"name\" class=\"ng-invalid ng-dirty w-full md:w-56\" [style]=\"{ 'height': '250px' }\" />"
+        ],
+        "description": "PrimeNG Listbox with invalid state styling"
+    },
+    "PrimeNG Listbox Import": {
+        "prefix": "p-listbox-import",
+        "body": [
+            "import { ListboxModule } from 'primeng/listbox';"
+        ],
+        "description": "Imports PrimeNG ListboxModule in TypeScript"
+    }
+}

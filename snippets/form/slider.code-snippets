@@ -1,0 +1,44 @@
+{
+    "PrimeNG Slider Basic": {
+        "prefix": "p-slider-basic",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\"></p-slider>"
+        ],
+        "description": "PrimeNG Slider with basic usage"
+    },
+    "PrimeNG Slider Range": {
+        "prefix": "p-slider-range",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:rangeValues}\" [range]=\"true\"></p-slider>"
+        ],
+        "description": "PrimeNG Slider with range selection"
+    },
+    "PrimeNG Slider Vertical": {
+        "prefix": "p-slider-vertical",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\" orientation=\"vertical\"></p-slider>"
+        ],
+        "description": "PrimeNG Slider in vertical orientation"
+    },
+    "PrimeNG Slider Step": {
+        "prefix": "p-slider-step",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\" [step]=\"${2:10}\"></p-slider>"
+        ],
+        "description": "PrimeNG Slider with custom step value"
+    },
+    "PrimeNG Slider Min-Max": {
+        "prefix": "p-slider-minmax",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\" [min]=\"${2:0}\" [max]=\"${3:100}\"></p-slider>"
+        ],
+        "description": "PrimeNG Slider with custom min and max values"
+    },
+    "PrimeNG Slider OnChange Event": {
+        "prefix": "p-slider-onChange",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\" (onChange)=\"${2:onSliderChange($event)}\"></p-slider>"
+        ],
+        "description": "PrimeNG Slider with onChange event"
+    }
+}

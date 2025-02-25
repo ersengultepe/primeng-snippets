@@ -1,0 +1,43 @@
+{
+    "PrimeNG SelectButton Basic": {
+        "prefix": "p-selectButton-basic",
+        "body": [
+            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\" optionLabel=\"${3:label}\"></p-selectButton>"
+        ],
+        "description": "PrimeNG SelectButton with basic usage"
+    },
+    "PrimeNG SelectButton Multiple": {
+        "prefix": "p-selectButton-multiple",
+        "body": [
+            "<p-selectButton [(ngModel)]=\"${1:selectedOptions}\" [options]=\"${2:options}\" optionLabel=\"${3:label}\" [multiple]=\"true\"></p-selectButton>"
+        ],
+        "description": "PrimeNG SelectButton with multiple selection"
+    },
+    "PrimeNG SelectButton Disabled": {
+        "prefix": "p-selectButton-disabled",
+        "body": [
+            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\" [disabled]=\"${3:true}\"></p-selectButton>"
+        ],
+        "description": "PrimeNG SelectButton in disabled state"
+    },
+    "PrimeNG SelectButton Custom Templates": {
+        "prefix": "p-selectButton-template",
+        "body": [
+            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\">",
+            "    <ng-template pTemplate=\"item\" let-option>",
+            "        <div class=\"flex align-items-center\">",
+            "            <span>{{ option.label }}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-selectButton>"
+        ],
+        "description": "PrimeNG SelectButton with custom item template"
+    },
+    "PrimeNG SelectButton OnChange Event": {
+        "prefix": "p-selectButton-onChange",
+        "body": [
+            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\" (onChange)=\"${3:onOptionChange($event)}\"></p-selectButton>"
+        ],
+        "description": "PrimeNG SelectButton with onChange event"
+    }
+}

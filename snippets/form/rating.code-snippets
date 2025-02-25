@@ -1,0 +1,51 @@
+{
+    "PrimeNG Rating Basic": {
+        "prefix": "p-rating-basic",
+        "body": [
+            "<p-rating [(ngModel)]=\"${1:value}\" />"
+        ],
+        "description": "Basic PrimeNG Rating"
+    },
+    "PrimeNG Rating No Cancel": {
+        "prefix": "p-rating-nocancel",
+        "body": [
+            "<p-rating [(ngModel)]=\"${1:value}\" [cancel]=\"false\" />"
+        ],
+        "description": "PrimeNG Rating without cancel option"
+    },
+    "PrimeNG Rating Custom Icons": {
+        "prefix": "p-rating-custom",
+        "body": [
+            "<p-rating [(ngModel)]=\"${1:value}\" [stars]=\"${2:5}\" [cancel]=\"false\">",
+            "    <ng-template pTemplate=\"onicon\">",
+            "        <i class=\"pi pi-circle-fill text-orange-500\"></i>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"officon\">",
+            "        <i class=\"pi pi-circle text-gray-300\"></i>",
+            "    </ng-template>",
+            "</p-rating>"
+        ],
+        "description": "PrimeNG Rating with custom icons"
+    },
+    "PrimeNG Rating ReadOnly": {
+        "prefix": "p-rating-readonly",
+        "body": [
+            "<p-rating [(ngModel)]=\"${1:value}\" [readonly]=\"true\" [cancel]=\"false\" />"
+        ],
+        "description": "PrimeNG Rating in readonly mode"
+    },
+    "PrimeNG Rating Disabled": {
+        "prefix": "p-rating-disabled",
+        "body": [
+            "<p-rating [(ngModel)]=\"${1:value}\" [disabled]=\"true\" />"
+        ],
+        "description": "PrimeNG Rating in disabled state"
+    },
+    "PrimeNG Rating Import": {
+        "prefix": "p-rating-import",
+        "body": [
+            "import { RatingModule } from 'primeng/rating';"
+        ],
+        "description": "Imports PrimeNG RatingModule in TypeScript"
+    }
+}

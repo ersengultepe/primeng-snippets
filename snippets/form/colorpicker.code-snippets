@@ -1,0 +1,37 @@
+{
+    "PrimeNG ColorPicker Basic": {
+        "prefix": "p-colorPicker-basic",
+        "body": [
+            "<p-colorPicker [(ngModel)]=\"${1:color}\"></p-colorPicker>"
+        ],
+        "description": "PrimeNG ColorPicker with basic usage"
+    },
+    "PrimeNG ColorPicker Inline": {
+        "prefix": "p-colorPicker-inline",
+        "body": [
+            "<p-colorPicker [(ngModel)]=\"${1:color}\" [inline]=\"true\"></p-colorPicker>"
+        ],
+        "description": "PrimeNG ColorPicker in inline mode"
+    },
+    "PrimeNG ColorPicker Disabled": {
+        "prefix": "p-colorPicker-disabled",
+        "body": [
+            "<p-colorPicker [(ngModel)]=\"${1:color}\" [disabled]=\"${2:true}\"></p-colorPicker>"
+        ],
+        "description": "PrimeNG ColorPicker in disabled state"
+    },
+    "PrimeNG ColorPicker Format": {
+        "prefix": "p-colorPicker-format",
+        "body": [
+            "<p-colorPicker [(ngModel)]=\"${1:color}\" format=\"${2:hex}\"></p-colorPicker>"
+        ],
+        "description": "PrimeNG ColorPicker with custom format (hex, rgb, hsl)"
+    },
+    "PrimeNG ColorPicker OnChange Event": {
+        "prefix": "p-colorPicker-onChange",
+        "body": [
+            "<p-colorPicker [(ngModel)]=\"${1:color}\" (onChange)=\"${2:onColorChange($event)}\"></p-colorPicker>"
+        ],
+        "description": "PrimeNG ColorPicker with onChange event"
+    }
+}

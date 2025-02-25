@@ -1,0 +1,91 @@
+{
+    "PrimeNG InputGroup Basic": {
+        "prefix": "p-inputgroup-basic",
+        "body": [
+            "<p-inputgroup>",
+            "    <p-inputgroup-addon>",
+            "        <i class=\"pi pi-user\"></i>",
+            "    </p-inputgroup-addon>",
+            "    <input type=\"text\" pInputText placeholder=\"${1:Username}\" />",
+            "</p-inputgroup>"
+        ],
+        "description": "Basic PrimeNG InputGroup with icon addon"
+    },
+    "PrimeNG InputGroup Multiple Addons": {
+        "prefix": "p-inputgroup-multiple",
+        "body": [
+            "<p-inputgroup>",
+            "    <p-inputgroup-addon>",
+            "        <i class=\"pi pi-clock\"></i>",
+            "    </p-inputgroup-addon>",
+            "    <p-inputgroup-addon>",
+            "        <i class=\"pi pi-align-left\"></i>",
+            "    </p-inputgroup-addon>",
+            "    <input type=\"text\" pInputText placeholder=\"${1:Input}\" />",
+            "</p-inputgroup>"
+        ],
+        "description": "PrimeNG InputGroup with multiple addons"
+    },
+    "PrimeNG InputGroup Checkbox": {
+        "prefix": "p-inputgroup-checkbox",
+        "body": [
+            "<p-inputgroup>",
+            "    <p-inputgroup-addon>",
+            "        <p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"true\" />",
+            "    </p-inputgroup-addon>",
+            "    <input type=\"text\" pInputText placeholder=\"${2:Confirm}\" />",
+            "</p-inputgroup>"
+        ],
+        "description": "PrimeNG InputGroup with checkbox addon"
+    },
+    "PrimeNG InputGroup Button": {
+        "prefix": "p-inputgroup-button",
+        "body": [
+            "<p-inputgroup>",
+            "    <input type=\"text\" pInputText placeholder=\"${1:Search}\" />",
+            "    <p-inputgroup-addon>",
+            "        <p-button icon=\"pi pi-search\" styleClass=\"p-button\" />",
+            "    </p-inputgroup-addon>",
+            "</p-inputgroup>"
+        ],
+        "description": "PrimeNG InputGroup with button addon"
+    },
+    "PrimeNG InputGroup Multiple Buttons": {
+        "prefix": "p-inputgroup-buttons",
+        "body": [
+            "<p-inputgroup>",
+            "    <p-inputgroup-addon>",
+            "        <p-button icon=\"pi pi-refresh\" styleClass=\"p-button\" />",
+            "    </p-inputgroup-addon>",
+            "    <input type=\"text\" pInputText placeholder=\"${1:Input}\" />",
+            "    <p-inputgroup-addon>",
+            "        <p-button icon=\"pi pi-times\" styleClass=\"p-button\" />",
+            "    </p-inputgroup-addon>",
+            "</p-inputgroup>"
+        ],
+        "description": "PrimeNG InputGroup with multiple button addons"
+    },
+    "PrimeNG InputGroup Import": {
+        "prefix": "p-inputgroup-import",
+        "body": [
+            "import { InputGroupModule } from 'primeng/inputgroup';",
+            "import { InputGroupAddonModule } from 'primeng/inputgroupaddon';",
+            "import { InputTextModule } from 'primeng/inputtext';"
+        ],
+        "description": "Imports PrimeNG InputGroup and related modules"
+    },
+    "PrimeNG Checkbox Import": {
+        "prefix": "p-checkbox-import",
+        "body": [
+            "import { CheckboxModule } from 'primeng/checkbox';"
+        ],
+        "description": "Imports PrimeNG CheckboxModule"
+    },
+    "PrimeNG Button Import": {
+        "prefix": "p-button-import",
+        "body": [
+            "import { ButtonModule } from 'primeng/button';"
+        ],
+        "description": "Imports PrimeNG ButtonModule"
+    }
+}

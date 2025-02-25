@@ -1,0 +1,80 @@
+{
+    "PrimeNG FloatLabel Over": {
+        "prefix": "p-floatlabel-over",
+        "body": [
+            "<p-floatlabel>",
+            "    <input id=\"${1:floatlabel}\" type=\"text\" pInputText [(ngModel)]=\"${2:value}\" />",
+            "    <label for=\"${1:floatlabel}\">${3:Username}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG FloatLabel with over variant"
+    },
+    "PrimeNG FloatLabel In": {
+        "prefix": "p-floatlabel-in",
+        "body": [
+            "<p-floatlabel variant=\"in\">",
+            "    <input id=\"${1:floatlabel}\" type=\"text\" pInputText [(ngModel)]=\"${2:value}\" />",
+            "    <label for=\"${1:floatlabel}\">${3:Username}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG FloatLabel with in variant"
+    },
+    "PrimeNG FloatLabel On": {
+        "prefix": "p-floatlabel-on",
+        "body": [
+            "<p-floatlabel variant=\"on\">",
+            "    <input id=\"${1:floatlabel}\" type=\"text\" pInputText [(ngModel)]=\"${2:value}\" />",
+            "    <label for=\"${1:floatlabel}\">${3:Username}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG FloatLabel with on variant"
+    },
+    "PrimeNG FloatLabel Textarea": {
+        "prefix": "p-floatlabel-textarea",
+        "body": [
+            "<p-floatlabel>",
+            "    <textarea id=\"${1:floatlabel}\" rows=\"5\" cols=\"30\" pTextarea [(ngModel)]=\"${2:value}\"></textarea>",
+            "    <label for=\"${1:floatlabel}\">${3:Comments}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG FloatLabel with Textarea"
+    },
+    "PrimeNG FloatLabel Dropdown": {
+        "prefix": "p-floatlabel-dropdown",
+        "body": [
+            "<p-floatlabel>",
+            "    <p-dropdown id=\"${1:dropdown}\" [options]=\"${2:cities}\" [(ngModel)]=\"${3:selectedCity}\" optionLabel=\"name\"></p-dropdown>",
+            "    <label for=\"${1:dropdown}\">${4:Select a City}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG FloatLabel with Dropdown"
+    },
+    "PrimeNG FloatLabel Import": {
+        "prefix": "p-floatlabel-import",
+        "body": [
+            "import { FloatLabelModule } from 'primeng/floatlabel';"
+        ],
+        "description": "Imports PrimeNG FloatLabelModule in TypeScript"
+    },
+    "PrimeNG InputText Import": {
+        "prefix": "p-inputtext-import",
+        "body": [
+            "import { InputTextModule } from 'primeng/inputtext';"
+        ],
+        "description": "Imports PrimeNG InputTextModule in TypeScript"
+    },
+    "PrimeNG Textarea Import": {
+        "prefix": "p-textarea-import",
+        "body": [
+            "import { TextareaModule } from 'primeng/textarea';"
+        ],
+        "description": "Imports PrimeNG TextareaModule in TypeScript"
+    },
+    "PrimeNG Dropdown Import": {
+        "prefix": "p-dropdown-import",
+        "body": [
+            "import { DropdownModule } from 'primeng/dropdown';"
+        ],
+        "description": "Imports PrimeNG DropdownModule in TypeScript"
+    }
+}

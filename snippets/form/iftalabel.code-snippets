@@ -1,0 +1,60 @@
+{
+    "PrimeNG IftaLabel Basic": {
+        "prefix": "p-iftalabel-basic",
+        "body": [
+            "<p-iftalabel>",
+            "    <input id=\"${1:iftalabel}\" type=\"text\" pInputText [(ngModel)]=\"${2:value}\" />",
+            "    <label for=\"${1:iftalabel}\">${3:Username}</label>",
+            "</p-iftalabel>"
+        ],
+        "description": "Basic PrimeNG IftaLabel with input"
+    },
+    "PrimeNG IftaLabel Textarea": {
+        "prefix": "p-iftalabel-textarea",
+        "body": [
+            "<p-iftalabel>",
+            "    <textarea id=\"${1:iftalabel}\" rows=\"5\" cols=\"30\" pTextarea [(ngModel)]=\"${2:value}\"></textarea>",
+            "    <label for=\"${1:iftalabel}\">${3:Comments}</label>",
+            "</p-iftalabel>"
+        ],
+        "description": "PrimeNG IftaLabel with Textarea"
+    },
+    "PrimeNG IftaLabel Dropdown": {
+        "prefix": "p-iftalabel-dropdown",
+        "body": [
+            "<p-iftalabel>",
+            "    <p-dropdown id=\"${1:dropdown}\" [options]=\"${2:cities}\" [(ngModel)]=\"${3:selectedCity}\" optionLabel=\"name\"></p-dropdown>",
+            "    <label for=\"${1:dropdown}\">${4:Select a City}</label>",
+            "</p-iftalabel>"
+        ],
+        "description": "PrimeNG IftaLabel with Dropdown"
+    },
+    "PrimeNG IftaLabel Import": {
+        "prefix": "p-iftalabel-import",
+        "body": [
+            "import { IftaLabelModule } from 'primeng/iftalabel';"
+        ],
+        "description": "Imports PrimeNG IftaLabelModule in TypeScript"
+    },
+    "PrimeNG InputText Import": {
+        "prefix": "p-inputtext-import",
+        "body": [
+            "import { InputTextModule } from 'primeng/inputtext';"
+        ],
+        "description": "Imports PrimeNG InputTextModule in TypeScript"
+    },
+    "PrimeNG Textarea Import": {
+        "prefix": "p-textarea-import",
+        "body": [
+            "import { TextareaModule } from 'primeng/textarea';"
+        ],
+        "description": "Imports PrimeNG TextareaModule in TypeScript"
+    },
+    "PrimeNG Dropdown Import": {
+        "prefix": "p-dropdown-import",
+        "body": [
+            "import { DropdownModule } from 'primeng/dropdown';"
+        ],
+        "description": "Imports PrimeNG DropdownModule in TypeScript"
+    }
+}

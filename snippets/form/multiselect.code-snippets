@@ -1,0 +1,43 @@
+{
+    "PrimeNG MultiSelect Basic": {
+        "prefix": "p-multiSelect-basic",
+        "body": [
+            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" optionLabel=\"${3:name}\" placeholder=\"${4:Select Items}\"></p-multiSelect>"
+        ],
+        "description": "PrimeNG MultiSelect with basic usage"
+    },
+    "PrimeNG MultiSelect Filter": {
+        "prefix": "p-multiSelect-filter",
+        "body": [
+            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" [filter]=\"true\" filterPlaceholder=\"${3:Search}\"></p-multiSelect>"
+        ],
+        "description": "PrimeNG MultiSelect with filter functionality"
+    },
+    "PrimeNG MultiSelect Disabled": {
+        "prefix": "p-multiSelect-disabled",
+        "body": [
+            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" [disabled]=\"${3:true}\"></p-multiSelect>"
+        ],
+        "description": "PrimeNG MultiSelect in disabled state"
+    },
+    "PrimeNG MultiSelect Custom Templates": {
+        "prefix": "p-multiSelect-template",
+        "body": [
+            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\">",
+            "    <ng-template pTemplate=\"item\" let-item>",
+            "        <div class=\"flex align-items-center\">",
+            "            <span>{{ item.name }}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-multiSelect>"
+        ],
+        "description": "PrimeNG MultiSelect with custom item template"
+    },
+    "PrimeNG MultiSelect OnChange Event": {
+        "prefix": "p-multiSelect-onChange",
+        "body": [
+            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" (onChange)=\"${3:onItemsChange($event)}\"></p-multiSelect>"
+        ],
+        "description": "PrimeNG MultiSelect with onChange event"
+    }
+}

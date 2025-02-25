@@ -1,0 +1,125 @@
+{
+    "PrimeNG Auto Complete": {
+        "prefix": "p-checkbox-import",
+        "body": [
+            "import { CheckboxModule } from 'primeng/checkbox';"
+        ],
+        "description": "Imports PrimeNG Checkbox in TypeScript"
+    },    
+      "PrimeNG Checkbox Basic": {
+        "prefix": "p-checkbox-basic",
+        "body": [
+          "<p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"true\" />"
+        ],
+        "description": "PrimeNG Basic Checkbox"
+      },
+      "PrimeNG Checkbox Reactive Form": {
+        "prefix": "p-checkbox-reactive-form",
+        "body": [
+          "<form class=\"flex items-center gap-1\" [formGroup]=\"formGroup\">",
+          "    <p-checkbox formControlName=\"${1:city}\" value=\"${2:New York}\" inputId=\"${3:ny}\" />",
+          "    <label for=\"${3:ny}\" class=\"ml-2\">${2:New York}</label>",
+          "</form>"
+        ],
+        "description": "PrimeNG Checkbox Reactive Form"
+      },
+      "PrimeNG Checkbox Indeterminate": {
+        "prefix": "p-checkbox-indeterminate",
+        "body": [
+          "<p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"true\" [indeterminate]=\"true\" />"
+        ],
+        "description": "PrimeNG Checkbox with Indeterminate state"
+      },
+      "PrimeNG Checkbox Group": {
+        "prefix": "p-checkbox-group",
+        "body": [
+            "<div class=\"flex items-center\">",
+            "    <p-checkbox inputId=\"${1:ingredient1}\" name=\"${5:pizza}\" value=\"${2:Cheese}\" [(ngModel)]=\"${5:pizza}\" />",
+            "    <label for=\"${1:ingredient1}\" class=\"ml-2\"> ${2:Cheese} </label>",
+            "</div>",
+            "<div class=\"flex items-center\">",
+            "    <p-checkbox inputId=\"${3:ingredient2}\" name=\"${5:pizza}\" value=\"${4:Mushroom}\" [(ngModel)]=\"${5:pizza}\" />",
+            "    <label for=\"${3:ingredient2}\" class=\"ml-2\"> ${4:Mushroom} </label>",
+            "</div>",
+            "<div class=\"flex items-center\">",
+            "    <p-checkbox inputId=\"${6:ingredient3}\" name=\"${5:pizza}\" value=\"${7:Pepper}\" [(ngModel)]=\"${5:pizza}\" />",
+            "    <label for=\"${6:ingredient3}\" class=\"ml-2\"> ${7:Pepper} </label>",
+            "</div>",
+            "<div class=\"flex items-center\">",
+            "    <p-checkbox inputId=\"${8:ingredient4}\" name=\"${5:pizza}\" value=\"${9:Onion}\" [(ngModel)]=\"${5:pizza}\" />",
+            "    <label for=\"${8:ingredient4}\" class=\"ml-2\"> ${9:Onion} </label>",
+            "</div>"
+        ],
+        "description": "PrimeNG Checkbox group with 4 labeled options in flex containers"
+    },
+      "PrimeNG Checkbox Dynamic": {
+        "prefix": "p-checkbox-dynamic",
+        "body": [
+          "<div *ngFor=\"let category of ${1:categories}\" class=\"flex items-center\">",
+          "    <p-checkbox [inputId]=\"category.key\" name=\"${2:group}\" [value]=\"category\" [(ngModel)]=\"${3:selectedCategories}\" />",
+          "    <label [for]=\"category.key\" class=\"ml-2\"> {{ category.name }} </label>",
+          "</div>"
+        ],
+        "description": "PrimeNG Checkbox Dynamic, Checkboxes can be generated using a list of values."
+      },
+      "PrimeNG Checkbox Filled": {
+        "prefix": "p-checkbox-filled",
+        "body": [
+          "<p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"true\" variant=\"${2:filled}\" />"
+        ],
+        "description": "Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style."
+      },
+      "PrimeNG Checkbox Small": {
+        "prefix": "p-checkbox-small",
+        "body": [
+            "<div class=\"flex items-center gap-2\">",
+            "    <p-checkbox [(ngModel)]=\"${1:size}\" inputId=\"${2:size_small}\" name=\"${1:size}\" value=\"${3:Small}\" size=\"small\" />",
+            "    <label for=\"${2:size_small}\" class=\"text-sm\">${3:Small}</label>",
+            "</div>"
+        ],
+        "description": "Checkbox provides small and large sizes as alternatives to the base."
+    },
+    "PrimeNG Checkbox Normal": {
+        "prefix": "p-checkbox-normal",
+        "body": [
+            "<div class=\"flex items-center gap-2\">",
+            "    <p-checkbox [(ngModel)]=\"${1:size}\" inputId=\"${2:size_normal}\" name=\"${1:size}\" value=\"${3:Normal}\" />",
+            "    <label for=\"${2:size_normal}\">${3:Normal}</label>",
+            "</div>"
+        ],
+        "description": "Checkbox provides small and large sizes as alternatives to the base."
+    },
+    "PrimeNG Checkbox Large": {
+        "prefix": "p-checkbox-large",
+        "body": [
+            "<div class=\"flex items-center gap-2\">",
+            "    <p-checkbox [(ngModel)]=\"${1:size}\" inputId=\"${2:size_large}\" name=\"${1:size}\" value=\"${3:Large}\" size=\"large\" />",
+            "    <label for=\"${2:size_large}\" class=\"text-lg\">${3:Large}</label>",
+            "</div>"
+        ],
+        "description": "Checkbox provides small and large sizes as alternatives to the base."
+    },
+      "PrimeNG Checkbox Disabled": {
+        "prefix": "p-checkbox-disabled",
+        "body": [
+          "<p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"true\" [disabled]=\"true\" />"
+        ],
+        "description": "When disabled is present, the element cannot be edited and focused."
+      },
+      "PrimeNG Checkbox Invalid": {
+        "prefix": "p-checkbox-invalid",
+        "body": [
+          "<p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"true\" class=\"ng-invalid ng-dirty\" />"
+        ],
+        "description": "Invalid state style is added using the ng-invalid and ng-dirty class to indicate a failed validation."
+      }
+}  
+  
+
+    
+
+
+    
+  
+  
+  

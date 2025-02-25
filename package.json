@@ -28,27 +28,45 @@
     "snippets": [
       {
         "language": "html",
-        "path": "./snippets/auto-complete.code-snippets"
+        "path": "./snippets/form/auto-complete.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/auto-complete.code-snippets"
+        "path": "./snippets/form/auto-complete.code-snippets"
+      },
+      
+      {
+        "language": "html",
+        "path": "./snippets/form/checkbox.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/checkbox.code-snippets"
       },
       {
         "language": "html",
-        "path": "./snippets/button-snippets.code-snippets"
+        "path": "./snippets/form/icon-field.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/button-snippets.code-snippets"
+        "path": "./snippets/form/icon-field.code-snippets"
+      },
+      
+      {
+        "language": "html",
+        "path": "./snippets/button/button-snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/button/button-snippets.code-snippets"
       },
       {
         "language": "html",
-        "path": "./snippets/speed-dial.code-snippets"
+        "path": "./snippets/button/speed-dial.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/speed-dial.code-snippets"
+        "path": "./snippets/button/speed-dial.code-snippets"
       }
     ]
   }

@@ -1,0 +1,43 @@
+{
+    "PrimeNG CascadeSelect Basic": {
+        "prefix": "p-cascadeSelect-basic",
+        "body": [
+            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\" optionGroupLabel=\"${4:label}\" [optionGroupChildren]=\"${5:items}\" placeholder=\"${6:Select a City}\"></p-cascadeSelect>"
+        ],
+        "description": "PrimeNG CascadeSelect with basic usage"
+    },
+    "PrimeNG CascadeSelect Disabled": {
+        "prefix": "p-cascadeSelect-disabled",
+        "body": [
+            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" [disabled]=\"${3:true}\"></p-cascadeSelect>"
+        ],
+        "description": "PrimeNG CascadeSelect in disabled state"
+    },
+    "PrimeNG CascadeSelect Filter": {
+        "prefix": "p-cascadeSelect-filter",
+        "body": [
+            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" [filter]=\"true\" filterPlaceholder=\"${3:Search}\"></p-cascadeSelect>"
+        ],
+        "description": "PrimeNG CascadeSelect with filter functionality"
+    },
+    "PrimeNG CascadeSelect Custom Templates": {
+        "prefix": "p-cascadeSelect-template",
+        "body": [
+            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\">",
+            "    <ng-template pTemplate=\"option\" let-option>",
+            "        <div class=\"flex align-items-center\">",
+            "            <span>{{ option.name }}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-cascadeSelect>"
+        ],
+        "description": "PrimeNG CascadeSelect with custom option template"
+    },
+    "PrimeNG CascadeSelect OnChange Event": {
+        "prefix": "p-cascadeSelect-onChange",
+        "body": [
+            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" (onChange)=\"${3:onCityChange($event)}\"></p-cascadeSelect>"
+        ],
+        "description": "PrimeNG CascadeSelect with onChange event"
+    }
+}

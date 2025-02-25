@@ -1,0 +1,45 @@
+{
+    "PrimeNG Editor Basic": {
+        "prefix": "p-editor-basic",
+        "body": [
+            "<p-editor [(ngModel)]=\"${1:text}\" [style]=\"{ 'height': '320px' }\"></p-editor>"
+        ],
+        "description": "Basic PrimeNG Editor"
+    },
+    "PrimeNG Editor Custom Toolbar": {
+        "prefix": "p-editor-custom",
+        "body": [
+            "<p-editor [(ngModel)]=\"${1:text}\" [style]=\"{ 'height': '320px' }\">",
+            "    <ng-template pTemplate=\"header\">",
+            "        <span class=\"ql-formats\">",
+            "            <button type=\"button\" class=\"ql-bold\" aria-label=\"Bold\"></button>",
+            "            <button type=\"button\" class=\"ql-italic\" aria-label=\"Italic\"></button>",
+            "            <button type=\"button\" class=\"ql-underline\" aria-label=\"Underline\"></button>",
+            "        </span>",
+            "    </ng-template>",
+            "</p-editor>"
+        ],
+        "description": "PrimeNG Editor with custom toolbar"
+    },
+    "PrimeNG Editor ReadOnly": {
+        "prefix": "p-editor-readonly",
+        "body": [
+            "<p-editor [(ngModel)]=\"${1:text}\" [style]=\"{ 'height': '320px' }\" [readonly]=\"true\"></p-editor>"
+        ],
+        "description": "PrimeNG Editor in readonly mode"
+    },
+    "PrimeNG Editor Disabled": {
+        "prefix": "p-editor-disabled",
+        "body": [
+            "<p-editor [(ngModel)]=\"${1:text}\" [style]=\"{ 'height': '320px' }\" [disabled]=\"true\"></p-editor>"
+        ],
+        "description": "PrimeNG Editor in disabled state"
+    },
+    "PrimeNG Editor Import": {
+        "prefix": "p-editor-import",
+        "body": [
+            "import { EditorModule } from 'primeng/editor';"
+        ],
+        "description": "Imports PrimeNG EditorModule in TypeScript"
+    }
+}

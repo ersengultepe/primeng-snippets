@@ -1,0 +1,61 @@
+{
+    "PrimeNG InputText Basic": {
+        "prefix": "p-inputtext-basic",
+        "body": [
+            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" />"
+        ],
+        "description": "Basic PrimeNG InputText"
+    },
+    "PrimeNG InputText Small": {
+        "prefix": "p-inputtext-small",
+        "body": [
+            "<input type=\"text\" pInputText size=\"small\" [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" />"
+        ],
+        "description": "PrimeNG InputText with small size"
+    },
+    "PrimeNG InputText Large": {
+        "prefix": "p-inputtext-large",
+        "body": [
+            "<input type=\"text\" pInputText size=\"large\" [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" />"
+        ],
+        "description": "PrimeNG InputText with large size"
+    },
+    "PrimeNG InputText FloatLabel": {
+        "prefix": "p-inputtext-floatlabel",
+        "body": [
+            "<p-floatlabel>",
+            "    <input type=\"text\" pInputText id=\"${1:inputtext}\" [(ngModel)]=\"${2:value}\" />",
+            "    <label for=\"${1:inputtext}\">${3:Text}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG InputText with FloatLabel"
+    },
+    "PrimeNG InputText Disabled": {
+        "prefix": "p-inputtext-disabled",
+        "body": [
+            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" disabled />"
+        ],
+        "description": "PrimeNG InputText in disabled state"
+    },
+    "PrimeNG InputText Invalid": {
+        "prefix": "p-inputtext-invalid",
+        "body": [
+            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" class=\"ng-invalid ng-dirty\" />"
+        ],
+        "description": "PrimeNG InputText with invalid state styling"
+    },
+    "PrimeNG InputText Import": {
+        "prefix": "p-inputtext-import",
+        "body": [
+            "import { InputTextModule } from 'primeng/inputtext';"
+        ],
+        "description": "Imports PrimeNG InputTextModule in TypeScript"
+    },
+    "PrimeNG FloatLabel Import": {
+        "prefix": "p-floatlabel-import",
+        "body": [
+            "import { FloatLabelModule } from 'primeng/floatlabel';"
+        ],
+        "description": "Imports PrimeNG FloatLabelModule in TypeScript"
+    }
+}

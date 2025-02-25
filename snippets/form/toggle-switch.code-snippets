@@ -1,0 +1,30 @@
+{
+    "PrimeNG ToggleSwitch Basic": {
+        "prefix": "p-toggleSwitch-basic",
+        "body": [
+            "<p-toggleSwitch [(ngModel)]=\"${1:checked}\"></p-toggleSwitch>"
+        ],
+        "description": "PrimeNG ToggleSwitch with basic usage"
+    },
+    "PrimeNG ToggleSwitch Disabled": {
+        "prefix": "p-toggleSwitch-disabled",
+        "body": [
+            "<p-toggleSwitch [(ngModel)]=\"${1:checked}\" [disabled]=\"${2:true}\"></p-toggleSwitch>"
+        ],
+        "description": "PrimeNG ToggleSwitch in disabled state"
+    },
+    "PrimeNG ToggleSwitch Custom Labels": {
+        "prefix": "p-toggleSwitch-labels",
+        "body": [
+            "<p-toggleSwitch onLabel=\"${1:Yes}\" offLabel=\"${2:No}\" [(ngModel)]=\"${3:checked}\"></p-toggleSwitch>"
+        ],
+        "description": "PrimeNG ToggleSwitch with custom on/off labels"
+    },
+    "PrimeNG ToggleSwitch Styled": {
+        "prefix": "p-toggleSwitch-styled",
+        "body": [
+            "<p-toggleSwitch [(ngModel)]=\"${1:checked}\" styleClass=\"${2:custom-switch}\"></p-toggleSwitch>"
+        ],
+        "description": "PrimeNG ToggleSwitch with custom styles"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "PrimeNG DatePicker Basic": {
+        "prefix": "p-datePicker-basic",
+        "body": [
+            "<p-calendar [(ngModel)]=\"${1:date}\" dateFormat=\"${2:dd/mm/yy}\"></p-calendar>"
+        ],
+        "description": "PrimeNG DatePicker with basic usage"
+    },
+    "PrimeNG DatePicker Inline": {
+        "prefix": "p-datePicker-inline",
+        "body": [
+            "<p-calendar [(ngModel)]=\"${1:date}\" [inline]=\"true\"></p-calendar>"
+        ],
+        "description": "PrimeNG DatePicker in inline mode"
+    },
+    "PrimeNG DatePicker Disabled": {
+        "prefix": "p-datePicker-disabled",
+        "body": [
+            "<p-calendar [(ngModel)]=\"${1:date}\" [disabled]=\"${2:true}\"></p-calendar>"
+        ],
+        "description": "PrimeNG DatePicker in disabled state"
+    },
+    "PrimeNG DatePicker Range": {
+        "prefix": "p-datePicker-range",
+        "body": [
+            "<p-calendar [(ngModel)]=\"${1:dates}\" selectionMode=\"range\" [readonlyInput]=\"true\"></p-calendar>"
+        ],
+        "description": "PrimeNG DatePicker with range selection"
+    },
+    "PrimeNG DatePicker Time": {
+        "prefix": "p-datePicker-time",
+        "body": [
+            "<p-calendar [(ngModel)]=\"${1:date}\" [showTime]=\"true\" [showSeconds]=\"true\"></p-calendar>"
+        ],
+        "description": "PrimeNG DatePicker with time selection"
+    },
+    "PrimeNG DatePicker OnChange Event": {
+        "prefix": "p-datePicker-onChange",
+        "body": [
+            "<p-calendar [(ngModel)]=\"${1:date}\" (onSelect)=\"${2:onDateSelect($event)}\"></p-calendar>"
+        ],
+        "description": "PrimeNG DatePicker with onChange event"
+    }
+}

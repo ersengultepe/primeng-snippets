@@ -1,0 +1,96 @@
+{
+    "PrimeNG InputNumber Basic": {
+        "prefix": "p-inputnumber-basic",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" />"
+        ],
+        "description": "Basic PrimeNG InputNumber"
+    },
+    "PrimeNG InputNumber MinMax": {
+        "prefix": "p-inputnumber-minmax",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" [min]=\"${2:0}\" [max]=\"${3:100}\" />"
+        ],
+        "description": "PrimeNG InputNumber with min and max values"
+    },
+    "PrimeNG InputNumber Vertical": {
+        "prefix": "p-inputnumber-vertical",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" [showButtons]=\"true\" mode=\"vertical\" styleClass=\"w-20\" />"
+        ],
+        "description": "PrimeNG InputNumber with vertical buttons"
+    },
+    "PrimeNG InputNumber Buttons": {
+        "prefix": "p-inputnumber-buttons",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" [showButtons]=\"true\" buttonLayout=\"stacked\" />"
+        ],
+        "description": "PrimeNG InputNumber with stacked buttons"
+    },
+    "PrimeNG InputNumber Currency": {
+        "prefix": "p-inputnumber-currency",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" mode=\"currency\" currency=\"${2:USD}\" locale=\"${3:en-US}\" />"
+        ],
+        "description": "PrimeNG InputNumber with currency formatting"
+    },
+    "PrimeNG InputNumber Decimal": {
+        "prefix": "p-inputnumber-decimal",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" mode=\"decimal\" [minFractionDigits]=\"${2:2}\" [maxFractionDigits]=\"${3:5}\" />"
+        ],
+        "description": "PrimeNG InputNumber with decimal formatting"
+    },
+    "PrimeNG InputNumber Prefix": {
+        "prefix": "p-inputnumber-prefix",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" prefix=\"${2:+}\" />"
+        ],
+        "description": "PrimeNG InputNumber with prefix"
+    },
+    "PrimeNG InputNumber Suffix": {
+        "prefix": "p-inputnumber-suffix",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" suffix=\"${2:%}\" />"
+        ],
+        "description": "PrimeNG InputNumber with suffix"
+    },
+    "PrimeNG InputNumber FloatLabel": {
+        "prefix": "p-inputnumber-floatlabel",
+        "body": [
+            "<p-floatlabel>",
+            "    <p-inputnumber id=\"${1:inputnumber}\" [(ngModel)]=\"${2:value}\" />",
+            "    <label for=\"${1:inputnumber}\">${3:Number}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG InputNumber with FloatLabel"
+    },
+    "PrimeNG InputNumber Disabled": {
+        "prefix": "p-inputnumber-disabled",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" [disabled]=\"true\" />"
+        ],
+        "description": "PrimeNG InputNumber in disabled state"
+    },
+    "PrimeNG InputNumber Invalid": {
+        "prefix": "p-inputnumber-invalid",
+        "body": [
+            "<p-inputnumber [(ngModel)]=\"${1:value}\" class=\"ng-invalid ng-dirty\" />"
+        ],
+        "description": "PrimeNG InputNumber with invalid state styling"
+    },
+    "PrimeNG InputNumber Import": {
+        "prefix": "p-inputnumber-import",
+        "body": [
+            "import { InputNumberModule } from 'primeng/inputnumber';"
+        ],
+        "description": "Imports PrimeNG InputNumberModule in TypeScript"
+    },
+    "PrimeNG FloatLabel Import": {
+        "prefix": "p-floatlabel-import",
+        "body": [
+            "import { FloatLabelModule } from 'primeng/floatlabel';"
+        ],
+        "description": "Imports PrimeNG FloatLabelModule in TypeScript"
+    }
+}

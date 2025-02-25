@@ -1,0 +1,37 @@
+{
+    "PrimeNG ToggleButton Basic": {
+        "prefix": "p-toggleButton-basic",
+        "body": [
+            "<p-toggleButton [(ngModel)]=\"${1:checked}\" onLabel=\"${2:On}\" offLabel=\"${3:Off}\"></p-toggleButton>"
+        ],
+        "description": "PrimeNG ToggleButton with basic usage"
+    },
+    "PrimeNG ToggleButton Icons": {
+        "prefix": "p-toggleButton-icons",
+        "body": [
+            "<p-toggleButton [(ngModel)]=\"${1:checked}\" onIcon=\"${2:pi pi-check}\" offIcon=\"${3:pi pi-times}\"></p-toggleButton>"
+        ],
+        "description": "PrimeNG ToggleButton with custom icons"
+    },
+    "PrimeNG ToggleButton Disabled": {
+        "prefix": "p-toggleButton-disabled",
+        "body": [
+            "<p-toggleButton [(ngModel)]=\"${1:checked}\" [disabled]=\"${2:true}\"></p-toggleButton>"
+        ],
+        "description": "PrimeNG ToggleButton in disabled state"
+    },
+    "PrimeNG ToggleButton Custom Styles": {
+        "prefix": "p-toggleButton-styled",
+        "body": [
+            "<p-toggleButton [(ngModel)]=\"${1:checked}\" styleClass=\"${2:custom-toggle}\"></p-toggleButton>"
+        ],
+        "description": "PrimeNG ToggleButton with custom styles"
+    },
+    "PrimeNG ToggleButton OnChange Event": {
+        "prefix": "p-toggleButton-onChange",
+        "body": [
+            "<p-toggleButton [(ngModel)]=\"${1:checked}\" (onChange)=\"${2:onToggleChange($event)}\"></p-toggleButton>"
+        ],
+        "description": "PrimeNG ToggleButton with onChange event"
+    }
+}

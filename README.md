@@ -8,10 +8,6 @@ Stay tuned!!!
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
-## Angular Essentials
-
-Check out the [Angular Essentials extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials&WT.mc_id=javascript-0000-jopapa) for more great extensions for developing with JavaScript and Angular.
-
 ## Usage
 
 Type part of a snippet, press `tab`, and the snippet unfolds.

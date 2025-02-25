@@ -1,0 +1,54 @@
+{
+    "PrimeNG Textarea Basic": {
+        "prefix": "p-textarea-basic",
+        "body": [
+            "<textarea rows=\"5\" cols=\"30\" pTextarea placeholder=\"${1:Your Message}\"></textarea>"
+        ],
+        "description": "Basic PrimeNG Textarea"
+    },
+    "PrimeNG Textarea AutoResize": {
+        "prefix": "p-textarea-autoresize",
+        "body": [
+            "<textarea rows=\"5\" cols=\"30\" pTextarea [autoResize]=\"true\" placeholder=\"${1:Your Message}\"></textarea>"
+        ],
+        "description": "PrimeNG Textarea with auto-resize"
+    },
+    "PrimeNG Textarea FloatLabel": {
+        "prefix": "p-textarea-floatlabel",
+        "body": [
+            "<p-floatlabel>",
+            "    <textarea id=\"${1:floatlabel}\" rows=\"5\" cols=\"30\" pTextarea [(ngModel)]=\"${2:value}\"></textarea>",
+            "    <label for=\"${1:floatlabel}\">${3:Your Message}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG Textarea with FloatLabel"
+    },
+    "PrimeNG Textarea Disabled": {
+        "prefix": "p-textarea-disabled",
+        "body": [
+            "<textarea rows=\"5\" cols=\"30\" pTextarea placeholder=\"${1:Your Message}\" [disabled]=\"true\"></textarea>"
+        ],
+        "description": "PrimeNG Textarea in disabled state"
+    },
+    "PrimeNG Textarea Invalid": {
+        "prefix": "p-textarea-invalid",
+        "body": [
+            "<textarea rows=\"5\" cols=\"30\" pTextarea placeholder=\"${1:Your Message}\" class=\"ng-invalid ng-dirty\"></textarea>"
+        ],
+        "description": "PrimeNG Textarea with invalid state styling"
+    },
+    "PrimeNG Textarea Import": {
+        "prefix": "p-textarea-import",
+        "body": [
+            "import { TextareaModule } from 'primeng/textarea';"
+        ],
+        "description": "Imports PrimeNG TextareaModule in TypeScript"
+    },
+    "PrimeNG FloatLabel Import": {
+        "prefix": "p-floatlabel-import",
+        "body": [
+            "import { FloatLabelModule } from 'primeng/floatlabel';"
+        ],
+        "description": "Imports PrimeNG FloatLabelModule in TypeScript"
+    }
+}
