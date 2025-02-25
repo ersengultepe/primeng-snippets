@@ -1,0 +1,93 @@
+{
+    "PrimeNG SpeedDial Import": {
+        "prefix": "p-speeddial-import",
+        "body": [
+            "import { SpeedDialModule } from 'primeng/speeddial';"
+        ],
+        "description": "Imports PrimeNG SpeedDialModule in TypeScript"
+    },
+    "PrimeNG SpeedDial Up": {
+        "prefix": "p-speeddial-up",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" direction=\"up\" [style]=\"{ position: 'absolute', left: 'calc(50% - 2rem)', bottom: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Up Direction)"
+    },
+    "PrimeNG SpeedDial Down": {
+        "prefix": "p-speeddial-down",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" direction=\"down\" [style]=\"{ position: 'absolute', left: 'calc(50% - 2rem)', top: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Down Direction)"
+    },
+    "PrimeNG SpeedDial Left": {
+        "prefix": "p-speeddial-left",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" direction=\"left\" [style]=\"{ position: 'absolute', top: 'calc(50% - 2rem)', right: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Left Direction)"
+    },
+    "PrimeNG SpeedDial Right": {
+        "prefix": "p-speeddial-right",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" direction=\"right\" [style]=\"{ position: 'absolute', top: 'calc(50% - 2rem)', left: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Right Direction)"
+    },
+    "PrimeNG SpeedDial Circle": {
+        "prefix": "p-speeddial-circle",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" [radius]=\"80\" type=\"circle\" [style]=\"{ position: 'absolute' }\" [buttonProps]=\"{ severity: 'warn', rounded: true }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Circle Type)"
+    },
+    "PrimeNG SpeedDial Semi-Circle Up": {
+        "prefix": "p-speeddial-semicircle-up",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" [radius]=\"80\" type=\"semi-circle\" direction=\"up\" [style]=\"{ position: 'absolute', left: 'calc(50% - 2rem)', bottom: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Semi-Circle Up Direction)"
+    },
+    "PrimeNG SpeedDial Semi-Circle Down": {
+        "prefix": "p-speeddial-semicircle-down",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" [radius]=\"80\" type=\"semi-circle\" direction=\"down\" [style]=\"{ position: 'absolute', left: 'calc(50% - 2rem)', top: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Semi-Circle Down Direction)"
+    },
+    "PrimeNG SpeedDial Quarter-Circle Up-Left": {
+        "prefix": "p-speeddial-quartercircle-upleft",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" [radius]=\"120\" type=\"quarter-circle\" direction=\"up-left\" [style]=\"{ position: 'absolute', right: 0, bottom: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Quarter-Circle Up-Left)"
+    },
+    "PrimeNG SpeedDial Quarter-Circle Down-Right": {
+        "prefix": "p-speeddial-quartercircle-downright",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" [radius]=\"120\" type=\"quarter-circle\" direction=\"down-right\" [style]=\"{ position: 'absolute', left: 0, top: 0 }\" />"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial (Quarter-Circle Down-Right)"
+    },
+    "PrimeNG SpeedDial Custom Button": {
+        "prefix": "p-speeddial-custom-button",
+        "body": [
+            "<p-speeddial [model]=\"${1:items}\" direction=\"up\" [transitionDelay]=\"80\" style=\"position: 'absolute'\">",
+            "    <ng-template #button let-toggleCallback=\"toggleCallback\">",
+            "        <p-button outlined styleClass=\"border\" (click)=\"toggleCallback($event)\">",
+            "            <svg width=\"31\" height=\"33\" viewBox=\"0 0 31 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "                <path d=\"M15.1934 0V0V0L0.0391235 5.38288L2.35052 25.3417L15.1934 32.427V32.427V32.427L28.0364 25.3417L30.3478 5.38288L15.1934 0Z\" fill=\"var(--p-primary-color)\" />",
+            "            </svg>",
+            "        </p-button>",
+            "    </ng-template>",
+            "    <ng-template #item let-item let-toggleCallback=\"toggleCallback\">",
+            "        <div class=\"flex flex-col items-center justify-between gap-2 p-2 border rounded border-surface-200 dark:border-surface-700 w-20 cursor-pointer\" (click)=\"toggleCallback($event, item)\">",
+            "            <span [class]=\"item.icon\"></span>",
+            "            <span>{{ item.label }}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-speeddial>"
+        ],
+        "description": "Snippet for PrimeNG SpeedDial with Custom Button"
+    }
+}

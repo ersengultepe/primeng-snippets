@@ -1,0 +1,692 @@
+{
+    "PrimeNG Button Import": {
+        "prefix": "p-button-import",
+        "body": [
+            "import { ButtonModule } from 'primeng/button';"
+        ],
+        "description": "Imports PrimeNG ButtonModule in TypeScript"
+    },
+    "PrimeNG Button": {
+        "prefix": "p-button",
+        "body": [
+            "<p-button label=\"${1:Click Me}\" (onClick)=\"${2:onClick()}\"></p-button>"
+        ],
+        "description": "PrimeNG Button component snippet"
+    },
+    "PrimeNG Button Loading": {
+        "prefix": "p-button-loading",
+        "body": [
+            "<p-button label=\"${1:Search}\" (onClick)=\"${2:onClick()}\" icon=\"pi ${3:pi-check}\" [loading]=\"loading\"  ></p-button>"
+        ],
+        "description": "PrimeNG Loading Button component snippet"
+    },
+    "PrimeNG Button Icon": {
+        "prefix": "p-button-icon",
+        "body": [
+            "<p-button label=\"${1:Click Me}\" (onClick)=\"${2:onClick()}\" icon=\"pi ${3:pi-check}\" iconPos=\"${4:right}\" ></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon"
+    },
+    "PrimeNG Button Success": {
+        "prefix": "p-button-success",
+        "body": [
+            "<p-button label=\"${1:Success}\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Success"
+    },
+    "PrimeNG Button Secondary": {
+        "prefix": "p-button-secondary",
+        "body": [
+            "<p-button label=\"${1:Secondary}\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Secondary"
+    },
+    "PrimeNG Button Info": {
+        "prefix": "p-button-info",
+        "body": [
+            "<p-button label=\"${1:Info}\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Info"
+    },
+    "PrimeNG Button Warn": {
+        "prefix": "p-button-warn",
+        "body": [
+            "<p-button label=\"${1:Warn}\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Warn"
+    },
+    "PrimeNG Button Help": {
+        "prefix": "p-button-help",
+        "body": [
+            "<p-button label=\"${1:Help}\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Help"
+    },
+    "PrimeNG Button Danger": {
+        "prefix": "p-button-danger",
+        "body": [
+            "<p-button label=\"${1:Danger}\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Danger"
+    },
+    "PrimeNG Button Contrast": {
+        "prefix": "p-button-contrast",
+        "body": [
+            "<p-button label=\"${1:Contrast}\" severity=\"contrast\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Contrast"
+    },
+    "PrimeNG Button Disabled": {
+        "prefix": "p-button-disabled",
+        "body": [
+            "<p-button label=\"${1:Submit}\" [disabled]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Disabled"
+    },
+    "PrimeNG Button Primary Raised": {
+        "prefix": "p-button-primary-raised",
+        "body": [
+            "<p-button label=\"${1:Primary}\" [raised]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Primary Raised"
+    },
+    "PrimeNG Button Secondary Raised": {
+        "prefix": "p-button-secondary-raised",
+        "body": [
+            "<p-button label=\"${1:Secondary}\" [raised]=\"true\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Secondary Raised"
+    },
+    "PrimeNG Button Success Raised": {
+        "prefix": "p-button-success-raised",
+        "body": [
+            "<p-button label=\"${1:Success}\" [raised]=\"true\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Success Raised"
+    },
+    "PrimeNG Button Info Raised": {
+        "prefix": "p-button-info-raised",
+        "body": [
+            "<p-button label=\"${1:Info}\" [raised]=\"true\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Info Raised"
+    },
+    "PrimeNG Button Warn Raised": {
+        "prefix": "p-button-warn-raised",
+        "body": [
+            "<p-button label=\"${1:Warn}\" [raised]=\"true\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Warn Raised"
+    },
+    "PrimeNG Button Help Raised": {
+        "prefix": "p-button-help-raised",
+        "body": [
+            "<p-button label=\"${1:Help}\" [raised]=\"true\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Help Raised"
+    },
+    "PrimeNG Button Danger Raised": {
+        "prefix": "p-button-danger-raised",
+        "body": [
+            "<p-button label=\"${1:Danger}\" [raised]=\"true\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Danger Raised"
+    },
+    "PrimeNG Button Contrast Raised": {
+        "prefix": "p-button-contrast-raised",
+        "body": [
+            "<p-button label=\"${1:Contrast}\" [raised]=\"true\" severity=\"contrast\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Contrast Raised"
+    },
+    "PrimeNG Button Primary Rounded": {
+        "prefix": "p-button-primary-rounded",
+        "body": [
+            "<p-button label=\"${1:Primary}\" [rounded]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Primary Rounded"
+    },
+    "PrimeNG Button Secondary Rounded": {
+        "prefix": "p-button-secondary-rounded",
+        "body": [
+            "<p-button label=\"${1:Secondary}\" [rounded]=\"true\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Secondary Rounded"
+    },
+    "PrimeNG Button Success Rounded": {
+        "prefix": "p-button-success-rounded",
+        "body": [
+            "<p-button label=\"${1:Success}\" [rounded]=\"true\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Success Rounded"
+    },
+    "PrimeNG Button Info Rounded": {
+        "prefix": "p-button-info-rounded",
+        "body": [
+            "<p-button label=\"${1:Info}\" [rounded]=\"true\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Info Rounded"
+    },
+    "PrimeNG Button Warn Rounded": {
+        "prefix": "p-button-warn-rounded",
+        "body": [
+            "<p-button label=\"${1:Warn}\" [rounded]=\"true\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Warn Rounded"
+    },
+    "PrimeNG Button Help Rounded": {
+        "prefix": "p-button-help-rounded",
+        "body": [
+            "<p-button label=\"${1:Help}\" [rounded]=\"true\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Help Rounded"
+    },
+    "PrimeNG Button Danger Rounded": {
+        "prefix": "p-button-danger-rounded",
+        "body": [
+            "<p-button label=\"${1:Danger}\" [rounded]=\"true\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Danger Rounded"
+    },
+    "PrimeNG Button Contrast Rounded": {
+        "prefix": "p-button-contrast-rounded",
+        "body": [
+            "<p-button label=\"${1:Contrast}\" [rounded]=\"true\" severity=\"contrast\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Contrast Rounded"
+    },
+    "PrimeNG Button Primary Text": {
+        "prefix": "p-button-primary-text",
+        "body": [
+            "<p-button label=\"${1:Primary}\" variant=\"text\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Primary Text"
+    },
+    "PrimeNG Button Secondary Text": {
+        "prefix": "p-button-secondary-text",
+        "body": [
+            "<p-button label=\"${1:Secondary}\" variant=\"text\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Secondary Text"
+    },
+    "PrimeNG Button Success Text": {
+        "prefix": "p-button-success-text",
+        "body": [
+            "<p-button label=\"${1:Success}\" variant=\"text\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Success Text"
+    },
+    "PrimeNG Button Info Text": {
+        "prefix": "p-button-info-text",
+        "body": [
+            "<p-button label=\"${1:Info}\" variant=\"text\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Info Text"
+    },
+    "PrimeNG Button Warn Text": {
+        "prefix": "p-button-warn-text",
+        "body": [
+            "<p-button label=\"${1:Warn}\" variant=\"text\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Warn Text"
+    },
+    "PrimeNG Button Help Text": {
+        "prefix": "p-button-help-text",
+        "body": [
+            "<p-button label=\"${1:Help}\" variant=\"text\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Help Text"
+    },
+    "PrimeNG Button Danger Text": {
+        "prefix": "p-button-danger-text",
+        "body": [
+            "<p-button label=\"${1:Danger}\" variant=\"text\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Danger Text"
+    },
+    "PrimeNG Button Plain Text": {
+        "prefix": "p-button-plain-text",
+        "body": [
+            "<p-button label=\"${1:Plain}\" variant=\"text\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Plain Text"
+    },
+    "PrimeNG Button Primary Text Raised": {
+        "prefix": "p-button-primary-text-raised",
+        "body": [
+            "<p-button label=\"${1:Primary}\" variant=\"text\" [raised]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Primary Text Raised"
+    },
+    "PrimeNG Button Secondary Text Raised": {
+        "prefix": "p-button-secondary-text-raised",
+        "body": [
+            "<p-button label=\"${1:Secondary}\" variant=\"text\" [raised]=\"true\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Secondary Text Raised"
+    },
+    "PrimeNG Button Success Text Raised": {
+        "prefix": "p-button-success-text-raised",
+        "body": [
+            "<p-button label=\"${1:Success}\" variant=\"text\" [raised]=\"true\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Success Text Raised"
+    },
+    "PrimeNG Button Info Text Raised": {
+        "prefix": "p-button-info-text-raised",
+        "body": [
+            "<p-button label=\"${1:Info}\" variant=\"text\" [raised]=\"true\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Info Text Raised"
+    },
+    "PrimeNG Button Warn Text Raised": {
+        "prefix": "p-button-warn-text-raised",
+        "body": [
+            "<p-button label=\"${1:Warn}\" variant=\"text\" [raised]=\"true\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Warn Text Raised"
+    },
+    "PrimeNG Button Help Text Raised": {
+        "prefix": "p-button-help-text-raised",
+        "body": [
+            "<p-button label=\"${1:Help}\" variant=\"text\" [raised]=\"true\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Help Text Raised"
+    },
+    "PrimeNG Button Danger Text Raised": {
+        "prefix": "p-button-danger-text-raised",
+        "body": [
+            "<p-button label=\"${1:Danger}\" variant=\"text\" [raised]=\"true\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Danger Text Raised"
+    },
+    "PrimeNG Button Plain Text Raised": {
+        "prefix": "p-button-plain-text-raised",
+        "body": [
+            "<p-button label=\"${1:Plain}\" variant=\"text\" [raised]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Plain Text Raised"
+    },
+    "PrimeNG Button Primary Outlined": {
+        "prefix": "p-button-primary-outlined",
+        "body": [
+            "<p-button label=\"${1:Primary}\" variant=\"outlined\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Primary Outlined"
+    },
+    "PrimeNG Button Secondary Outlined": {
+        "prefix": "p-button-secondary-outlined",
+        "body": [
+            "<p-button label=\"${1:Secondary}\" variant=\"outlined\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Secondary Outlined"
+    },
+    "PrimeNG Button Success Outlined": {
+        "prefix": "p-button-success-outlined",
+        "body": [
+            "<p-button label=\"${1:Success}\" variant=\"outlined\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Success Outlined"
+    },
+    "PrimeNG Button Info Outlined": {
+        "prefix": "p-button-info-outlined",
+        "body": [
+            "<p-button label=\"${1:Info}\" variant=\"outlined\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Info Outlined"
+    },
+    "PrimeNG Button Warn Outlined": {
+        "prefix": "p-button-warn-outlined",
+        "body": [
+            "<p-button label=\"${1:Warn}\" variant=\"outlined\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Warn Outlined"
+    },
+    "PrimeNG Button Help Outlined": {
+        "prefix": "p-button-help-outlined",
+        "body": [
+            "<p-button label=\"${1:Help}\" variant=\"outlined\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Help Outlined"
+    },
+    "PrimeNG Button Danger Outlined": {
+        "prefix": "p-button-danger-outlined",
+        "body": [
+            "<p-button label=\"${1:Danger}\" variant=\"outlined\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Danger Outlined"
+    },
+    "PrimeNG Button Contrast Outlined": {
+        "prefix": "p-button-contrast-outlined",
+        "body": [
+            "<p-button label=\"${1:Contrast}\" variant=\"outlined\" severity=\"contrast\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Contrast Outlined"
+    },
+    "PrimeNG Button Icon Check": {
+        "prefix": "p-button-icon-check",
+        "body": [
+            "<p-button icon=\"pi pi-check\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Check"
+    },
+    "PrimeNG Button Icon Bookmark Secondary": {
+        "prefix": "p-button-icon-bookmark-secondary",
+        "body": [
+            "<p-button icon=\"pi pi-bookmark\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bookmark Secondary"
+    },
+    "PrimeNG Button Icon Search Success": {
+        "prefix": "p-button-icon-search-success",
+        "body": [
+            "<p-button icon=\"pi pi-search\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Search Success"
+    },
+    "PrimeNG Button Icon User Info": {
+        "prefix": "p-button-icon-user-info",
+        "body": [
+            "<p-button icon=\"pi pi-user\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon User Info"
+    },
+    "PrimeNG Button Icon Bell Warn": {
+        "prefix": "p-button-icon-bell-warn",
+        "body": [
+            "<p-button icon=\"pi pi-bell\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bell Warn"
+    },
+    "PrimeNG Button Icon Heart Help": {
+        "prefix": "p-button-icon-heart-help",
+        "body": [
+            "<p-button icon=\"pi pi-heart\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Heart Help"
+    },
+    "PrimeNG Button Icon Times Danger": {
+        "prefix": "p-button-icon-times-danger",
+        "body": [
+            "<p-button icon=\"pi pi-times\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Times Danger"
+    },
+    "PrimeNG Button Icon Check Rounded": {
+        "prefix": "p-button-icon-check-rounded",
+        "body": [
+            "<p-button icon=\"pi pi-check\" [rounded]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Check Rounded"
+    },
+    "PrimeNG Button Icon Bookmark Rounded Secondary": {
+        "prefix": "p-button-icon-bookmark-rounded-secondary",
+        "body": [
+            "<p-button icon=\"pi pi-bookmark\" [rounded]=\"true\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bookmark Rounded Secondary"
+    },
+    "PrimeNG Button Icon Search Rounded Success": {
+        "prefix": "p-button-icon-search-rounded-success",
+        "body": [
+            "<p-button icon=\"pi pi-search\" [rounded]=\"true\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Search Rounded Success"
+    },
+    "PrimeNG Button Icon User Rounded Info": {
+        "prefix": "p-button-icon-user-rounded-info",
+        "body": [
+            "<p-button icon=\"pi pi-user\" [rounded]=\"true\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon User Rounded Info"
+    },
+    "PrimeNG Button Icon Bell Rounded Warn": {
+        "prefix": "p-button-icon-bell-rounded-warn",
+        "body": [
+            "<p-button icon=\"pi pi-bell\" [rounded]=\"true\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bell Rounded Warn"
+    },
+    "PrimeNG Button Icon Heart Rounded Help": {
+        "prefix": "p-button-icon-heart-rounded-help",
+        "body": [
+            "<p-button icon=\"pi pi-heart\" [rounded]=\"true\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Heart Rounded Help"
+    },
+    "PrimeNG Button Icon Times Rounded Danger": {
+        "prefix": "p-button-icon-times-rounded-danger",
+        "body": [
+            "<p-button icon=\"pi pi-times\" [rounded]=\"true\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Times Rounded Danger"
+    },
+    "PrimeNG Button Icon Check Rounded Outlined": {
+        "prefix": "p-button-icon-check-rounded-outlined",
+        "body": [
+            "<p-button icon=\"pi pi-check\" [rounded]=\"true\" [outlined]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Check Rounded Outlined"
+    },
+    "PrimeNG Button Icon Bookmark Rounded Outlined Secondary": {
+        "prefix": "p-button-icon-bookmark-rounded-outlined-secondary",
+        "body": [
+            "<p-button icon=\"pi pi-bookmark\" [rounded]=\"true\" severity=\"secondary\" [outlined]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bookmark Rounded Outlined Secondary"
+    },
+    "PrimeNG Button Icon Search Rounded Outlined Success": {
+        "prefix": "p-button-icon-search-rounded-outlined-success",
+        "body": [
+            "<p-button icon=\"pi pi-search\" [rounded]=\"true\" severity=\"success\" [outlined]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Search Rounded Outlined Success"
+    },
+    "PrimeNG Button Icon User Rounded Outlined Info": {
+        "prefix": "p-button-icon-user-rounded-outlined-info",
+        "body": [
+            "<p-button icon=\"pi pi-user\" [rounded]=\"true\" severity=\"info\" [outlined]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon User Rounded Outlined Info"
+    },
+    "PrimeNG Button Icon Bell Rounded Outlined Warn": {
+        "prefix": "p-button-icon-bell-rounded-outlined-warn",
+        "body": [
+            "<p-button icon=\"pi pi-bell\" [rounded]=\"true\" severity=\"warn\" [outlined]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bell Rounded Outlined Warn"
+    },
+    "PrimeNG Button Icon Heart Rounded Outlined Help": {
+        "prefix": "p-button-icon-heart-rounded-outlined-help",
+        "body": [
+            "<p-button icon=\"pi pi-heart\" [rounded]=\"true\" severity=\"help\" [outlined]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Heart Rounded Outlined Help"
+    },
+    "PrimeNG Button Icon Times Rounded Outlined Danger": {
+        "prefix": "p-button-icon-times-rounded-outlined-danger",
+        "body": [
+            "<p-button icon=\"pi pi-times\" [rounded]=\"true\" severity=\"danger\" [outlined]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Times Rounded Outlined Danger"
+    },
+    "PrimeNG Button Icon Check Rounded Text Raised": {
+        "prefix": "p-button-icon-check-rounded-text-raised",
+        "body": [
+            "<p-button icon=\"pi pi-check\" [rounded]=\"true\" [text]=\"true\" [raised]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Check Rounded Text Raised"
+    },
+    "PrimeNG Button Icon Bookmark Rounded Text Raised Secondary": {
+        "prefix": "p-button-icon-bookmark-rounded-text-raised-secondary",
+        "body": [
+            "<p-button icon=\"pi pi-bookmark\" [rounded]=\"true\" [text]=\"true\" [raised]=\"true\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bookmark Rounded Text Raised Secondary"
+    },
+    "PrimeNG Button Icon Search Rounded Text Raised Success": {
+        "prefix": "p-button-icon-search-rounded-text-raised-success",
+        "body": [
+            "<p-button icon=\"pi pi-search\" [rounded]=\"true\" [text]=\"true\" [raised]=\"true\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Search Rounded Text Raised Success"
+    },
+    "PrimeNG Button Icon User Rounded Text Raised Info": {
+        "prefix": "p-button-icon-user-rounded-text-raised-info",
+        "body": [
+            "<p-button icon=\"pi pi-user\" [rounded]=\"true\" [text]=\"true\" [raised]=\"true\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon User Rounded Text Raised Info"
+    },
+    "PrimeNG Button Icon Bell Rounded Text Raised Warn": {
+        "prefix": "p-button-icon-bell-rounded-text-raised-warn",
+        "body": [
+            "<p-button icon=\"pi pi-bell\" [rounded]=\"true\" [text]=\"true\" [raised]=\"true\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bell Rounded Text Raised Warn"
+    },
+    "PrimeNG Button Icon Heart Rounded Text Raised Help": {
+        "prefix": "p-button-icon-heart-rounded-text-raised-help",
+        "body": [
+            "<p-button icon=\"pi pi-heart\" [rounded]=\"true\" [text]=\"true\" [raised]=\"true\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Heart Rounded Text Raised Help"
+    },
+    "PrimeNG Button Icon Times Rounded Text Raised Danger": {
+        "prefix": "p-button-icon-times-rounded-text-raised-danger",
+        "body": [
+            "<p-button icon=\"pi pi-times\" [rounded]=\"true\" [text]=\"true\" [raised]=\"true\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Times Rounded Text Raised Danger"
+    },
+    "PrimeNG Button Icon Check Rounded Text": {
+        "prefix": "p-button-icon-check-rounded-text",
+        "body": [
+            "<p-button icon=\"pi pi-check\" [rounded]=\"true\" [text]=\"true\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Check Rounded Text"
+    },
+    "PrimeNG Button Icon Bookmark Rounded Text Secondary": {
+        "prefix": "p-button-icon-bookmark-rounded-text-secondary",
+        "body": [
+            "<p-button icon=\"pi pi-bookmark\" [rounded]=\"true\" [text]=\"true\" severity=\"secondary\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bookmark Rounded Text Secondary"
+    },
+    "PrimeNG Button Icon Search Rounded Text Success": {
+        "prefix": "p-button-icon-search-rounded-text-success",
+        "body": [
+            "<p-button icon=\"pi pi-search\" [rounded]=\"true\" [text]=\"true\" severity=\"success\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Search Rounded Text Success"
+    },
+    "PrimeNG Button Icon User Rounded Text Info": {
+        "prefix": "p-button-icon-user-rounded-text-info",
+        "body": [
+            "<p-button icon=\"pi pi-user\" [rounded]=\"true\" [text]=\"true\" severity=\"info\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon User Rounded Text Info"
+    },
+    "PrimeNG Button Icon Bell Rounded Text Warn": {
+        "prefix": "p-button-icon-bell-rounded-text-warn",
+        "body": [
+            "<p-button icon=\"pi pi-bell\" [rounded]=\"true\" [text]=\"true\" severity=\"warn\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Bell Rounded Text Warn"
+    },
+    "PrimeNG Button Icon Heart Rounded Text Help": {
+        "prefix": "p-button-icon-heart-rounded-text-help",
+        "body": [
+            "<p-button icon=\"pi pi-heart\" [rounded]=\"true\" [text]=\"true\" severity=\"help\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Heart Rounded Text Help"
+    },
+    "PrimeNG Button Icon Times Rounded Text Danger": {
+        "prefix": "p-button-icon-times-rounded-text-danger",
+        "body": [
+            "<p-button icon=\"pi pi-times\" [rounded]=\"true\" [text]=\"true\" severity=\"danger\"></p-button>"
+        ],
+        "description": "Snippet for PrimeNG Button Icon Times Rounded Text Danger"
+    },    
+        "PrimeNG Button - Badge": {
+            "prefix": "p-button-badge",
+            "body": [
+                "<p-button label=\"${1:Emails}\" badge=\"2\" styleClass=\"${2:m-0}\"></p-button>"
+            ],
+            "description": "PrimeNG Button component for Emails with a badge"
+        },
+        "PrimeNG Button - Badge With Icon": {
+            "prefix": "p-button-badge-icon",
+            "body": [
+                "<p-button label=\"${1:Messages}\" icon=\"pi ${2:pi-users}\" badge=\"2\" badgeSeverity=\"contrast\" styleClass=\"m-0\" [outlined]=\"true\"></p-button>"
+            ],
+            "description": "PrimeNG Button component for Messages with an icon and badge"
+        },
+        "PrimeNG Button Group": {
+            "prefix": "p-button-group",
+            "body": [
+                "<p-buttongroup>",
+                "    <p-button label=\"Save\" icon=\"pi pi-check\"></p-button>",
+                "    <p-button label=\"Delete\" icon=\"pi pi-trash\"></p-button>",
+                "    <p-button label=\"Cancel\" icon=\"pi pi-times\"></p-button>",
+                "</p-buttongroup>"
+            ],
+            "description": "PrimeNG Button Group with Save, Delete, and Cancel buttons"
+        },
+        "PrimeNG Button - Small": {
+            "prefix": "p-button-small",
+            "body": [
+                "<p-button label=\"Small\" icon=\"pi pi-check\" size=\"small\"></p-button>"
+            ],
+            "description": "PrimeNG Small Button with a check icon"
+        },
+        "PrimeNG Button - Normal": {
+            "prefix": "p-button-normal",
+            "body": [
+                "<p-button label=\"Normal\" icon=\"pi pi-check\"></p-button>"
+            ],
+            "description": "PrimeNG Normal Button with a check icon"
+        },
+        "PrimeNG Button - Large": {
+            "prefix": "p-button-large",
+            "body": [
+                "<p-button label=\"Large\" icon=\"pi pi-check\" size=\"large\"></p-button>"
+            ],
+            "description": "PrimeNG Large Button with a check icon"
+        },
+        "PrimeNG Button - Custom SVG": {
+            "prefix": "p-button-svg",
+            "body": [
+                "<p-button [outlined]=\"true\">",
+                "    <svg",
+                "        width=\"31\"",
+                "        height=\"33\"",
+                "        viewBox=\"0 0 31 33\"",
+                "        fill=\"none\"",
+                "        xmlns=\"http://www.w3.org/2000/svg\"",
+                "        class=\"block mx-auto\"",
+                "    >",
+                "        <path",
+                "            d=\"M15.1934 0V0V0L0.0391235 5.38288L2.35052 25.3417L15.1934 32.427V32.427V32.427L28.0364 25.3417L30.3478 5.38288L15.1934 0Z\"",
+                "            fill=\"var(--p-primary-color)\"",
+                "        />",
+                "        <mask id=\"mask0_1_52\" style=\"mask-type:luminance\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"31\" height=\"33\">",
+                "            <path",
+                "                d=\"M15.1934 0V0V0L0.0391235 5.38288L2.35052 25.3417L15.1934 32.427V32.427V32.427L28.0364 25.3417L30.3478 5.38288L15.1934 0Z\"",
+                "                fill=\"var(--ground-background)\"",
+                "            />",
+                "        </mask>",
+                "        <g mask=\"url(#mask0_1_52)\">",
+                "            <path",
+                "                fill-rule=\"evenodd\"",
+                "                clip-rule=\"evenodd\"",
+                "                d=\"M15.1935 0V3.5994V3.58318V20.0075V20.0075V32.427V32.427L28.0364 25.3417L30.3478 5.38288L15.1935 0Z\"",
+                "                fill=\"var(--p-primary-color)\"",
+                "            />",
+                "        </g>",
+                "    </svg>",
+                "</p-button>"
+            ],
+            "description": "PrimeNG Button with a custom SVG icon"
+        }    
+}

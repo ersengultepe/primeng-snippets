@@ -1,0 +1,9 @@
+{
+    "PrimeNG Auto Complete": {
+        "prefix": "p-autocomplete-import",
+        "body": [
+            "import { AutoCompleteModule } from 'primeng/autocomplete';"
+        ],
+        "description": "Imports PrimeNG Auto Complete in TypeScript"
+    }
+}
