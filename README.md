@@ -2,9 +2,9 @@
 
 **Created for rimeNG Quickly release**
 
-This extension for Visual Studio Code adds snippets for PrimeNG for Angular for TypeScript and HTML.
-Currently only snippets for buttons are prepared, but it will be updated frequently for other primgn tags. 
-Stay tuned!!!
+This extension for Visual Studio Code includes a lot of primeNG elements that allow you to quickly add snippets in Typescript and HTML files if you install PrimeNG in your Angular applications.
+Currently snippets for form elements are available, but will be updated frequently for other primeNG elements. 
+Stay tuned !!!
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
@@ -26,7 +26,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 
 ## Requirements
 
-- **Visual Studio Code**: Version 1.40.0 or higher.
+- **Visual Studio Code**: Version 1.10.0 or higher.
 - **Angular Project**: An Angular project with PrimeNG installed (snippets will work, but PrimeNG dependency is required for components to render).
 
 ## Installing PrimeNG
@@ -34,23 +34,31 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 To use the extension, you need to install PrimeNG in your project. Follow these steps:
 
 1. Open a terminal and navigate to your project directory.
-2. Run the following command to install PrimeNG and PrimeIcons:
+2. Run the following command to install PrimeNG, Prime Themes, PrimeIcons and PrimeFlex(optional) :
 
 # Using npm
 ```sh
-npm install primeng @primeng/themes
+npm install primeng @primeng/themes primeicons primeflex
 ```
 
 # Using yarn
 
 ```sh
-yarn add primeng @primeng/themes
+yarn add primeng @primeng/themes primeicons primeflex
 ```
 # Using pnpm
 
 ```sh
-pnpm add primeng @primeng/themes 
+pnpm add primeng @primeng/themes primeicons primeflex
 ```
+
+# CSS Import
+
+Import the following files into style.css or style.scss
+
+@import "primeflex/primeflex.css";
+@import "primeicons/primeicons.css";
+
 
 ## Configuring PrimeNG
 
@@ -74,107 +82,75 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-### TypeScript Angular Snippets
+### Available PrimeNG Components in Snippets
+
+AutoComplete, CascadeSelect, Checkbox, ColorPicker, DatePicker, Editor, FloatLabel, IconField, InputGroup, InputMask, InputNumber, InputOTP, InputText, KeyFilter, Knob, ListBox, MultiSelect, Password, RadioButton, Rating, Select, SelectButton, Slider, TextArea, ToggleButton, ToggleSwitch, TreeSelect, Button, SpeedDial.
+
+## Available PrimeNG Components in Snippets
 
 | Snippet                                    | Purpose                                                              |
 |--------------------------------------------|----------------------------------------------------------------------|
+| p-autocomplete-import                      | Imports PrimeNG AutoCompleteModule in TypeScript                     |
+| p-autocomplete-basic                       | PrimeNG AutoComplete component snippet                               |
+| p-cascadeselect-import                     | Imports PrimeNG CascadeSelectModule in TypeScript                    |
+| p-cascadeselect-basic                      | PrimeNG CascadeSelect component snippet                              |
+| p-checkbox-import                          | Imports PrimeNG CheckboxModule in TypeScript                         |
+| p-checkbox-basic                           | PrimeNG Checkbox component snippet                                   |
+| p-colorpicker-import                       | Imports PrimeNG ColorPickerModule in TypeScript                      |
+| p-colorpicker-basic                        | PrimeNG ColorPicker component snippet                                |
+| p-datepicker-import                        | Imports PrimeNG DatePickerModule in TypeScript                       |
+| p-datepicker-basic                         | PrimeNG DatePicker component snippet                                 |
+| p-editor-import                            | Imports PrimeNG EditorModule in TypeScript                           |
+| p-editor-basic                             | PrimeNG Editor component snippet                                     |
+| p-floatlabel-import                        | Imports PrimeNG FloatLabelModule in TypeScript                       |
+| p-floatlabel-basic                         | PrimeNG FloatLabel component snippet                                 |
+| p-iconfield-import                         | Imports PrimeNG IconFieldModule in TypeScript                        |
+| p-iconfield-basic                          | PrimeNG IconField component snippet                                  |
+| p-inputgroup-import                        | Imports PrimeNG InputGroupModule in TypeScript                       |
+| p-inputgroup-basic                         | PrimeNG InputGroup component snippet                                 |
+| p-inputmask-import                         | Imports PrimeNG InputMaskModule in TypeScript                        |
+| p-inputmask-basic                          | PrimeNG InputMask component snippet                                  |
+| p-inputnumber-import                       | Imports PrimeNG InputNumberModule in TypeScript                      |
+| p-inputnumber-basic                        | PrimeNG InputNumber component snippet                                |
+| p-inputotp-import                          | Imports PrimeNG InputOTPModule in TypeScript                         |
+| p-inputotp-basic                           | PrimeNG InputOTP component snippet                                   |
+| p-inputtext-import                         | Imports PrimeNG InputTextModule in TypeScript                        |
+| p-inputtext-basic                          | PrimeNG InputText component snippet                                  |
+| p-keyfilter-import                         | Imports PrimeNG KeyFilterModule in TypeScript                        |
+| p-keyfilter-basic                          | PrimeNG KeyFilter component snippet                                  |
+| p-knob-import                              | Imports PrimeNG KnobModule in TypeScript                             |
+| p-knob-basic                               | PrimeNG Knob component snippet                                       |
+| p-listbox-import                           | Imports PrimeNG ListBoxModule in TypeScript                          |
+| p-listbox-basic                            | PrimeNG ListBox component snippet                                    |
+| p-multiselect-import                       | Imports PrimeNG MultiSelectModule in TypeScript                      |
+| p-multiselect-basic                        | PrimeNG MultiSelect component snippet                                |
+| p-password-import                          | Imports PrimeNG PasswordModule in TypeScript                         |
+| p-password-basic                           | PrimeNG Password component snippet                                   |
+| p-radiobutton-import                       | Imports PrimeNG RadioButtonModule in TypeScript                      |
+| p-radiobutton-basic                        | PrimeNG RadioButton component snippet                                |
+| p-rating-import                            | Imports PrimeNG RatingModule in TypeScript                           |
+| p-rating-basic                             | PrimeNG Rating component snippet                                     |
+| p-select-import                            | Imports PrimeNG SelectModule in TypeScript                           |
+| p-select-basic                             | PrimeNG Select component snippet                                     |
+| p-selectbutton-import                      | Imports PrimeNG SelectButtonModule in TypeScript                     |
+| p-selectbutton-basic                       | PrimeNG SelectButton component snippet                               |
+| p-slider-import                            | Imports PrimeNG SliderModule in TypeScript                           |
+| p-slider-basic                             | PrimeNG Slider component snippet                                     |
+| p-textarea-import                          | Imports PrimeNG TextAreaModule in TypeScript                         |
+| p-textarea-basic                           | PrimeNG TextArea component snippet                                   |
+| p-togglebutton-import                      | Imports PrimeNG ToggleButtonModule in TypeScript                     |
+| p-togglebutton-basic                       | PrimeNG ToggleButton component snippet                               |
+| p-toggleswitch-import                      | Imports PrimeNG ToggleSwitchModule in TypeScript                     |
+| p-toggleswitch-basic                       | PrimeNG ToggleSwitch component snippet                               |
+| p-treeselect-import                        | Imports PrimeNG TreeSelectModule in TypeScript                       |
+| p-treeselect-basic                         | PrimeNG TreeSelect component snippet                                 |
 | p-button-import                            | Imports PrimeNG ButtonModule in TypeScript                           |
 | p-button-basic                             | PrimeNG Button component snippet                                     |
-| p-button-loading                           | PrimeNG Loading Button component snippet                             |
-| p-button-icon                              | Snippet for PrimeNG Button Icon                                      |
-| p-button-success                           | Snippet for PrimeNG Button Success                                   |
-| p-button-secondary                         | Snippet for PrimeNG Button Secondary                                 |
-| p-button-info                              | Snippet for PrimeNG Button Info                                      |
-| p-button-warn                              | Snippet for PrimeNG Button Warn                                      |
-| p-button-help                              | Snippet for PrimeNG Button Help                                      |
-| p-button-danger                            | Snippet for PrimeNG Button Danger                                    |
-| p-button-contrast                          | Snippet for PrimeNG Button Contrast                                  |
-| p-button-disabled                          | Snippet for PrimeNG Button Disabled                                  |
-| p-button-primary-raised                    | Snippet for PrimeNG Button Primary Raised                            |
-| p-button-secondary-raised                  | Snippet for PrimeNG Button Secondary Raised                          |
-| p-button-success-raised                    | Snippet for PrimeNG Button Success Raised                            |
-| p-button-info-raised                       | Snippet for PrimeNG Button Info Raised                               |
-| p-button-warn-raised                       | Snippet for PrimeNG Button Warn Raised                               |
-| p-button-help-raised                       | Snippet for PrimeNG Button Help Raised                               |
-| p-button-danger-raised                     | Snippet for PrimeNG Button Danger Raised                             |
-| p-button-contrast-raised                   | Snippet for PrimeNG Button Contrast Raised                           |
-| p-button-primary-rounded                   | Snippet for PrimeNG Button Primary Rounded                           |
-| p-button-secondary-rounded                 | Snippet for PrimeNG Button Secondary Rounded                         |
-| p-button-success-rounded                   | Snippet for PrimeNG Button Success Rounded                           |
-| p-button-info-rounded                      | Snippet for PrimeNG Button Info Rounded                              |
-| p-button-warn-rounded                      | Snippet for PrimeNG Button Warn Rounded                              |
-| p-button-help-rounded                      | Snippet for PrimeNG Button Help Rounded                              |
-| p-button-danger-rounded                    | Snippet for PrimeNG Button Danger Rounded                            |
-| p-button-contrast-rounded                  | Snippet for PrimeNG Button Contrast Rounded                          |
-| p-button-primary-text                      | Snippet for PrimeNG Button Primary Text                              |
-| p-button-secondary-text                    | Snippet for PrimeNG Button Secondary Text                            |
-| p-button-success-text                      | Snippet for PrimeNG Button Success Text                              |
-| p-button-info-text                         | Snippet for PrimeNG Button Info Text                                 |
-| p-button-warn-text                         | Snippet for PrimeNG Button Warn Text                                 |
-| p-button-help-text                         | Snippet for PrimeNG Button Help Text                                 |
-| p-button-danger-text                       | Snippet for PrimeNG Button Danger Text                               |
-| p-button-plain-text                        | Snippet for PrimeNG Button Plain Text                                |
-| p-button-primary-text-raised               | Snippet for PrimeNG Button Primary Text Raised                       |
-| p-button-secondary-text-raised             | Snippet for PrimeNG Button Secondary Text Raised                     |
-| p-button-success-text-raised               | Snippet for PrimeNG Button Success Text Raised                       |
-| p-button-info-text-raised                  | Snippet for PrimeNG Button Info Text Raised                          |
-| p-button-warn-text-raised                  | Snippet for PrimeNG Button Warn Text Raised                          |
-| p-button-help-text-raised                  | Snippet for PrimeNG Button Help Text Raised                          |
-| p-button-danger-text-raised                | Snippet for PrimeNG Button Danger Text Raised                        |
-| p-button-plain-text-raised                 | Snippet for PrimeNG Button Plain Text Raised                         |
-| p-button-primary-outlined                  | Snippet for PrimeNG Button Primary Outlined                          |
-| p-button-secondary-outlined                | Snippet for PrimeNG Button Secondary Outlined                        |
-| p-button-success-outlined                  | Snippet for PrimeNG Button Success Outlined                          |
-| p-button-info-outlined                     | Snippet for PrimeNG Button Info Outlined                             |
-| p-button-warn-outlined                     | Snippet for PrimeNG Button Warn Outlined                             |
-| p-button-help-outlined                     | Snippet for PrimeNG Button Help Outlined                             |
-| p-button-danger-outlined                   | Snippet for PrimeNG Button Danger Outlined                           |
-| p-button-contrast-outlined                 | Snippet for PrimeNG Button Contrast Outlined                         |
-| p-button-icon-check                        | Snippet for PrimeNG Button Icon Check                                |
-| p-button-icon-bookmark-secondary           | Snippet for PrimeNG Button Icon Bookmark Secondary                   |
-| p-button-icon-search-success               | Snippet for PrimeNG Button Icon Search Success                       |
-| p-button-icon-user-info                    | Snippet for PrimeNG Button Icon User Info                            |
-| p-button-icon-bell-warn                    | Snippet for PrimeNG Button Icon Bell Warn                            |
-| p-button-icon-heart-help                   | Snippet for PrimeNG Button Icon Heart Help                           |
-| p-button-icon-times-danger                 | Snippet for PrimeNG Button Icon Times Danger                         |
-| p-button-icon-check-rounded                | Snippet for PrimeNG Button Icon Check Rounded                        |
-| p-button-icon-bookmark-rounded-secondary   | Snippet for PrimeNG Button Icon Bookmark Rounded Secondary           |
-| p-button-icon-search-rounded-success       | Snippet for PrimeNG Button Icon Search Rounded Success               |
-| p-button-icon-user-rounded-info            | Snippet for PrimeNG Button Icon User Rounded Info                    |
-| p-button-icon-bell-rounded-warn            | Snippet for PrimeNG Button Icon Bell Rounded Warn                    |
-| p-button-icon-heart-rounded-help           | Snippet for PrimeNG Button Icon Heart Rounded Help                   |
-| p-button-icon-times-rounded-danger         | Snippet for PrimeNG Button Icon Times Rounded Danger                 |
-| p-button-icon-check-rounded-outlined       | Snippet for PrimeNG Button Icon Check Rounded Outlined               |
-| p-button-icon-bookmark-rounded-outlined-secondary | Snippet for PrimeNG Button Icon Bookmark Rounded Outlined Secondary |
-| p-button-icon-search-rounded-outlined-success | Snippet for PrimeNG Button Icon Search Rounded Outlined Success   |
-| p-button-icon-user-rounded-outlined-info   | Snippet for PrimeNG Button Icon User Rounded Outlined Info           |
-| p-button-icon-bell-rounded-outlined-warn   | Snippet for PrimeNG Button Icon Bell Rounded Outlined Warn           |
-| p-button-icon-heart-rounded-outlined-help  | Snippet for PrimeNG Button Icon Heart Rounded Outlined Help          |
-| p-button-icon-times-rounded-outlined-danger| Snippet for PrimeNG Button Icon Times Rounded Outlined Danger        |
-| p-button-icon-check-rounded-text-raised    | Snippet for PrimeNG Button Icon Check Rounded Text Raised            |
-| p-button-icon-bookmark-rounded-text-raised-secondary | Snippet for PrimeNG Button Icon Bookmark Rounded Text Raised Secondary |
-| p-button-icon-search-rounded-text-raised-success | Snippet for PrimeNG Button Icon Search Rounded Text Raised Success |
-| p-button-icon-user-rounded-text-raised-info| Snippet for PrimeNG Button Icon User Rounded Text Raised Info        |
-| p-button-icon-bell-rounded-text-raised-warn| Snippet for PrimeNG Button Icon Bell Rounded Text Raised Warn        |
-| p-button-icon-heart-rounded-text-raised-help | Snippet for PrimeNG Button Icon Heart Rounded Text Raised Help     |
-| p-button-icon-times-rounded-text-raised-danger | Snippet for PrimeNG Button Icon Times Rounded Text Raised Danger |
-| p-button-icon-check-rounded-text           | Snippet for PrimeNG Button Icon Check Rounded Text                   |
-| p-button-icon-bookmark-rounded-text-secondary | Snippet for PrimeNG Button Icon Bookmark Rounded Text Secondary    |
-| p-button-icon-search-rounded-text-success  | Snippet for PrimeNG Button Icon Search Rounded Text Success          |
-| p-button-icon-user-rounded-text-info       | Snippet for PrimeNG Button Icon User Rounded Text Info               |
-| p-button-icon-bell-rounded-text-warn       | Snippet for PrimeNG Button Icon Bell Rounded Text Warn               |
-| p-button-icon-heart-rounded-text-help      | Snippet for PrimeNG Button Icon Heart Rounded Text Help              |
-| p-button-icon-times-rounded-text-danger    | Snippet for PrimeNG Button Icon Times Rounded Text Danger            |
-| p-button-badge                             | PrimeNG Button component for Emails with a badge                     |
-| p-button-badge-icon                        | PrimeNG Button component for Messages with an icon and badge         |
-| p-button-group                             | PrimeNG Button Group with Save, Delete, and Cancel buttons           |
-| p-button-small                             | PrimeNG Small Button with a check icon                               |
-| p-button-normal                            | PrimeNG Normal Button with a check icon                              |
-| p-button-large                             | PrimeNG Large Button with a check icon                               |
-| p-button-svg                               | PrimeNG Button with a custom SVG icon                                |
+| p-speeddial-import                         | Imports PrimeNG SpeedDialModule in TypeScript                        |
+| p-speeddial-basic                          | PrimeNG SpeedDial component snippet                                  |
 
 
-## Installation
+## Extension Installation
 
 1. Install Visual Studio Code 1.10.0 or higher
 1. Launch Code

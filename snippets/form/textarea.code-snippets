@@ -43,12 +43,5 @@
             "import { TextareaModule } from 'primeng/textarea';"
         ],
         "description": "Imports PrimeNG TextareaModule in TypeScript"
-    },
-    "PrimeNG FloatLabel Import": {
-        "prefix": "p-floatlabel-import",
-        "body": [
-            "import { FloatLabelModule } from 'primeng/floatlabel';"
-        ],
-        "description": "Imports PrimeNG FloatLabelModule in TypeScript"
     }
 }

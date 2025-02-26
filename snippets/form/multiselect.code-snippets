@@ -39,5 +39,12 @@
             "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" (onChange)=\"${3:onItemsChange($event)}\"></p-multiSelect>"
         ],
         "description": "PrimeNG MultiSelect with onChange event"
+    },
+    "PrimeNG MultiSelect Import": {
+        "prefix": "p-multiSelect-import",
+        "body": [
+            "import { MultiSelectModule } from 'primeng/multiselect';"
+        ],
+        "description": "PrimeNG MultiSelect Import Snippet"
     }
 }

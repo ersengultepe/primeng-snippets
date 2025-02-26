@@ -1,4 +1,11 @@
 {
+    "PrimeNG DatePicker Import": {
+        "prefix": "p-datePicker-import",
+        "body": [
+            "import { DatePickerModule } from 'primeng/datepicker';"
+        ],
+        "description": "PrimeNG DatePicker Import Snippet"
+    },
     "PrimeNG DatePicker Basic": {
         "prefix": "p-datePicker-basic",
         "body": [

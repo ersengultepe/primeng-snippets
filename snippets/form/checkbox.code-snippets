@@ -4,7 +4,7 @@
         "body": [
             "import { CheckboxModule } from 'primeng/checkbox';"
         ],
-        "description": "Imports PrimeNG Checkbox in TypeScript"
+        "description": "Imports PrimeNG Checkbox"
     },    
       "PrimeNG Checkbox Basic": {
         "prefix": "p-checkbox-basic",

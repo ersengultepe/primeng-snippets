@@ -39,5 +39,12 @@
             "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\" (onChange)=\"${3:onOptionChange($event)}\"></p-selectButton>"
         ],
         "description": "PrimeNG SelectButton with onChange event"
+    },
+    "PrimeNG SelectButton Import": {
+        "prefix": "p-selectButton-import",
+        "body": [
+            "import { SelectButtonModule } from 'primeng/selectbutton';"
+        ],
+        "description": "Imports PrimeNG SelectButton in TypeScript"
     }
 }

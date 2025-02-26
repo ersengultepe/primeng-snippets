@@ -26,5 +26,12 @@
             "<p-toggleSwitch [(ngModel)]=\"${1:checked}\" styleClass=\"${2:custom-switch}\"></p-toggleSwitch>"
         ],
         "description": "PrimeNG ToggleSwitch with custom styles"
+    },
+    "PrimeNG ToggleSwitch Import": {
+        "prefix": "p-toggleSwitch-import",
+        "body": [
+            "import { ToggleSwitchModule } from 'primeng/toggleswitch';"
+        ],
+        "description": "Imports PrimeNG ToggleSwitch in TypeScript"
     }
 }

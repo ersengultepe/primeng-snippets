@@ -4,6 +4,7 @@
   "displayName": "PrimeNG Quickly",
   "description": "PrimeNg Quickly components snippets for Angular",
   "icon": "images/logo.png",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ersengultepe/primeng-snippets.git"
@@ -15,7 +16,7 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "0.0.3",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.40.0"
   },
@@ -36,115 +37,19 @@
       },
       {
         "language": "html",
+        "path": "./snippets/form/cascade-select.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/cascade-select.code-snippets"
+      },
+      {
+        "language": "html",
         "path": "./snippets/form/checkbox.code-snippets"
       },
       {
         "language": "typescript",
         "path": "./snippets/form/checkbox.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/icon-field.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/icon-field.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/password.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/password.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/slider.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/slider.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/select.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/select.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/inputtext.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/inputtext.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/iftalabel.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/iftalabel.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/editor.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/editor.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/selectbutton.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/selectbutton.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/listbox.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/listbox.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/rating.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/rating.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/inputgroup.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/inputgroup.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/inputotp.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/inputotp.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/form/inputnumber.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/form/inputnumber.code-snippets"
       },
       {
         "language": "html",
@@ -156,11 +61,211 @@
       },
       {
         "language": "html",
+        "path": "./snippets/form/datepicker.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/datepicker.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/editor.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/editor.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/floatlabel.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/floatlabel.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/icon-field.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/icon-field.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/iftalabel.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/iftalabel.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/inputgroup.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/inputgroup.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/inputmask.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/inputmask.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/inputnumber.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/inputnumber.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/inputotp.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/inputotp.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/inputtext.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/inputtext.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/keyfilter.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/keyfilter.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/knob.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/knob.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/listbox.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/listbox.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/multiselect.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/multiselect.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/password.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/password.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/radiobutton.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/radiobutton.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/rating.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/rating.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/select.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/select.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/selectbutton.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/selectbutton.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/slider.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/slider.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/textarea.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/textarea.code-snippets"
+      },
+      {
+        "language": "html",
         "path": "./snippets/form/toggle-button.code-snippets"
       },
       {
         "language": "typescript",
         "path": "./snippets/form/toggle-button.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/toggle-switch.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/toggle-switch.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/form/treeselect.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/form/treeselect.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/button/button-snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/button/treeselect.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/button/speed-dial.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/button/speed-dial.code-snippets"
       }
     ]
   }

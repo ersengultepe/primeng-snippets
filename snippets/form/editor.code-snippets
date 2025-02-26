@@ -40,6 +40,6 @@
         "body": [
             "import { EditorModule } from 'primeng/editor';"
         ],
-        "description": "Imports PrimeNG EditorModule in TypeScript"
+        "description": "Imports PrimeNG EditorModule Snippet"
     }
 }

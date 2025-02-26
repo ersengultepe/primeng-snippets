@@ -33,5 +33,12 @@
             "<p-toggleButton [(ngModel)]=\"${1:checked}\" (onChange)=\"${2:onToggleChange($event)}\"></p-toggleButton>"
         ],
         "description": "PrimeNG ToggleButton with onChange event"
+    },
+    "PrimeNG ToggleButton Import": {
+        "prefix": "p-toggleButton-import",
+        "body": [
+            "import { ToggleButtonModule } from 'primeng/togglebutton';"
+        ],
+        "description": "Imports PrimeNG ToggleButton in TypeScript"
     }
 }

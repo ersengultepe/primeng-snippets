@@ -73,19 +73,5 @@
             "import { InputOtpModule } from 'primeng/inputotp';"
         ],
         "description": "Imports PrimeNG InputOtpModule in TypeScript"
-    },
-    "PrimeNG InputText Import": {
-        "prefix": "p-inputtext-import",
-        "body": [
-            "import { InputTextModule } from 'primeng/inputtext';"
-        ],
-        "description": "Imports PrimeNG InputTextModule in TypeScript"
-    },
-    "PrimeNG Button Import": {
-        "prefix": "p-button-import",
-        "body": [
-            "import { ButtonModule } from 'primeng/button';"
-        ],
-        "description": "Imports PrimeNG ButtonModule in TypeScript"
     }
 }

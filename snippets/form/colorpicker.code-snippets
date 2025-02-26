@@ -1,4 +1,11 @@
 {
+    "PrimeNG ColorPicker Import": {
+        "prefix": "p-colorPicker-import",
+        "body": [
+            "import { ColorPickerModule } from 'primeng/colorpicker';"
+        ],
+        "description": "PrimeNG ColorPicker Import Snippet"
+    },
     "PrimeNG ColorPicker Basic": {
         "prefix": "p-colorPicker-basic",
         "body": [

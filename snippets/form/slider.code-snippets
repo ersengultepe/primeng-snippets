@@ -40,5 +40,12 @@
             "<p-slider [(ngModel)]=\"${1:value}\" (onChange)=\"${2:onSliderChange($event)}\"></p-slider>"
         ],
         "description": "PrimeNG Slider with onChange event"
+    },
+    "PrimeNG Slider Import": {
+        "prefix": "p-slider-import",
+        "body": [
+            "import { SliderModule } from 'primeng/slider';"
+        ],
+        "description": "Imports PrimeNG Slider in TypeScript"
     }
 }

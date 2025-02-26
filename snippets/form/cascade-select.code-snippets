@@ -1,4 +1,11 @@
 {
+    "PrimeNG CascadeSelect Import": {
+        "prefix": "p-cascadeSelect-import",
+        "body": [
+            "import { CascadeSelectModule } from 'primeng/cascadeselect';"
+        ],
+        "description": "PrimeNG CascadeSelect Import"
+    },
     "PrimeNG CascadeSelect Basic": {
         "prefix": "p-cascadeSelect-basic",
         "body": [

@@ -92,12 +92,5 @@
             "import { KeyFilterModule } from 'primeng/keyfilter';"
         ],
         "description": "Imports PrimeNG KeyFilterModule in TypeScript"
-    },
-    "PrimeNG InputText Import": {
-        "prefix": "p-inputtext-import",
-        "body": [
-            "import { InputTextModule } from 'primeng/inputtext';"
-        ],
-        "description": "Imports PrimeNG InputTextModule in TypeScript"
     }
 }

@@ -73,19 +73,5 @@
             "import { InputTextModule } from 'primeng/inputtext';"
         ],
         "description": "Imports PrimeNG InputGroup and related modules"
-    },
-    "PrimeNG Checkbox Import": {
-        "prefix": "p-checkbox-import",
-        "body": [
-            "import { CheckboxModule } from 'primeng/checkbox';"
-        ],
-        "description": "Imports PrimeNG CheckboxModule"
-    },
-    "PrimeNG Button Import": {
-        "prefix": "p-button-import",
-        "body": [
-            "import { ButtonModule } from 'primeng/button';"
-        ],
-        "description": "Imports PrimeNG ButtonModule"
     }
 }

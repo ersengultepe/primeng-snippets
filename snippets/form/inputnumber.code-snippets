@@ -85,12 +85,5 @@
             "import { InputNumberModule } from 'primeng/inputnumber';"
         ],
         "description": "Imports PrimeNG InputNumberModule in TypeScript"
-    },
-    "PrimeNG FloatLabel Import": {
-        "prefix": "p-floatlabel-import",
-        "body": [
-            "import { FloatLabelModule } from 'primeng/floatlabel';"
-        ],
-        "description": "Imports PrimeNG FloatLabelModule in TypeScript"
     }
 }

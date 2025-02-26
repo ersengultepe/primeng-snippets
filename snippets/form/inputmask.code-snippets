@@ -71,12 +71,5 @@
             "import { InputMaskModule } from 'primeng/inputmask';"
         ],
         "description": "Imports PrimeNG InputMaskModule in TypeScript"
-    },
-    "PrimeNG FloatLabel Import": {
-        "prefix": "p-floatlabel-import",
-        "body": [
-            "import { FloatLabelModule } from 'primeng/floatlabel';"
-        ],
-        "description": "Imports PrimeNG FloatLabelModule in TypeScript"
     }
 }
