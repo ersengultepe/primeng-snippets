@@ -1,6 +1,6 @@
 # PrimeNG Quickly for VS Code
 
-**Created for rimeNG Quickly release**
+**Created for PrimeNG Quickly release**
 
 This extension for Visual Studio Code includes a lot of primeNG elements that allow you to quickly add snippets in Typescript and HTML files if you install PrimeNG in your Angular applications.
 Currently snippets for form elements are available, but will be updated frequently for other primeNG elements. 
