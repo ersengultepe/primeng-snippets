@@ -1,0 +1,62 @@
+{
+    "PrimeNG Paginator Import": {
+        "prefix": "p-paginator-import",
+        "body": [
+            "import { PaginatorModule } from 'primeng/paginator';"
+        ],
+        "description": "Imports PrimeNG PaginatorModule in TypeScript"
+    },
+    "PrimeNG Paginator Basic": {
+        "prefix": "p-paginator-basic",
+        "body": [
+            "<p-paginator (onPageChange)=\"onPageChange($event)\" [first]=\"first\" [rows]=\"rows\" [totalRecords]=\"120\" [rowsPerPageOptions]=\"[10, 20, 30]\"></p-paginator>"
+        ],
+        "description": "Basic PrimeNG Paginator component with page change event"
+    },
+    "PrimeNG Paginator Template": {
+        "prefix": "p-paginator-template",
+        "body": [
+            "<div class=\"flex items-center justify-center\">",
+            "    <div>",
+            "        <p-button icon=\"pi pi-star\" outlined />",
+            "    </div>",
+            "    <div class=\"flex-1\">",
+            "        <p-paginator (onPageChange)=\"onPageChange1($event)\" [first]=\"first1\" [rows]=\"rows1\" [totalRecords]=\"120\" [rowsPerPageOptions]=\"[10, 20, 30]\" [showFirstLastIcon]=\"false\"></p-paginator>",
+            "    </div>",
+            "    <div class=\"justify-end\">",
+            "        <p-button icon=\"pi pi-search\" />",
+            "    </div>",
+            "</div>",
+            "<div class=\"flex items-center justify-end\">",
+            "    <span class=\"mx-1 text-color\">Items per page: </span>",
+            "    <p-select [options]=\"options\" optionLabel=\"label\" optionValue=\"value\" [(ngModel)]=\"rows2\" (ngModelChange)=\"first2 = 0\"></p-select>",
+            "    <p-paginator [first]=\"first2\" [rows]=\"rows2\" [totalRecords]=\"120\" (onPageChange)=\"onPageChange2($event)\" [showCurrentPageReport]=\"true\"",
+            "        currentPageReportTemplate=\"{first} - {last} of {totalRecords}\" [showPageLinks]=\"false\" [showFirstLastIcon]=\"false\"></p-paginator>",
+            "</div>",
+            "<div class=\"flex items-center justify-start\">",
+            "    <div class=\"flex justify-center items-center gap-4\">",
+            "        <span>Items per page: </span>",
+            "        <p-slider [(ngModel)]=\"rows3\" (ngModelChange)=\"first3 = 0\" [style]=\"{ width: '10rem' }\" [min]=\"10\" [max]=\"120\" [step]=\"30\"></p-slider>",
+            "    </div>",
+            "    <p-paginator (onPageChange)=\"onPageChange3($event)\" [first]=\"first3\" [rows]=\"rows3\" [totalRecords]=\"totalRecords\" [showFirstLastIcon]=\"false\"",
+            "        [showCurrentPageReport]=\"true\" currentPageReportTemplate=\"{first} - {last} of {totalRecords}\"></p-paginator>",
+            "</div>"
+        ],
+        "description": "PrimeNG Paginator with custom template"
+    },
+    "PrimeNG Paginator Current Page Report": {
+        "prefix": "p-paginator-current-page-report",
+        "body": [
+            "<p-paginator",
+            "    (onPageChange)=\"onPageChange($event)\"",
+            "    [first]=\"first\"",
+            "    [rows]=\"rows\"",
+            "    [totalRecords]=\"120\"",
+            "    [showCurrentPageReport]=\"true\"",
+            "    [showPageLinks]=\"false\"",
+            "    [showJumpToPageDropdown]=\"false\"",
+            "    currentPageReportTemplate=\"Showing {first} to {last} of {totalRecords}\"></p-paginator>"
+        ],
+        "description": "PrimeNG Paginator with custom current page report template"
+    }
+}

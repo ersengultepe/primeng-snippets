@@ -1,0 +1,157 @@
+{
+    "PrimeNG Scroller Basic": {
+        "prefix": "p-virtualscroller-basic",
+        "body": [
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" scrollHeight=\"${3:200px}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "Basic PrimeNG VirtualScroller"
+    },
+    "PrimeNG Scroller Horizontal": {
+        "prefix": "p-virtualscroller-horizontal",
+        "body": [
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" scrollHeight=\"${3:200px}\" orientation=\"horizontal\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" style=\"writing-mode: vertical-lr; width: ${2:50}px;\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "PrimeNG VirtualScroller with horizontal orientation"
+    },
+    "PrimeNG Scroller Grid": {
+        "prefix": "p-virtualscroller-grid",
+        "body": [
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"[${2:50}, ${3:100}]\" orientation=\"both\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            <div *ngFor=\"let el of item\" style=\"width: ${3:100}px\">{{ el }}</div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "PrimeNG VirtualScroller with grid layout"
+    },
+    "PrimeNG Scroller Delay": {
+        "prefix": "p-virtualscroller-delay",
+        "body": [
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>",
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" [delay]=\"${3:150}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>",
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" [delay]=\"${4:500}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "PrimeNG VirtualScroller with delay variations"
+    },
+    "PrimeNG Scroller Loading": {
+        "prefix": "p-virtualscroller-loading",
+        "body": [
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" [showLoader]=\"true\" [delay]=\"${3:250}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>",
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" [showLoader]=\"true\" [delay]=\"${3:250}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"loader\" let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            <p-skeleton [width]=\"options.even ? '60%' : '50%'\" height=\"1.3rem\"></p-skeleton>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "PrimeNG VirtualScroller with loading indicators"
+    },
+    "PrimeNG Scroller Lazy": {
+        "prefix": "p-virtualscroller-lazy",
+        "body": [
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:50}\" [showLoader]=\"true\" [delay]=\"${3:250}\" [loading]=\"${4:lazyLoading}\" [lazy]=\"true\" (onLazyLoad)=\"${5:onLazyLoad($event)}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${2:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "PrimeNG VirtualScroller with lazy loading"
+    },
+    "PrimeNG Scroller Programmatic": {
+        "prefix": "p-virtualscroller-programmatic",
+        "body": [
+            "<p-button label=\"Reset\" (click)=\"${1:reset()}\" />",
+            "<p-virtualscroller #sc [items]=\"${2:items}\" [itemSize]=\"${3:50}\" scrollHeight=\"${4:200px}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex items-center p-2\" [ngClass]=\"{ 'bg-surface-100 dark:bg-surface-700': options.odd }\" style=\"height: ${3:50}px;\">",
+            "            {{ item }}",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "PrimeNG VirtualScroller with programmatic scrolling"
+    },
+    "PrimeNG Scroller Template": {
+        "prefix": "p-virtualscroller-template",
+        "body": [
+            "<p-virtualscroller [items]=\"${1:items}\" [itemSize]=\"${2:25 * 7}\" [showLoader]=\"true\" [delay]=\"${3:250}\" styleClass=\"border border-surface\" [style]=\"{ width: '200px', height: '200px' }\">",
+            "    <ng-template pTemplate=\"item\" let-item let-options=\"options\">",
+            "        <div class=\"flex flex-col align-items-stretch\" [ngClass]=\"{ 'surface-ground': options.odd }\">",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\">Item: {{ item }}</div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\">Index: {{ options.index }}</div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\">Count: {{ options.count }}</div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\">First: {{ options.first }}</div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\">Last: {{ options.last }}</div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\">Even: {{ options.even }}</div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\">Odd: {{ options.odd }}</div>",
+            "        </div>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"loader\" let-options=\"options\">",
+            "        <div class=\"flex flex-col items-stretch\" [ngClass]=\"{ 'surface-ground': options.odd }\">",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\"><p-skeleton width=\"60%\" height=\"1.2rem\"></p-skeleton></div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\"><p-skeleton width=\"50%\" height=\"1.2rem\"></p-skeleton></div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\"><p-skeleton width=\"60%\" height=\"1.2rem\"></p-skeleton></div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\"><p-skeleton width=\"50%\" height=\"1.2rem\"></p-skeleton></div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\"><p-skeleton width=\"60%\" height=\"1.2rem\"></p-skeleton></div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\"><p-skeleton width=\"50%\" height=\"1.2rem\"></p-skeleton></div>",
+            "            <div class=\"flex items-center px-2\" style=\"height: 25px\"><p-skeleton width=\"60%\" height=\"1.2rem\"></p-skeleton></div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-virtualscroller>"
+        ],
+        "description": "PrimeNG VirtualScroller with custom template"
+    },
+    "PrimeNG Scroller Import": {
+        "prefix": "p-virtualscroller-import",
+        "body": [
+            "import { ScrollerModule } from 'primeng/scroller';"
+        ],
+        "description": "Imports PrimeNG ScrollerModule in TypeScript"
+    }
+}

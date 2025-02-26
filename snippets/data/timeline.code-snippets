@@ -1,0 +1,101 @@
+{
+    "PrimeNG Timeline Basic": {
+        "prefix": "p-timeline-basic",
+        "body": [
+            "<p-timeline [value]=\"${1:events}\">",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event.status }}",
+            "    </ng-template>",
+            "</p-timeline>"
+        ],
+        "description": "Basic PrimeNG Timeline"
+    },
+    "PrimeNG Timeline Alignment": {
+        "prefix": "p-timeline-alignment",
+        "body": [
+            "<p-timeline [value]=\"${1:events}\" class=\"w-full md:w-80\">",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event.status }}",
+            "    </ng-template>",
+            "</p-timeline>",
+            "<p-timeline [value]=\"${1:events}\" class=\"w-full md:w-80\" align=\"right\">",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event.status }}",
+            "    </ng-template>",
+            "</p-timeline>",
+            "<p-timeline [value]=\"${1:events}\" class=\"w-full md:w-80\" align=\"alternate\">",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event.status }}",
+            "    </ng-template>",
+            "</p-timeline>"
+        ],
+        "description": "PrimeNG Timeline with different alignments"
+    },
+    "PrimeNG Timeline Opposite": {
+        "prefix": "p-timeline-opposite",
+        "body": [
+            "<p-timeline [value]=\"${1:events}\">",
+            "    <ng-template pTemplate=\"opposite\" let-event>",
+            "        <small class=\"text-surface-500 dark:text-surface-400\">{{ event.date }}</small>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event.status }}",
+            "    </ng-template>",
+            "</p-timeline>"
+        ],
+        "description": "PrimeNG Timeline with opposite content"
+    },
+    "PrimeNG Timeline Template": {
+        "prefix": "p-timeline-template",
+        "body": [
+            "<p-timeline [value]=\"${1:events}\" align=\"alternate\" styleClass=\"customized-timeline\">",
+            "    <ng-template pTemplate=\"marker\" let-event>",
+            "        <span class=\"flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm\" [style]=\"{ 'background-color': event.color }\">",
+            "            <i [class]=\"event.icon\"></i>",
+            "        </span>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        <p-card [header]=\"event.status\" [subheader]=\"event.date\">",
+            "            <img *ngIf=\"event.image\" [src]=\"'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image\" [alt]=\"event.name\" width=\"200\" class=\"shadow\" />",
+            "            <p>",
+            "                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+            "            </p>",
+            "            <p-button label=\"Read more\" [text]=\"true\" />",
+            "        </p-card>",
+            "    </ng-template>",
+            "</p-timeline>"
+        ],
+        "description": "PrimeNG Timeline with custom template"
+    },
+    "PrimeNG Timeline Horizontal": {
+        "prefix": "p-timeline-horizontal",
+        "body": [
+            "<p-timeline [value]=\"${1:events}\" layout=\"horizontal\" align=\"top\">",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event }}",
+            "    </ng-template>",
+            "</p-timeline>",
+            "<p-timeline [value]=\"${1:events}\" layout=\"horizontal\" align=\"bottom\">",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event }}",
+            "    </ng-template>",
+            "</p-timeline>",
+            "<p-timeline [value]=\"${1:events}\" layout=\"horizontal\" align=\"alternate\">",
+            "    <ng-template pTemplate=\"content\" let-event>",
+            "        {{ event }}",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"opposite\" let-event>",
+            "        <span> </span>",
+            "    </ng-template>",
+            "</p-timeline>"
+        ],
+        "description": "PrimeNG Timeline with horizontal layout"
+    },
+    "PrimeNG Timeline Import": {
+        "prefix": "p-timeline-import",
+        "body": [
+            "import { TimelineModule } from 'primeng/timeline';"
+        ],
+        "description": "Imports PrimeNG TimelineModule in TypeScript"
+    }
+}

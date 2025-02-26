@@ -1,0 +1,64 @@
+{
+    "PrimeNG OrganizationChart Import": {
+        "prefix": "p-orgchart-import",
+        "body": ["import { OrganizationChartModule } from 'primeng/organizationchart';"],
+        "description": "Import statement for PrimeNG OrganizationChart module"
+    },
+    "PrimeNG OrganizationChart Basic": {
+        "prefix": "p-orgchart-basic",
+        "body": ["<p-organization-chart [value]=\"${1:data}\" />"],
+        "description": "Basic OrganizationChart with hierarchical data"
+    },
+    "PrimeNG OrganizationChart Template": {
+        "prefix": "p-orgchart-template",
+        "body": [
+            "<p-organization-chart [value]=\"${1:data}\" [collapsible]=\"${2:true}\">",
+            "    <ng-template let-node pTemplate=\"default\">",
+            "        <div class=\"flex flex-col items-center\">",
+            "            <img src=\"${3:imageUrl}\" [alt]=\"node.label\" [class]=\"${4:flagClass}\" width=\"32\" />",
+            "            <div class=\"mt-4 font-medium text-lg\">{{ node.label }}</div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-organization-chart>"
+        ],
+        "description": "OrganizationChart with custom node template and collapsible nodes"
+    },
+    "PrimeNG OrganizationChart Selection": {
+        "prefix": "p-orgchart-selection",
+        "body": [
+            "<p-organization-chart",
+            "    [value]=\"${1:data}\"",
+            "    selectionMode=\"${2:multiple}\"",
+            "    [(selection)]=\"${3:selectedNodes}\"",
+            "    [collapsible]=\"${4:true}\">",
+            "    <ng-template let-node pTemplate=\"person\">",
+            "        <div class=\"flex flex-col\">",
+            "            <div class=\"flex flex-col items-center\">",
+            "                <img [src]=\"node.data.image\" class=\"mb-4 w-12 h-12\" />",
+            "                <div class=\"font-bold mb-2\">{{ node.data.name }}</div>",
+            "                <div>{{ node.data.title }}</div>",
+            "            </div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-organization-chart>"
+        ],
+        "description": "OrganizationChart with multiple selection support"
+    },
+    "PrimeNG OrganizationChart Colored": {
+        "prefix": "p-orgchart-colored",
+        "body": [
+            "<p-organization-chart [value]=\"${1:data}\" [collapsible]=\"${2:true}\">",
+            "    <ng-template let-node pTemplate=\"person\">",
+            "        <div class=\"flex flex-col\">",
+            "            <div class=\"flex flex-col items-center\">",
+            "                <img [src]=\"node.data.image\" class=\"mb-4 w-12 h-12\" />",
+            "                <span class=\"font-bold mb-2\">{{ node.data.name }}</span>",
+            "                <span>{{ node.data.title }}</span>",
+            "            </div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-organization-chart>"
+        ],
+        "description": "OrganizationChart with custom node styling"
+    }
+}

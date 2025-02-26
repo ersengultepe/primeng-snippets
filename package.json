@@ -16,7 +16,7 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "1.0.2",
+  "version": "1.1.1",
   "engines": {
     "vscode": "^1.10.0"
   },
@@ -253,19 +253,99 @@
       },
       {
         "language": "html",
-        "path": "./snippets/button/button-snippets.code-snippets"
+        "path": "./snippets/button/button.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/button/button-snippets.code-snippets"
+        "path": "./snippets/button/button.code-snippets"
       },
       {
         "language": "html",
-        "path": "./snippets/button/speed-dial.code-snippets"
+        "path": "./snippets/button/speeddial.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/button/speed-dial.code-snippets"
+        "path": "./snippets/button/speeddial.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/button/splitbutton.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/button/splitbutton.code-snippets"
+      },     
+      { 
+        "language": "html",
+        "path": "./snippets/data/dataview.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/dataview.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/data/orderlist.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/orderlist.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/orgchart.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/orgchart.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/paginator.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/paginator.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/picklist.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/picklist.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/table.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/table.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/timeline.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/timeline.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/tree.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/tree.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/treetable.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/treetable.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/data/virtualscroller.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/data/virtualscroller.code-snippets"
       }
     ]
   }

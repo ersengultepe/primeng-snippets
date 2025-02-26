@@ -1,0 +1,62 @@
+{
+    "PrimeNG OrderList Import": {
+        "prefix": "p-orderlist-import",
+        "body": ["import { OrderListModule } from 'primeng/orderlist';"],
+        "description": "Import statement for PrimeNG OrderList module"
+    },
+    "PrimeNG OrderList Basic": {
+        "prefix": "p-orderlist-basic",
+        "body": [
+            "<p-orderlist [value]=\"${1:products}\" dataKey=\"${2:id}\" breakpoint=\"575px\">",
+            "    <ng-template #option let-option>",
+            "        {{ option.name }}",
+            "    </ng-template>",
+            "</p-orderlist>"
+        ],
+        "description": "Basic OrderList with simple text display"
+    },
+    "PrimeNG OrderList Filter": {
+        "prefix": "p-orderlist-filter",
+        "body": [
+            "<p-orderlist",
+            "    [value]=\"${1:products}\"",
+            "    [listStyle]=\"{ 'max-height': '30rem' }\"",
+            "    filterBy=\"${2:name}\"",
+            "    filterPlaceholder=\"${3:Filter by name}\">",
+            "    <ng-template let-option let-selected=\"selected\" #option>",
+            "        <div class=\"flex flex-wrap p-1 items-center gap-4 w-full\">",
+            "            <img class=\"w-12 shrink-0 rounded\" src=\"${4:imageUrl}\" [alt]=\"option.name\">",
+            "            <div class=\"flex-1 flex flex-col\">",
+            "                <span class=\"font-medium text-sm\">{{ option.name }}</span>",
+            "                <span class=\"text-sm text-surface-500\">{{ option.category }}</span>",
+            "            </div>",
+            "            <span class=\"font-bold sm:ml-8\">${5:1$}{{ option.price }}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-orderlist>"
+        ],
+        "description": "OrderList with filtering and image support"
+    },
+    "PrimeNG OrderList Template": {
+        "prefix": "p-orderlist-template",
+        "body": [
+            "<p-orderlist",
+            "    [value]=\"${1:products}\"",
+            "    dataKey=\"${2:id}\"",
+            "    breakpoint=\"575px\"",
+            "    scrollHeight=\"20rem\">",
+            "    <ng-template let-option let-selected=\"selected\" #item>",
+            "        <div class=\"flex flex-wrap p-1 items-center gap-4 w-full\">",
+            "            <img class=\"w-12 shrink-0 rounded\" src=\"${3:imageUrl}\" [alt]=\"option.name\">",
+            "            <div class=\"flex-1 flex flex-col\">",
+            "                <span class=\"font-medium text-sm\">{{ option.name }}</span>",
+            "                <span class=\"text-sm text-surface-500\">{{ option.category }}</span>",
+            "            </div>",
+            "            <span class=\"font-bold sm:ml-8\">${4:1$}{{ option.price }}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-orderlist>"
+        ],
+        "description": "OrderList with custom template and scrolling support"
+    }
+}

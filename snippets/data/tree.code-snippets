@@ -1,0 +1,156 @@
+{
+    "PrimeNG Tree Import": {
+        "prefix": "p-tree-import",
+        "body": [
+            "import { TreeModule } from 'primeng/tree';"
+        ],
+        "description": "PrimeNG Tree module import"
+    },
+    "PrimeNG Tree Basic": {
+        "prefix": "p-tree-basic",
+        "body": [
+            "<p-tree [value]=\"${1:files}\" styleClass=\"w-full md:w-[30rem]\"></p-tree>"
+        ],
+        "description": "Basic PrimeNG Tree component"
+    },
+    "PrimeNG Tree Controlled": {
+        "prefix": "p-tree-controlled",
+        "body": [
+            "<div class=\"flex flex-wrap gap-2 mb-6\">",
+            "    <p-button icon=\"pi pi-plus\" label=\"Expand all\" (click)=\"expandAll()\" />",
+            "    <p-button icon=\"pi pi-minus\" label=\"Collapse all\" (click)=\"collapseAll()\" />",
+            "</div>",
+            "<p-tree [value]=\"${1:files}\" styleClass=\"w-full md:w-[30rem]\"></p-tree>"
+        ],
+        "description": "Tree with expand/collapse controls"
+    },
+    "PrimeNG Tree Single Selection": {
+        "prefix": "p-tree-single-select",
+        "body": [
+            "<p-tree [value]=\"${1:files}\" styleClass=\"w-full md:w-[30rem]\"",
+            "    selectionMode=\"single\"",
+            "    [(selection)]=\"${2:selectedFile}\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with single node selection"
+    },
+    "PrimeNG Tree Multiple Selection": {
+        "prefix": "p-tree-multi-select",
+        "body": [
+            "<div class=\"flex items-center mb-6 gap-2\">",
+            "    <p-toggleswitch inputId=\"input-metakey\" [(ngModel)]=\"${1:metaKeySelection}\" />",
+            "    <label for=\"input-metakey\">MetaKey</label>",
+            "</div>",
+            "<p-tree [metaKeySelection]=\"${1:metaKeySelection}\"",
+            "    [value]=\"${2:files}\"",
+            "    styleClass=\"w-full md:w-[30rem]\"",
+            "    selectionMode=\"multiple\"",
+            "    [(selection)]=\"${3:selectedFiles}\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with multiple node selection"
+    },
+    "PrimeNG Tree Checkbox Selection": {
+        "prefix": "p-tree-checkbox",
+        "body": [
+            "<p-tree [value]=\"${1:files}\"",
+            "    styleClass=\"w-full md:w-[30rem]\"",
+            "    selectionMode=\"checkbox\"",
+            "    [(selection)]=\"${2:selectedFiles}\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with checkbox selection"
+    },
+    "PrimeNG Tree Events": {
+        "prefix": "p-tree-events",
+        "body": [
+            "<p-tree [value]=\"${1:files}\"",
+            "    styleClass=\"w-full md:w-[30rem]\"",
+            "    selectionMode=\"single\"",
+            "    [(selection)]=\"${2:selectedFile}\"",
+            "    (onNodeExpand)=\"nodeExpand($event)\"",
+            "    (onNodeCollapse)=\"nodeCollapse($event)\"",
+            "    (onNodeSelect)=\"nodeSelect($event)\"",
+            "    (onNodeUnselect)=\"nodeUnselect($event)\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with event handlers"
+    },
+    "PrimeNG Tree Lazy Loading": {
+        "prefix": "p-tree-lazy",
+        "body": [
+            "<p-tree styleClass=\"w-full md:w-[30rem]\"",
+            "    [value]=\"${1:nodes}\"",
+            "    (onNodeExpand)=\"onNodeExpand($event)\"",
+            "    [loading]=\"${2:loading}\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with lazy loading"
+    },
+    "PrimeNG Tree Template": {
+        "prefix": "p-tree-template",
+        "body": [
+            "<p-tree [value]=\"${1:nodes}\" styleClass=\"w-full md:w-[30rem]\">",
+            "    <ng-template let-node pTemplate=\"url\">",
+            "        <a [href]=\"node.data\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-surface-700 dark:text-surface-100 hover:text-primary\">",
+            "            {{ node.label }}",
+            "        </a>",
+            "    </ng-template>",
+            "    <ng-template let-node pTemplate=\"default\">",
+            "        <b>{{ node.label }}</b>",
+            "    </ng-template>",
+            "</p-tree>"
+        ],
+        "description": "Tree with custom templates"
+    },
+    "PrimeNG Tree Filter": {
+        "prefix": "p-tree-filter",
+        "body": [
+            "<p-tree [value]=\"${1:files}\"",
+            "    styleClass=\"w-full md:w-[30rem]\"",
+            "    [filter]=\"true\"",
+            "    filterPlaceholder=\"${2:Search...}\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with filtering"
+    },
+    "PrimeNG Tree Virtual Scroll": {
+        "prefix": "p-tree-virtual-scroll",
+        "body": [
+            "<p-tree [value]=\"${1:files}\"",
+            "    styleClass=\"w-full md:w-[30rem]\"",
+            "    scrollHeight=\"250px\"",
+            "    [virtualScroll]=\"true\"",
+            "    [virtualScrollItemSize]=\"46\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with virtual scrolling"
+    },
+    "PrimeNG Tree DragDrop": {
+        "prefix": "p-tree-dragdrop",
+        "body": [
+            "<p-tree [value]=\"${1:files}\"",
+            "    styleClass=\"w-full md:w-[30rem]\"",
+            "    [draggableNodes]=\"true\"",
+            "    [droppableNodes]=\"true\"",
+            "    draggableScope=\"self\"",
+            "    droppableScope=\"self\">",
+            "</p-tree>"
+        ],
+        "description": "Tree with drag and drop"
+    },
+    "PrimeNG Tree Context Menu": {
+        "prefix": "p-tree-context-menu",
+        "body": [
+            "<p-tree [value]=\"${1:files}\"",
+            "    styleClass=\"w-full md:w-[30rem]\"",
+            "    selectionMode=\"single\"",
+            "    [(selection)]=\"${2:selectedFile}\"",
+            "    [contextMenu]=\"cm\">",
+            "</p-tree>",
+            "<p-contextmenu #cm [model]=\"${3:items}\"></p-contextmenu>",
+            "<p-toast></p-toast>"
+        ],
+        "description": "Tree with context menu"
+    }
+}
