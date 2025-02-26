@@ -163,14 +163,17 @@ AutoComplete, CascadeSelect, Checkbox, ColorPicker, DatePicker, Editor, FloatLab
 
 This plugin was created with artificial intelligence support. Thanks to the free services of the following AI language models, the laborious work is made much easier.
 
+- [Le Chat - Mistral AI](https://chat.mistral.ai/)
 - [Grok 3](https://grok.com/)
 - [ChatGpt](https://chatgpt.com/)
 - [Deepseek](https://chat.deepseek.com/)
+- [Phind](https://www.phind.com/)
 
 ##
 
 Plugin logo created by Canva
 
 - [Canva - Free Online AI Image Generator](https://www.canva.com/ai-image-generator/)
+
 ![Logo](images/logo.png)
 
