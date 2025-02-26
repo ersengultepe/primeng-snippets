@@ -1,75 +1,107 @@
 {
-    "PrimeNG InputMask Basic": {
-        "prefix": "p-inputmask-basic",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"99-999999\" placeholder=\"${2:99-999999}\" />"
-        ],
-        "description": "Basic PrimeNG InputMask"
-    },
-    "PrimeNG InputMask Phone": {
-        "prefix": "p-inputmask-phone",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"(999) 999-9999\" placeholder=\"${2:(999) 999-9999}\" />"
-        ],
-        "description": "PrimeNG InputMask for phone number"
-    },
-    "PrimeNG InputMask Date": {
-        "prefix": "p-inputmask-date",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"99/99/9999\" placeholder=\"${2:MM/DD/YYYY}\" />"
-        ],
-        "description": "PrimeNG InputMask for date"
-    },
-    "PrimeNG InputMask Serial": {
-        "prefix": "p-inputmask-serial",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"a*-999-a999\" placeholder=\"${2:a*-999-a999}\" />"
-        ],
-        "description": "PrimeNG InputMask for serial number"
-    },
-    "PrimeNG InputMask Optional": {
-        "prefix": "p-inputmask-optional",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"(999) 999-9999? x99999\" placeholder=\"${2:(999) 999-9999 x99999}\" />"
-        ],
-        "description": "PrimeNG InputMask with optional extension"
-    },
-    "PrimeNG InputMask SlotChar": {
-        "prefix": "p-inputmask-slotchar",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"99/99/9999\" slotChar=\"${2:-}\" placeholder=\"${3:99-99-9999}\" />"
-        ],
-        "description": "PrimeNG InputMask with custom slot character"
-    },
-    "PrimeNG InputMask FloatLabel": {
-        "prefix": "p-inputmask-floatlabel",
-        "body": [
-            "<p-floatlabel>",
-            "    <p-inputmask id=\"${1:inputmask}\" [(ngModel)]=\"${2:value}\" mask=\"99-999999\" />",
-            "    <label for=\"${1:inputmask}\">${3:Code}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG InputMask with FloatLabel"
-    },
-    "PrimeNG InputMask Disabled": {
-        "prefix": "p-inputmask-disabled",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"99-999999\" placeholder=\"${2:99-999999}\" [disabled]=\"true\" />"
-        ],
-        "description": "PrimeNG InputMask in disabled state"
-    },
-    "PrimeNG InputMask Invalid": {
-        "prefix": "p-inputmask-invalid",
-        "body": [
-            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"99-999999\" placeholder=\"${2:99-999999}\" class=\"ng-invalid ng-dirty\" />"
-        ],
-        "description": "PrimeNG InputMask with invalid state styling"
-    },
     "PrimeNG InputMask Import": {
         "prefix": "p-inputmask-import",
         "body": [
             "import { InputMaskModule } from 'primeng/inputmask';"
         ],
         "description": "Imports PrimeNG InputMaskModule in TypeScript"
+    },
+    "PrimeNG InputMask Basic": {
+        "prefix": "p-inputmask-basic",
+        "body": [
+            "<p-inputmask mask=\"99-999999\" [(ngModel)]=\"${1:value}\" placeholder=\"99-999999\" />"
+        ],
+        "description": "Basic PrimeNG InputMask component with ngModel binding"
+    },
+    "PrimeNG InputMask Reactive Forms": {
+        "prefix": "p-inputmask-reactive",
+        "body": [
+            "<p-inputmask mask=\"99-999999\" formControlName=\"${1:value}\" placeholder=\"99-999999\" />"
+        ],
+        "description": "PrimeNG InputMask used with reactive forms"
+    },
+    "PrimeNG InputMask Mask": {
+        "prefix": "p-inputmask-mask",
+        "body": [
+            "<span class=\"font-bold block mb-2\">SSN</span>",
+            "<p-inputmask mask=\"999-99-9999\" [(ngModel)]=\"${1:value1}\" placeholder=\"999-99-9999\" />",
+            "<span class=\"font-bold block mb-2\">Phone</span>",
+            "<p-inputmask mask=\"(999) 999-9999\" [(ngModel)]=\"${2:value2}\" placeholder=\"(999) 999-9999\" />",
+            "<span class=\"font-bold block mb-2\">Serial Number</span>",
+            "<p-inputmask mask=\"a*-999-a999\" [(ngModel)]=\"${3:value3}\" placeholder=\"a*-999-a999\" />"
+        ],
+        "description": "PrimeNG InputMask with various mask formats"
+    },
+    "PrimeNG InputMask Optional": {
+        "prefix": "p-inputmask-optional",
+        "body": [
+            "<p-inputmask mask=\"(999) 999-9999? x99999\" [(ngModel)]=\"${1:value}\" placeholder=\"(999) 999-9999? x99999\" />"
+        ],
+        "description": "PrimeNG InputMask with optional mask"
+    },
+    "PrimeNG InputMask SlotChar": {
+        "prefix": "p-inputmask-slotchar",
+        "body": [
+            "<p-inputmask [(ngModel)]=\"${1:value}\" mask=\"99/99/9999\" placeholder=\"99/99/9999\" slotChar=\"mm/dd/yyyy\" />"
+        ],
+        "description": "PrimeNG InputMask with custom slotChar"
+    },
+    "PrimeNG InputMask Filled": {
+        "prefix": "p-inputmask-filled",
+        "body": [
+            "<p-inputmask mask=\"99-999999\" [(ngModel)]=\"${1:value}\" variant=\"filled\" placeholder=\"99-999999\" />"
+        ],
+        "description": "PrimeNG InputMask with filled variant"
+    },
+    "PrimeNG InputMask Float Label": {
+        "prefix": "p-inputmask-float-label",
+        "body": [
+            "<p-floatlabel>",
+            "    <p-inputmask id=\"over_label\" [(ngModel)]=\"${1:value1}\" mask=\"999-99-9999\" />",
+            "    <label for=\"over_label\">Over Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"in\">",
+            "    <p-inputmask id=\"in_label\" [(ngModel)]=\"${2:value2}\" mask=\"999-99-9999\" />",
+            "    <label for=\"in_label\">In Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"on\">",
+            "    <p-inputmask id=\"on_label\" [(ngModel)]=\"${3:value3}\" mask=\"999-99-9999\" />",
+            "    <label for=\"on_label\">On Label</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG InputMask with float label variations"
+    },
+    "PrimeNG InputMask Ifta Label": {
+        "prefix": "p-inputmask-ifta-label",
+        "body": [
+            "<p-iftalabel>",
+            "    <p-inputmask id=\"ssn\" [(ngModel)]=\"${1:value}\" mask=\"999-99-9999\" autocomplete=\"off\" />",
+            "    <label for=\"ssn\">SSN</label>",
+            "</p-iftalabel>"
+        ],
+        "description": "PrimeNG InputMask with IftaLabel"
+    },
+    "PrimeNG InputMask Sizes": {
+        "prefix": "p-inputmask-sizes",
+        "body": [
+            "<p-inputmask [(ngModel)]=\"${1:value1}\" placeholder=\"Small\" size=\"small\" mask=\"99-999999\" />",
+            "<p-inputmask [(ngModel)]=\"${2:value2}\" placeholder=\"Normal\" mask=\"99-999999\" />",
+            "<p-inputmask [(ngModel)]=\"${3:value3}\" placeholder=\"Large\" size=\"large\" mask=\"99-999999\" />"
+        ],
+        "description": "PrimeNG InputMask with different sizes"
+    },
+    "PrimeNG InputMask Invalid": {
+        "prefix": "p-inputmask-invalid",
+        "body": [
+            "<p-inputmask mask=\"999-99-9999\" [(ngModel)]=\"${1:value}\" class=\"ng-invalid ng-dirty\" placeholder=\"Serial Key\" />"
+        ],
+        "description": "PrimeNG InputMask in invalid state"
+    },
+    "PrimeNG InputMask Disabled": {
+        "prefix": "p-inputmask-disabled",
+        "body": [
+            "<p-inputmask mask=\"999-99-9999\" [(ngModel)]=\"${1:value}\" [disabled]=\"true\" />"
+        ],
+        "description": "PrimeNG InputMask in disabled state"
     }
 }

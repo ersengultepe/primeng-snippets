@@ -1,38 +1,57 @@
 {
+    "PrimeNG Rating Import": {
+        "prefix": "p-rating-import",
+        "body": [
+            "import { RatingModule } from 'primeng/rating';"
+        ],
+        "description": "Imports PrimeNG RatingModule in TypeScript"
+    },
     "PrimeNG Rating Basic": {
         "prefix": "p-rating-basic",
         "body": [
             "<p-rating [(ngModel)]=\"${1:value}\" />"
         ],
-        "description": "Basic PrimeNG Rating"
+        "description": "Basic PrimeNG Rating component with two-way binding"
     },
-    "PrimeNG Rating No Cancel": {
-        "prefix": "p-rating-nocancel",
+    "PrimeNG Rating Reactive Forms": {
+        "prefix": "p-rating-reactive",
         "body": [
-            "<p-rating [(ngModel)]=\"${1:value}\" [cancel]=\"false\" />"
+            "<form [formGroup]=\"${1:formGroup}\">",
+            "    <p-rating formControlName=\"${2:value}\" />",
+            "</form>"
         ],
-        "description": "PrimeNG Rating without cancel option"
+        "description": "PrimeNG Rating component used with reactive forms"
     },
-    "PrimeNG Rating Custom Icons": {
-        "prefix": "p-rating-custom",
+    "PrimeNG Rating Number of Stars": {
+        "prefix": "p-rating-stars",
         "body": [
-            "<p-rating [(ngModel)]=\"${1:value}\" [stars]=\"${2:5}\" [cancel]=\"false\">",
-            "    <ng-template pTemplate=\"onicon\">",
-            "        <i class=\"pi pi-circle-fill text-orange-500\"></i>",
+            "<p-rating [(ngModel)]=\"${1:value}\" [stars]=\"${2:10}\" />"
+        ],
+        "description": "PrimeNG Rating component with custom number of stars"
+    },
+    "PrimeNG Rating Template": {
+        "prefix": "p-rating-template",
+        "body": [
+            "<p-rating [(ngModel)]=\"${1:value}\" stars=\"${2:5}\">",
+            "    <ng-template #cancelicon>",
+            "        <img src=\"https://primefaces.org/cdn/primeng/images/demo/rating/cancel.png\" height=\"24\" width=\"24\" />",
             "    </ng-template>",
-            "    <ng-template pTemplate=\"officon\">",
-            "        <i class=\"pi pi-circle text-gray-300\"></i>",
+            "    <ng-template #onicon>",
+            "        <img src=\"https://primefaces.org/cdn/primeng/images/demo/rating/custom-icon-active.png\" height=\"24\" width=\"24\" />",
+            "    </ng-template>",
+            "    <ng-template #officon>",
+            "        <img src=\"https://primefaces.org/cdn/primeng/images/demo/rating/custom-icon.png\" height=\"24\" width=\"24\" />",
             "    </ng-template>",
             "</p-rating>"
         ],
-        "description": "PrimeNG Rating with custom icons"
+        "description": "PrimeNG Rating component with custom templates"
     },
     "PrimeNG Rating ReadOnly": {
         "prefix": "p-rating-readonly",
         "body": [
-            "<p-rating [(ngModel)]=\"${1:value}\" [readonly]=\"true\" [cancel]=\"false\" />"
+            "<p-rating [(ngModel)]=\"${1:value}\" [readonly]=\"true\" />"
         ],
-        "description": "PrimeNG Rating in readonly mode"
+        "description": "PrimeNG Rating component in read-only state"
     },
     "PrimeNG Rating Disabled": {
         "prefix": "p-rating-disabled",
@@ -40,12 +59,5 @@
             "<p-rating [(ngModel)]=\"${1:value}\" [disabled]=\"true\" />"
         ],
         "description": "PrimeNG Rating in disabled state"
-    },
-    "PrimeNG Rating Import": {
-        "prefix": "p-rating-import",
-        "body": [
-            "import { RatingModule } from 'primeng/rating';"
-        ],
-        "description": "Imports PrimeNG RatingModule in TypeScript"
     }
 }

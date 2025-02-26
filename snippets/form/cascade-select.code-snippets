@@ -1,50 +1,119 @@
 {
     "PrimeNG CascadeSelect Import": {
-        "prefix": "p-cascadeSelect-import",
+        "prefix": "p-cascadeselect-import",
         "body": [
-            "import { CascadeSelectModule } from 'primeng/cascadeselect';"
+            "import { ${1:CascadeSelectModule} } from '${2:primeng/cascadeselect}';"
         ],
-        "description": "PrimeNG CascadeSelect Import"
+        "description": "PrimeNG CascadeSelect Import Snippet"
     },
     "PrimeNG CascadeSelect Basic": {
-        "prefix": "p-cascadeSelect-basic",
+        "prefix": "p-cascadeselect-basic",
         "body": [
-            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\" optionGroupLabel=\"${4:label}\" [optionGroupChildren]=\"${5:items}\" placeholder=\"${6:Select a City}\"></p-cascadeSelect>"
+            "<p-cascadeselect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:countries}\" optionLabel=\"${3:cname}\" optionGroupLabel=\"${4:name}\" [optionGroupChildren]=\"${5:['states', 'cities']}\" [style]=\"${6:{ minWidth: '14rem' }}\" placeholder=\"${7:Select a City}\" />"
         ],
         "description": "PrimeNG CascadeSelect with basic usage"
     },
-    "PrimeNG CascadeSelect Disabled": {
-        "prefix": "p-cascadeSelect-disabled",
+    "PrimeNG CascadeSelect Reactive Forms": {
+        "prefix": "p-cascadeselect-reactive-forms",
         "body": [
-            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" [disabled]=\"${3:true}\"></p-cascadeSelect>"
+            "<form [formGroup]=\"${1:formGroup}\">",
+            "    <p-cascadeselect formControlName=\"${2:selectedCity}\" [options]=\"${3:countries}\" optionLabel=\"${4:cname}\" optionGroupLabel=\"${5:name}\" [optionGroupChildren]=\"${6:['states', 'cities']}\" [style]=\"${7:{ minWidth: '14rem' }}\" placeholder=\"${8:Select a City}\" />",
+            "</form>"
         ],
-        "description": "PrimeNG CascadeSelect in disabled state"
+        "description": "PrimeNG CascadeSelect with Reactive Forms"
     },
-    "PrimeNG CascadeSelect Filter": {
-        "prefix": "p-cascadeSelect-filter",
+    "PrimeNG CascadeSelect Template": {
+        "prefix": "p-cascadeselect-template",
         "body": [
-            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" [filter]=\"true\" filterPlaceholder=\"${3:Search}\"></p-cascadeSelect>"
-        ],
-        "description": "PrimeNG CascadeSelect with filter functionality"
-    },
-    "PrimeNG CascadeSelect Custom Templates": {
-        "prefix": "p-cascadeSelect-template",
-        "body": [
-            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\">",
-            "    <ng-template pTemplate=\"option\" let-option>",
-            "        <div class=\"flex align-items-center\">",
-            "            <span>{{ option.name }}</span>",
+            "<p-cascadeselect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:countries}\" optionLabel=\"${3:cname}\" optionGroupLabel=\"${4:name}\" [optionGroupChildren]=\"${5:['states', 'cities']}\" [style]=\"${6:{ minWidth: '14rem' }}\" placeholder=\"${7:Select a City}\">",
+            "    <ng-template #option let-option>",
+            "        <div class=\"${8:flex items-center}\">",
+            "            <img *ngIf=\"${9:option.states}\" src=\"${10:https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png}\" [class]=\"${11:'mr-2 flag flag-' + option.code.toLowerCase()}\" style=\"${12:width: 18px}\" />",
+            "            <i class=\"${13:pi pi-compass mr-2}\" *ngIf=\"${14:option.cities}\"></i>",
+            "            <i class=\"${15:pi pi-map-marker mr-2}\" *ngIf=\"${16:option.cname}\"></i>",
+            "            <span>{{ ${17:option.cname || option.name} }}</span>",
             "        </div>",
             "    </ng-template>",
-            "</p-cascadeSelect>"
+            "    <ng-template #triggericon>",
+            "        <i class=\"${18:pi pi-map}\"></i>",
+            "    </ng-template>",
+            "    <ng-template #header>",
+            "        <div class=\"${19:font-medium px-3 py-2}\">{{ ${20:Available Countries} }}</div>",
+            "    </ng-template>",
+            "    <ng-template #footer>",
+            "        <div class=\"${21:px-3 py-1}\">",
+            "            <p-button label=\"${22:Add New}\" fluid severity=\"${23:secondary}\" text=\"${24:true}\" size=\"${25:small}\" icon=\"${26:pi pi-plus}\" />",
+            "        </div>",
+            "    </ng-template>",
+            "</p-cascadeselect>"
         ],
-        "description": "PrimeNG CascadeSelect with custom option template"
+        "description": "PrimeNG CascadeSelect with custom template"
     },
-    "PrimeNG CascadeSelect OnChange Event": {
-        "prefix": "p-cascadeSelect-onChange",
+    "PrimeNG CascadeSelect Loading State": {
+        "prefix": "p-cascadeselect-loading-state",
         "body": [
-            "<p-cascadeSelect [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" (onChange)=\"${3:onCityChange($event)}\"></p-cascadeSelect>"
+            "<p-cascadeselect [loading]=\"${1:true}\" [style]=\"${2:{ minWidth: '14rem' }}\" placeholder=\"${3:Loading...}\" />"
         ],
-        "description": "PrimeNG CascadeSelect with onChange event"
+        "description": "PrimeNG CascadeSelect with loading state"
+    },
+    "PrimeNG CascadeSelect Float Label": {
+        "prefix": "p-cascadeselect-float-label",
+        "body": [
+            "<p-floatLabel class=\"${1:w-full md:w-56}\">",
+            "    <p-cascadeselect [(ngModel)]=\"${2:value1}\" inputId=\"${3:over_label}\" [options]=\"${4:countries}\" optionLabel=\"${5:cname}\" optionGroupLabel=\"${6:name}\" [optionGroupChildren]=\"${7:['states', 'cities']}\" styleClass=\"${8:w-full}\" />",
+            "    <label for=\"${9:over_label}\">${10:Over Label}</label>",
+            "</p-floatLabel>",
+            "",
+            "<p-floatLabel class=\"${11:w-full md:w-56}\" variant=\"${12:in}\">",
+            "    <p-cascadeselect [(ngModel)]=\"${13:value2}\" inputId=\"${14:in_label}\" [options]=\"${15:countries}\" optionLabel=\"${16:cname}\" optionGroupLabel=\"${17:name}\" [optionGroupChildren]=\"${18:['states', 'cities']}\" styleClass=\"${19:w-full}\" />",
+            "    <label for=\"${20:in_label}\">${21:In Label}</label>",
+            "</p-floatLabel>",
+            "",
+            "<p-floatLabel class=\"${22:w-full md:w-56}\" variant=\"${23:on}\">",
+            "    <p-cascadeselect [(ngModel)]=\"${24:value3}\" inputId=\"${25:on_label}\" [options]=\"${26:countries}\" optionLabel=\"${27:cname}\" optionGroupLabel=\"${28:name}\" [optionGroupChildren]=\"${29:['states', 'cities']}\" styleClass=\"${30:w-full}\" />",
+            "    <label for=\"${31:on_label}\">${32:On Label}</label>",
+            "</p-floatLabel>"
+        ],
+        "description": "PrimeNG CascadeSelect with Float Label"
+    },
+    "PrimeNG CascadeSelect Ifta Label": {
+        "prefix": "p-cascadeselect-ifta-label",
+        "body": [
+            "<p-iftaLabel class=\"${1:w-full md:w-56}\">",
+            "    <p-cascadeselect [(ngModel)]=\"${2:selectedCity}\" inputId=\"${3:cs_city}\" [options]=\"${4:countries}\" optionLabel=\"${5:cname}\" optionGroupLabel=\"${6:name}\" [optionGroupChildren]=\"${7:['states', 'cities']}\" styleClass=\"${8:w-full}\" />",
+            "    <label for=\"${9:cs_city}\">${10:City}</label>",
+            "</p-iftaLabel>"
+        ],
+        "description": "PrimeNG CascadeSelect with Ifta Label"
+    },
+    "PrimeNG CascadeSelect Sizes": {
+        "prefix": "p-cascadeselect-sizes",
+        "body": [
+            "<p-cascadeselect [(ngModel)]=\"${1:value1}\" [options]=\"${2:countries}\" optionLabel=\"${3:cname}\" optionGroupLabel=\"${4:name}\" [optionGroupChildren]=\"${5:['states', 'cities']}\" styleClass=\"${6:w-56}\" size=\"${7:small}\" placeholder=\"${8:Small}\" />",
+            "<p-cascadeselect [(ngModel)]=\"${9:value2}\" [options]=\"${10:countries}\" optionLabel=\"${11:cname}\" optionGroupLabel=\"${12:name}\" [optionGroupChildren]=\"${13:['states', 'cities']}\" styleClass=\"${14:w-56}\" placeholder=\"${15:Normal}\" />",
+            "<p-cascadeselect [(ngModel)]=\"${16:value3}\" [options]=\"${17:countries}\" optionLabel=\"${18:cname}\" optionGroupLabel=\"${19:name}\" [optionGroupChildren]=\"${20:['states', 'cities']}\" styleClass=\"${21:w-56}\" size=\"${22:large}\" placeholder=\"${23:Large}\" />"
+        ],
+        "description": "PrimeNG CascadeSelect with different sizes"
+    },
+    "PrimeNG CascadeSelect Filled": {
+        "prefix": "p-cascadeselect-filled",
+        "body": [
+            "<p-cascadeselect [(ngModel)]=\"${1:selectedCity}\" variant=\"${2:filled}\" [options]=\"${3:countries}\" optionLabel=\"${4:cname}\" optionGroupLabel=\"${5:name}\" [optionGroupChildren]=\"${6:['states', 'cities']}\" [style]=\"${7:{ minWidth: '14rem' }}\" placeholder=\"${8:Select a City}\" />"
+        ],
+        "description": "PrimeNG CascadeSelect with filled variant"
+    },
+    "PrimeNG CascadeSelect Invalid": {
+        "prefix": "p-cascadeselect-invalid",
+        "body": [
+            "<p-cascadeselect class=\"${1:ng-invalid ng-dirty}\" [(ngModel)]=\"${2:selectedCity}\" [options]=\"${3:countries}\" optionLabel=\"${4:cname}\" optionGroupLabel=\"${5:name}\" [optionGroupChildren]=\"${6:['states', 'cities']}\" [style]=\"${7:{ minWidth: '14rem' }}\" placeholder=\"${8:Select a City}\" />"
+        ],
+        "description": "PrimeNG CascadeSelect with invalid state"
+    },
+    "PrimeNG CascadeSelect Disabled": {
+        "prefix": "p-cascadeselect-disabled",
+        "body": [
+            "<p-cascadeselect [disabled]=\"${1:true}\" placeholder=\"${2:Disabled}\" [style]=\"${3:{ minWidth: '14rem' }}\" />"
+        ],
+        "description": "PrimeNG CascadeSelect with disabled state"
     }
 }

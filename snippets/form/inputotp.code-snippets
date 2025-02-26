@@ -1,58 +1,60 @@
 {
+    "PrimeNG InputOtp Import": {
+        "prefix": "p-inputotp-import",
+        "body": [
+            "import { InputOtpModule } from 'primeng/inputotp';"
+        ],
+        "description": "Imports PrimeNG InputOtpModule in TypeScript"
+    },
     "PrimeNG InputOtp Basic": {
         "prefix": "p-inputotp-basic",
         "body": [
             "<p-inputotp [(ngModel)]=\"${1:value}\" />"
         ],
-        "description": "Basic PrimeNG InputOtp"
+        "description": "Basic PrimeNG InputOtp component with ngModel binding"
     },
     "PrimeNG InputOtp Mask": {
         "prefix": "p-inputotp-mask",
         "body": [
             "<p-inputotp [(ngModel)]=\"${1:value}\" [mask]=\"true\" />"
         ],
-        "description": "PrimeNG InputOtp with mask"
+        "description": "PrimeNG InputOtp with mask enabled"
     },
-    "PrimeNG InputOtp IntegerOnly": {
-        "prefix": "p-inputotp-integeronly",
+    "PrimeNG InputOtp Integer Only": {
+        "prefix": "p-inputotp-integer-only",
         "body": [
             "<p-inputotp [(ngModel)]=\"${1:value}\" [integerOnly]=\"true\" />"
         ],
         "description": "PrimeNG InputOtp with integer-only input"
     },
-    "PrimeNG InputOtp Small": {
-        "prefix": "p-inputotp-small",
+    "PrimeNG InputOtp Sizes": {
+        "prefix": "p-inputotp-sizes",
         "body": [
-            "<p-inputotp [(ngModel)]=\"${1:value}\" size=\"small\" />"
+            "<p-inputotp [(ngModel)]=\"${1:value1}\" size=\"small\" />",
+            "<p-inputotp [(ngModel)]=\"${2:value2}\" />",
+            "<p-inputotp [(ngModel)]=\"${3:value3}\" size=\"large\" />"
         ],
-        "description": "PrimeNG InputOtp with small size"
+        "description": "PrimeNG InputOtp with different sizes"
     },
-    "PrimeNG InputOtp Large": {
-        "prefix": "p-inputotp-large",
-        "body": [
-            "<p-inputotp [(ngModel)]=\"${1:value}\" size=\"large\" />"
-        ],
-        "description": "PrimeNG InputOtp with large size"
-    },
-    "PrimeNG InputOtp Custom Template": {
-        "prefix": "p-inputotp-custom",
+    "PrimeNG InputOtp Template": {
+        "prefix": "p-inputotp-template",
         "body": [
             "<p-inputotp [(ngModel)]=\"${1:value}\">",
-            "    <ng-template pTemplate=\"input\" let-token let-events=\"events\">",
-            "        <input pInputText class=\"custom-otp-input\" (input)=\"events.input($event)\" (keydown)=\"events.keydown($event)\" type=\"text\" [attr.value]=\"token\" [maxLength]=\"1\" />",
+            "    <ng-template #input let-token let-events=\"events\">",
+            "        <input class=\"custom-otp-input\" (input)=\"events.input($event)\" (keydown)=\"events.keydown($event)\" type=\"text\" [attr.value]=\"token\" [maxLength]=\"1\" />",
             "    </ng-template>",
             "</p-inputotp>"
         ],
         "description": "PrimeNG InputOtp with custom template"
     },
-    "PrimeNG InputOtp Sample UI": {
+    "PrimeNG InputOtp Sample": {
         "prefix": "p-inputotp-sample",
         "body": [
             "<div class=\"flex flex-col items-center\">",
             "    <div class=\"font-bold text-xl mb-2\">Authenticate Your Account</div>",
             "    <p class=\"text-muted-color block mb-8\">Please enter the code sent to your phone.</p>",
             "    <p-inputotp [(ngModel)]=\"${1:value}\" [length]=\"6\">",
-            "        <ng-template pTemplate=\"input\" let-token let-events=\"events\" let-index=\"index\">",
+            "        <ng-template #input let-token let-events=\"events\" let-index=\"index\">",
             "            <input type=\"text\" [maxLength]=\"1\" (input)=\"events.input($event)\" (keydown)=\"events.keydown($event)\" [attr.value]=\"token\" class=\"custom-otp-input\" />",
             "            <div *ngIf=\"index === 3\" class=\"px-4\">",
             "                <i class=\"pi pi-minus\"></i>",
@@ -60,18 +62,11 @@
             "        </ng-template>",
             "    </p-inputotp>",
             "    <div class=\"flex justify-between mt-8 self-stretch\">",
-            "        <p-button label=\"Resend Code\" [link]=\"true\" class=\"p-0\" />",
-            "        <p-button label=\"Submit Code\" />",
+            "        <p-button label=\"Resend Code\" [link]=\"true\" class=\"p-0\"/>",
+            "        <p-button label=\"Submit Code\"/>",
             "    </div>",
             "</div>"
         ],
-        "description": "PrimeNG InputOtp with sample UI implementation"
-    },
-    "PrimeNG InputOtp Import": {
-        "prefix": "p-inputotp-import",
-        "body": [
-            "import { InputOtpModule } from 'primeng/inputotp';"
-        ],
-        "description": "Imports PrimeNG InputOtpModule in TypeScript"
+        "description": "PrimeNG InputOtp sample UI implementation"
     }
 }

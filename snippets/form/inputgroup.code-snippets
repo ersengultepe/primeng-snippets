@@ -1,77 +1,108 @@
 {
+    "PrimeNG InputGroup Import": {
+        "prefix": "p-inputgroup-import",
+        "body": [
+            "import { InputGroupModule } from 'primeng/inputgroup';",
+            "import { InputGroupAddonModule } from 'primeng/inputgroupaddon';"
+        ],
+        "description": "Import statements for PrimeNG InputGroup modules"
+    },
     "PrimeNG InputGroup Basic": {
         "prefix": "p-inputgroup-basic",
         "body": [
             "<p-inputgroup>",
             "    <p-inputgroup-addon>",
-            "        <i class=\"pi pi-user\"></i>",
+            "        <i class=\"pi pi-${1:user}\"></i>",
             "    </p-inputgroup-addon>",
-            "    <input type=\"text\" pInputText placeholder=\"${1:Username}\" />",
+            "    <input pInputText [(ngModel)]=\"${2:text1}\" placeholder=\"${3:Username}\" />",
             "</p-inputgroup>"
         ],
-        "description": "Basic PrimeNG InputGroup with icon addon"
+        "description": "Basic InputGroup with icon addon"
     },
-    "PrimeNG InputGroup Multiple Addons": {
-        "prefix": "p-inputgroup-multiple",
+    "PrimeNG InputGroup Price": {
+        "prefix": "p-inputgroup-price",
         "body": [
             "<p-inputgroup>",
-            "    <p-inputgroup-addon>",
-            "        <i class=\"pi pi-clock\"></i>",
-            "    </p-inputgroup-addon>",
-            "    <p-inputgroup-addon>",
-            "        <i class=\"pi pi-align-left\"></i>",
-            "    </p-inputgroup-addon>",
-            "    <input type=\"text\" pInputText placeholder=\"${1:Input}\" />",
+            "    <p-inputgroup-addon>${4:$}</p-inputgroup-addon>",
+            "    <p-inputnumber [(ngModel)]=\"${2:number}\" placeholder=\"${3:Price}\" />",
+            "    <p-inputgroup-addon>${5:.00}</p-inputgroup-addon>",
             "</p-inputgroup>"
         ],
-        "description": "PrimeNG InputGroup with multiple addons"
+        "description": "InputGroup with currency formatting"
+    },
+    "PrimeNG InputGroup Multiple": {
+        "prefix": "p-inputgroup-multiple",
+        "body": [
+            "<p-inputgroup class=\"w-full md:!w-[30rem]\">",
+            "    <p-inputgroup-addon>",
+            "        <i class=\"pi pi-${1:clock}\"></i>",
+            "    </p-inputgroup-addon>",
+            "    <p-inputgroup-addon>",
+            "        <i class=\"pi pi-${2:star-fill}\"></i>",
+            "    </p-inputgroup-addon>",
+            "    <input type=\"text\" pInputText placeholder=\"${3:Price}\" />",
+            "    <p-inputgroup-addon>${4:$}</p-inputgroup-addon>",
+            "    <p-inputgroup-addon>${5:.00}</p-inputgroup-addon>",
+            "</p-inputgroup>"
+        ],
+        "description": "InputGroup with multiple add-ons"
+    },
+    "PrimeNG InputGroup Search": {
+        "prefix": "p-inputgroup-search",
+        "body": [
+            "<p-inputgroup>",
+            "    <p-button label=\"${1:Search}\" />",
+            "    <input pInputText placeholder=\"${2:Keyword}\" />",
+            "</p-inputgroup>"
+        ],
+        "description": "InputGroup with search button"
     },
     "PrimeNG InputGroup Checkbox": {
         "prefix": "p-inputgroup-checkbox",
         "body": [
             "<p-inputgroup>",
+            "    <input type=\"text\" pInputText placeholder=\"${1:Price}\" />",
             "    <p-inputgroup-addon>",
-            "        <p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"true\" />",
-            "    </p-inputgroup-addon>",
-            "    <input type=\"text\" pInputText placeholder=\"${2:Confirm}\" />",
-            "</p-inputgroup>"
-        ],
-        "description": "PrimeNG InputGroup with checkbox addon"
-    },
-    "PrimeNG InputGroup Button": {
-        "prefix": "p-inputgroup-button",
-        "body": [
-            "<p-inputgroup>",
-            "    <input type=\"text\" pInputText placeholder=\"${1:Search}\" />",
-            "    <p-inputgroup-addon>",
-            "        <p-button icon=\"pi pi-search\" styleClass=\"p-button\" />",
+            "        <p-radiobutton [(ngModel)]=\"${2:radioValue1}\" name=\"${3:rb1}\" value=\"${4:rb1}\" />",
             "    </p-inputgroup-addon>",
             "</p-inputgroup>"
         ],
-        "description": "PrimeNG InputGroup with button addon"
+        "description": "InputGroup with checkbox/radio addon"
     },
-    "PrimeNG InputGroup Multiple Buttons": {
-        "prefix": "p-inputgroup-buttons",
+    "PrimeNG InputGroup FloatLabel": {
+        "prefix": "p-inputgroup-floatlabel",
         "body": [
             "<p-inputgroup>",
             "    <p-inputgroup-addon>",
-            "        <p-button icon=\"pi pi-refresh\" styleClass=\"p-button\" />",
+            "        <i class=\"pi pi-${1:user}\"></i>",
             "    </p-inputgroup-addon>",
-            "    <input type=\"text\" pInputText placeholder=\"${1:Input}\" />",
-            "    <p-inputgroup-addon>",
-            "        <p-button icon=\"pi pi-times\" styleClass=\"p-button\" />",
-            "    </p-inputgroup-addon>",
+            "    <p-floatlabel>",
+            "        <input pInputText id=\"${2:label_id}\" [(ngModel)]=\"${3:value1}\" />",
+            "        <label for=\"${2:label_id}\">${4:Label}</label>",
+            "    </p-floatlabel>",
             "</p-inputgroup>"
         ],
-        "description": "PrimeNG InputGroup with multiple button addons"
+        "description": "InputGroup with floating label"
     },
-    "PrimeNG InputGroup Import": {
-        "prefix": "p-inputgroup-import",
+    "PrimeNG InputGroup IftaLabel": {
+        "prefix": "p-inputgroup-iftalabel",
         "body": [
-            "import { InputGroupModule } from 'primeng/inputgroup';",
-            "import { InputGroupAddonModule } from 'primeng/inputgroupaddon';",
-            "import { InputTextModule } from 'primeng/inputtext';"
+            "<p-inputgroup class=\"md:!w-80\">",
+            "    <p-inputgroup-addon>",
+            "        <i class=\"pi pi-${1:shopping-cart}\"></i>",
+            "    </p-inputgroup-addon>",
+            "    <p-iftalabel>",
+            "        <p-inputnumber",
+            "            [(ngModel)]=\"${2:value}\"",
+            "            inputId=\"${3:price}\"",
+            "            mode=\"currency\"",
+            "            currency=\"${4:USD}\"",
+            "            locale=\"${5:en-US}\"",
+            "        />",
+            "        <label for=\"${3:price}\">${6:Price}</label>",
+            "    </p-iftalabel>",
+            "</p-inputgroup>"
         ],
-        "description": "Imports PrimeNG InputGroup and related modules"
+        "description": "InputGroup with infield top-aligned label"
     }
 }

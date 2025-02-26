@@ -1,96 +1,69 @@
 {
-    "PrimeNG KeyFilter Integer": {
-        "prefix": "p-keyfilter-int",
-        "body": [
-            "<input pInputText pKeyFilter=\"int\" placeholder=\"${1:Integers}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for integers"
-    },
-    "PrimeNG KeyFilter Positive Integer": {
-        "prefix": "p-keyfilter-pint",
-        "body": [
-            "<input pInputText pKeyFilter=\"pint\" placeholder=\"${1:Positive Integers}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for positive integers"
-    },
-    "PrimeNG KeyFilter Number": {
-        "prefix": "p-keyfilter-num",
-        "body": [
-            "<input pInputText pKeyFilter=\"num\" placeholder=\"${1:Numbers}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for numbers"
-    },
-    "PrimeNG KeyFilter Positive Number": {
-        "prefix": "p-keyfilter-pnum",
-        "body": [
-            "<input pInputText pKeyFilter=\"pnum\" placeholder=\"${1:Positive Numbers}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for positive numbers"
-    },
-    "PrimeNG KeyFilter Money": {
-        "prefix": "p-keyfilter-money",
-        "body": [
-            "<input pInputText pKeyFilter=\"money\" placeholder=\"${1:Money}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for money format"
-    },
-    "PrimeNG KeyFilter Hex": {
-        "prefix": "p-keyfilter-hex",
-        "body": [
-            "<input pInputText pKeyFilter=\"hex\" placeholder=\"${1:Hex}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for hexadecimal"
-    },
-    "PrimeNG KeyFilter Alpha": {
-        "prefix": "p-keyfilter-alpha",
-        "body": [
-            "<input pInputText pKeyFilter=\"alpha\" placeholder=\"${1:Alphabets}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for alphabets"
-    },
-    "PrimeNG KeyFilter AlphaNumeric": {
-        "prefix": "p-keyfilter-alphanum",
-        "body": [
-            "<input pInputText pKeyFilter=\"alphanum\" placeholder=\"${1:AlphaNumeric}\" />"
-        ],
-        "description": "PrimeNG KeyFilter for alphanumeric"
-    },
-    "PrimeNG KeyFilter Custom Regex": {
-        "prefix": "p-keyfilter-custom",
-        "body": [
-            "<input pInputText [pKeyFilter]=\"${1:/[A-Za-z0-9]/}\" placeholder=\"${2:Custom}\" />"
-        ],
-        "description": "PrimeNG KeyFilter with custom regex"
-    },
-    "PrimeNG KeyFilter Block Space": {
-        "prefix": "p-keyfilter-blockspace",
-        "body": [
-            "<input pInputText [pKeyFilter]=\"${1:/[^\\s]/}\" placeholder=\"${2:No Spaces}\" />"
-        ],
-        "description": "PrimeNG KeyFilter to block spaces"
-    },
-    "PrimeNG KeyFilter Block Chars": {
-        "prefix": "p-keyfilter-blockchars",
-        "body": [
-            "<input pInputText [pKeyFilter]=\"${1:/[^<>*!]/}\" placeholder=\"${2:No Special Chars}\" />"
-        ],
-        "description": "PrimeNG KeyFilter to block specific characters"
-    },
-    "PrimeNG KeyFilter Validate Only": {
-        "prefix": "p-keyfilter-validate",
-        "body": [
-            "<form [formGroup]=\"${1:formGroup}\">",
-            "    <label for=\"${2:integer}\" class=\"font-bold block mb-2\">${3:Integer}</label>",
-            "    <input pInputText id=\"${2:integer}\" pKeyFilter=\"int\" [pValidateOnly]=\"true\" formControlName=\"${4:value}\" class=\"w-full\" />",
-            "</form>"
-        ],
-        "description": "PrimeNG KeyFilter with validate only mode"
-    },
     "PrimeNG KeyFilter Import": {
         "prefix": "p-keyfilter-import",
         "body": [
             "import { KeyFilterModule } from 'primeng/keyfilter';"
         ],
         "description": "Imports PrimeNG KeyFilterModule in TypeScript"
+    },
+    "PrimeNG KeyFilter Integer": {
+        "prefix": "p-keyfilter-int",
+        "body": [
+            "<input pInputText pKeyFilter=\"int\" />"
+        ],
+        "description": "PrimeNG KeyFilter for integer input"
+    },
+    "PrimeNG KeyFilter Number": {
+        "prefix": "p-keyfilter-num",
+        "body": [
+            "<input pInputText pKeyFilter=\"num\" />"
+        ],
+        "description": "PrimeNG KeyFilter for numeric input"
+    },
+    "PrimeNG KeyFilter Money": {
+        "prefix": "p-keyfilter-money",
+        "body": [
+            "<input pInputText pKeyFilter=\"money\" />"
+        ],
+        "description": "PrimeNG KeyFilter for money input"
+    },
+    "PrimeNG KeyFilter Hex": {
+        "prefix": "p-keyfilter-hex",
+        "body": [
+            "<input pInputText pKeyFilter=\"hex\" />"
+        ],
+        "description": "PrimeNG KeyFilter for hexadecimal input"
+    },
+    "PrimeNG KeyFilter Alphabetic": {
+        "prefix": "p-keyfilter-alpha",
+        "body": [
+            "<input pInputText pKeyFilter=\"alpha\" />"
+        ],
+        "description": "PrimeNG KeyFilter for alphabetic input"
+    },
+    "PrimeNG KeyFilter Alphanumeric": {
+        "prefix": "p-keyfilter-alphanum",
+        "body": [
+            "<input pInputText pKeyFilter=\"alphanum\" />"
+        ],
+        "description": "PrimeNG KeyFilter for alphanumeric input"
+    },
+    "PrimeNG KeyFilter Regex": {
+        "prefix": "p-keyfilter-regex",
+        "body": [
+            "<input pInputText [pKeyFilter]=\"${1:blockSpace}\" />",
+            "<input pInputText [pKeyFilter]=\"${2:blockChars}\" />"
+        ],
+        "description": "PrimeNG KeyFilter with custom regex"
+    },
+    "PrimeNG KeyFilter Reactive Forms": {
+        "prefix": "p-keyfilter-reactive",
+        "body": [
+            "<form [formGroup]=\"${1:formGroup}\">",
+            "    <label for=\"integer\" class=\"font-bold block mb-2\"> Integer </label>",
+            "    <input pInputText id=\"integer\" pKeyFilter=\"int\" class=\"w-full\" formControlName=\"${2:value}\" />",
+            "</form>"
+        ],
+        "description": "PrimeNG KeyFilter used with reactive forms"
     }
 }

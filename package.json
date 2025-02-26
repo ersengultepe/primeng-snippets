@@ -16,9 +16,9 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "1.0.0",
+  "version": "1.0.2",
   "engines": {
-    "vscode": "^1.40.0"
+    "vscode": "^1.10.0"
   },
   "categories": [
     "Snippets",
@@ -257,7 +257,7 @@
       },
       {
         "language": "typescript",
-        "path": "./snippets/button/treeselect.code-snippets"
+        "path": "./snippets/button/button-snippets.code-snippets"
       },
       {
         "language": "html",

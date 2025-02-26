@@ -1,54 +1,92 @@
 {
-    "PrimeNG InputText Basic": {
-        "prefix": "p-inputtext-basic",
-        "body": [
-            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" />"
-        ],
-        "description": "Basic PrimeNG InputText"
-    },
-    "PrimeNG InputText Small": {
-        "prefix": "p-inputtext-small",
-        "body": [
-            "<input type=\"text\" pInputText size=\"small\" [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" />"
-        ],
-        "description": "PrimeNG InputText with small size"
-    },
-    "PrimeNG InputText Large": {
-        "prefix": "p-inputtext-large",
-        "body": [
-            "<input type=\"text\" pInputText size=\"large\" [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" />"
-        ],
-        "description": "PrimeNG InputText with large size"
-    },
-    "PrimeNG InputText FloatLabel": {
-        "prefix": "p-inputtext-floatlabel",
-        "body": [
-            "<p-floatlabel>",
-            "    <input type=\"text\" pInputText id=\"${1:inputtext}\" [(ngModel)]=\"${2:value}\" />",
-            "    <label for=\"${1:inputtext}\">${3:Text}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG InputText with FloatLabel"
-    },
-    "PrimeNG InputText Disabled": {
-        "prefix": "p-inputtext-disabled",
-        "body": [
-            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" disabled />"
-        ],
-        "description": "PrimeNG InputText in disabled state"
-    },
-    "PrimeNG InputText Invalid": {
-        "prefix": "p-inputtext-invalid",
-        "body": [
-            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" placeholder=\"${2:Enter text}\" class=\"ng-invalid ng-dirty\" />"
-        ],
-        "description": "PrimeNG InputText with invalid state styling"
-    },
     "PrimeNG InputText Import": {
         "prefix": "p-inputtext-import",
         "body": [
             "import { InputTextModule } from 'primeng/inputtext';"
         ],
         "description": "Imports PrimeNG InputTextModule in TypeScript"
+    },
+    "PrimeNG InputText Basic": {
+        "prefix": "p-inputtext-basic",
+        "body": [
+            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" />"
+        ],
+        "description": "Basic PrimeNG InputText component with ngModel binding"
+    },
+    "PrimeNG InputText Reactive Forms": {
+        "prefix": "p-inputtext-reactive",
+        "body": [
+            "<input type=\"text\" pInputText formControlName=\"${1:text}\" />"
+        ],
+        "description": "PrimeNG InputText used with reactive forms"
+    },
+    "PrimeNG InputText Float Label": {
+        "prefix": "p-inputtext-float-label",
+        "body": [
+            "<p-floatlabel>",
+            "    <input pInputText id=\"over_label\" [(ngModel)]=\"${1:value1}\" autocomplete=\"off\" />",
+            "    <label for=\"over_label\">Over Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"in\">",
+            "    <input pInputText id=\"in_label\" [(ngModel)]=\"${2:value2}\" autocomplete=\"off\" />",
+            "    <label for=\"in_label\">In Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"on\">",
+            "    <input pInputText id=\"on_label\" [(ngModel)]=\"${3:value3}\" autocomplete=\"off\" />",
+            "    <label for=\"on_label\">On Label</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG InputText with float label variations"
+    },
+    "PrimeNG InputText Ifta Label": {
+        "prefix": "p-inputtext-ifta-label",
+        "body": [
+            "<p-iftalabel>",
+            "    <input pInputText id=\"username\" [(ngModel)]=\"${1:value}\" autocomplete=\"off\" />",
+            "    <label for=\"username\">Username</label>",
+            "</p-iftalabel>"
+        ],
+        "description": "PrimeNG InputText with IftaLabel"
+    },
+    "PrimeNG InputText Sizes": {
+        "prefix": "p-inputtext-sizes",
+        "body": [
+            "<input pInputText [(ngModel)]=\"${1:value1}\" type=\"text\" pSize=\"small\" placeholder=\"Small\" />",
+            "<input pInputText [(ngModel)]=\"${2:value2}\" type=\"text\" placeholder=\"Normal\" />",
+            "<input pInputText [(ngModel)]=\"${3:value3}\" type=\"text\" pSize=\"large\" placeholder=\"Large\" />"
+        ],
+        "description": "PrimeNG InputText with different sizes"
+    },
+    "PrimeNG InputText Help Text": {
+        "prefix": "p-inputtext-help-text",
+        "body": [
+            "<div class=\"flex flex-col gap-2\">",
+            "    <label for=\"username\">Username</label>",
+            "    <input pInputText id=\"username\" aria-describedby=\"username-help\" [(ngModel)]=\"${1:value}\" />",
+            "    <small id=\"username-help\">Enter your username to reset your password.</small>",
+            "</div>"
+        ],
+        "description": "PrimeNG InputText with help text"
+    },
+    "PrimeNG InputText Filled": {
+        "prefix": "p-inputtext-filled",
+        "body": [
+            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" variant=\"filled\" />"
+        ],
+        "description": "PrimeNG InputText with filled variant"
+    },
+    "PrimeNG InputText Invalid": {
+        "prefix": "p-inputtext-invalid",
+        "body": [
+            "<input pInputText [(ngModel)]=\"${1:value}\" class=\"ng-invalid ng-dirty\" placeholder=\"Name\" />"
+        ],
+        "description": "PrimeNG InputText in invalid state"
+    },
+    "PrimeNG InputText Disabled": {
+        "prefix": "p-inputtext-disabled",
+        "body": [
+            "<input pInputText [disabled]=\"true\" [(ngModel)]=\"${1:value}\" />"
+        ],
+        "description": "PrimeNG InputText in disabled state"
     }
 }

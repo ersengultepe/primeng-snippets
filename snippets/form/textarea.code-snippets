@@ -1,47 +1,72 @@
 {
-    "PrimeNG Textarea Basic": {
-        "prefix": "p-textarea-basic",
-        "body": [
-            "<textarea rows=\"5\" cols=\"30\" pTextarea placeholder=\"${1:Your Message}\"></textarea>"
-        ],
-        "description": "Basic PrimeNG Textarea"
-    },
-    "PrimeNG Textarea AutoResize": {
-        "prefix": "p-textarea-autoresize",
-        "body": [
-            "<textarea rows=\"5\" cols=\"30\" pTextarea [autoResize]=\"true\" placeholder=\"${1:Your Message}\"></textarea>"
-        ],
-        "description": "PrimeNG Textarea with auto-resize"
-    },
-    "PrimeNG Textarea FloatLabel": {
-        "prefix": "p-textarea-floatlabel",
-        "body": [
-            "<p-floatlabel>",
-            "    <textarea id=\"${1:floatlabel}\" rows=\"5\" cols=\"30\" pTextarea [(ngModel)]=\"${2:value}\"></textarea>",
-            "    <label for=\"${1:floatlabel}\">${3:Your Message}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG Textarea with FloatLabel"
-    },
-    "PrimeNG Textarea Disabled": {
-        "prefix": "p-textarea-disabled",
-        "body": [
-            "<textarea rows=\"5\" cols=\"30\" pTextarea placeholder=\"${1:Your Message}\" [disabled]=\"true\"></textarea>"
-        ],
-        "description": "PrimeNG Textarea in disabled state"
-    },
-    "PrimeNG Textarea Invalid": {
-        "prefix": "p-textarea-invalid",
-        "body": [
-            "<textarea rows=\"5\" cols=\"30\" pTextarea placeholder=\"${1:Your Message}\" class=\"ng-invalid ng-dirty\"></textarea>"
-        ],
-        "description": "PrimeNG Textarea with invalid state styling"
-    },
     "PrimeNG Textarea Import": {
         "prefix": "p-textarea-import",
         "body": [
             "import { TextareaModule } from 'primeng/textarea';"
         ],
-        "description": "Imports PrimeNG TextareaModule in TypeScript"
+        "description": "Import statement for PrimeNG Textarea module"
+    },
+    "PrimeNG Textarea Basic": {
+        "prefix": "p-textarea-basic",
+        "body": [
+            "<textarea rows=\"${1:5}\" cols=\"${2:30}\" pTextarea [(ngModel)]=\"${3:value}\"></textarea>"
+        ],
+        "description": "Basic Textarea with two-way binding"
+    },
+    "PrimeNG Textarea Reactive": {
+        "prefix": "p-textarea-reactive",
+        "body": [
+            "<form [formGroup]=\"${1:formGroup}\">    <textarea rows=\"${2:5}\" cols=\"${3:30}\" pTextarea formControlName=\"${4:text}\"></textarea></form>"
+        ],
+        "description": "Textarea with reactive forms integration"
+    },
+    "PrimeNG Textarea AutoResize": {
+        "prefix": "p-textarea-autoresize",
+        "body": [
+            "<textarea rows=\"${1:5}\" cols=\"${2:30}\" pTextarea [autoResize]=\"${3:true}\"></textarea>"
+        ],
+        "description": "Textarea with auto-resize functionality"
+    },
+    "PrimeNG Textarea FloatLabel": {
+        "prefix": "p-textarea-floatlabel",
+        "body": [
+            "<p-floatlabel class=\"w-full\" variant=\"${1:over}\"> <textarea pTextarea id=\"${2:label_id}\" [(ngModel)]=\"${3:value}\" rows=\"${4:5}\" cols=\"${5:30}\" style=\"resize: none\" class=\"h-full\"    ></textarea>    <label for=\"${2:label_id}\">${6:Label}</label></p-floatlabel>"
+        ],
+        "description": "Textarea with floating label"
+    },
+    "PrimeNG Textarea IftaLabel": {
+        "prefix": "p-textarea-iftalabel",
+        "body": [
+            "<p-iftalabel class=\"w-full\">    <textarea        pTextarea        id=\"${1:field_id}\"        [(ngModel)]=\"${2:value}\"        rows=\"${3:5}\"        cols=\"${4:30}\"        style=\"resize: none\"    ></textarea>    <label for=\"${1:field_id}\">${5:Label}</label></p-iftalabel>"
+        ],
+        "description": "Textarea with infield top-aligned label"
+    },
+    "PrimeNG Textarea Sizes": {
+        "prefix": "p-textarea-sizes",
+        "body": [
+            "<textarea pTextarea [(ngModel)]=\"${1:value}\" pSize=\"${2:small}\" placeholder=\"${3:Size}\" rows=\"${4:3}\"></textarea>"
+        ],
+        "description": "Textarea with size variants"
+    },
+    "PrimeNG Textarea Filled": {
+        "prefix": "p-textarea-filled",
+        "body": [
+            "<textarea [(ngModel)]=\"${1:value}\" variant=\"filled\" rows=\"${2:5}\" cols=\"${3:30}\" pTextarea></textarea>"
+        ],
+        "description": "Textarea with filled style variant"
+    },
+    "PrimeNG Textarea Invalid": {
+        "prefix": "p-textarea-invalid",
+        "body": [
+            "<textarea rows=\"${1:5}\" cols=\"${2:30}\" pTextarea [(ngModel)]=\"${3:value}\" class=\"ng-invalid ng-dirty\" placeholder=\"${4:Placeholder}\"></textarea>"
+        ],
+        "description": "Textarea with validation error state"
+    },
+    "PrimeNG Textarea Disabled": {
+        "prefix": "p-textarea-disabled",
+        "body": [
+            "<textarea rows=\"${1:5}\" cols=\"${2:30}\" pTextarea [disabled]=\"${3:true}\"></textarea>"
+        ],
+        "description": "Disabled Textarea"
     }
 }

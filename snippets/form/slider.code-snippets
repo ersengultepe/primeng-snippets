@@ -1,51 +1,55 @@
 {
-    "PrimeNG Slider Basic": {
-        "prefix": "p-slider-basic",
-        "body": [
-            "<p-slider [(ngModel)]=\"${1:value}\"></p-slider>"
-        ],
-        "description": "PrimeNG Slider with basic usage"
-    },
-    "PrimeNG Slider Range": {
-        "prefix": "p-slider-range",
-        "body": [
-            "<p-slider [(ngModel)]=\"${1:rangeValues}\" [range]=\"true\"></p-slider>"
-        ],
-        "description": "PrimeNG Slider with range selection"
-    },
-    "PrimeNG Slider Vertical": {
-        "prefix": "p-slider-vertical",
-        "body": [
-            "<p-slider [(ngModel)]=\"${1:value}\" orientation=\"vertical\"></p-slider>"
-        ],
-        "description": "PrimeNG Slider in vertical orientation"
-    },
-    "PrimeNG Slider Step": {
-        "prefix": "p-slider-step",
-        "body": [
-            "<p-slider [(ngModel)]=\"${1:value}\" [step]=\"${2:10}\"></p-slider>"
-        ],
-        "description": "PrimeNG Slider with custom step value"
-    },
-    "PrimeNG Slider Min-Max": {
-        "prefix": "p-slider-minmax",
-        "body": [
-            "<p-slider [(ngModel)]=\"${1:value}\" [min]=\"${2:0}\" [max]=\"${3:100}\"></p-slider>"
-        ],
-        "description": "PrimeNG Slider with custom min and max values"
-    },
-    "PrimeNG Slider OnChange Event": {
-        "prefix": "p-slider-onChange",
-        "body": [
-            "<p-slider [(ngModel)]=\"${1:value}\" (onChange)=\"${2:onSliderChange($event)}\"></p-slider>"
-        ],
-        "description": "PrimeNG Slider with onChange event"
-    },
     "PrimeNG Slider Import": {
         "prefix": "p-slider-import",
         "body": [
             "import { SliderModule } from 'primeng/slider';"
-        ],
-        "description": "Imports PrimeNG Slider in TypeScript"
+        ]
+    },
+    "PrimeNG Slider Basic": {
+        "prefix": "p-slider-basic",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\" styleClass=\"w-56\"></p-slider>"
+        ]
+    },
+    "PrimeNG Slider Reactive Forms": {
+        "prefix": "p-slider-reactive",
+        "body": [
+            "<form [formGroup]=\"${1:formGroup}\">",
+            "    <p-slider formControlName=\"${2:value}\" styleClass=\"w-56\"></p-slider>",
+            "</form>"
+        ]
+    },
+    "PrimeNG Slider Input": {
+        "prefix": "p-slider-input",
+        "body": [
+            "<input type=\"text\" pInputText [(ngModel)]=\"${1:value}\" class=\"w-full mb-4\"/>",
+            "<p-slider [(ngModel)]=\"${1:value}\" class=\"w-full\"></p-slider>"
+        ]
+    },
+    "PrimeNG Slider Step": {
+        "prefix": "p-slider-step",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\" [step]=\"${2:20}\" styleClass=\"w-56\"></p-slider>"
+        ]
+    },
+    "PrimeNG Slider Range": {
+        "prefix": "p-slider-range",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:rangeValues}\" [range]=\"true\" styleClass=\"w-56\"></p-slider>"
+        ]
+    },
+    "PrimeNG Slider Filter": {
+        "prefix": "p-slider-filter",
+        "body": [
+            "<img alt=\"user header\" class=\"w-full md:w-80 rounded mb-6\" src=\"https://primefaces.org/cdn/primevue/images/card-vue.jpg\" [style]=\"${1:filterStyle}\" />",
+            "<p-selectbutton [(ngModel)]=\"${2:filter}\" [options]=\"${3:filterOptions}\" optionLabel=\"label\" optionValue=\"value\" class=\"mb-4\" />",
+            "<p-slider [(ngModel)]=\"${2:filterValues}[${2:filter}]\" class=\"w-56\" [min]=\"0\" [max]=\"200\"></p-slider>"
+        ]
+    },
+    "PrimeNG Slider Vertical": {
+        "prefix": "p-slider-vertical",
+        "body": [
+            "<p-slider [(ngModel)]=\"${1:value}\" orientation=\"vertical\" styleClass=\"h-56\"></p-slider>"
+        ]
     }
 }

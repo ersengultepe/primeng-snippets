@@ -1,69 +1,154 @@
-{
-    "PrimeNG TreeSelect Basic": {
-        "prefix": "p-treeselect-basic",
-        "body": [
-            "<p-treeselect [options]=\"${1:nodes}\" [(ngModel)]=\"${2:selectedNode}\" placeholder=\"${3:Select Item}\" class=\"md:w-80 w-full\" />"
-        ],
-        "description": "Basic PrimeNG TreeSelect"
-    },
-    "PrimeNG TreeSelect Single Expanded": {
-        "prefix": "p-treeselect-single-expanded",
-        "body": [
-            "<p-treeselect [options]=\"${1:nodes}\" [(ngModel)]=\"${2:selectedNode}\" placeholder=\"${3:Select Item}\" [panelStyle]=\"{ 'width': '30rem' }\" [expanded]=\"true\" class=\"md:w-80 w-full\" />"
-        ],
-        "description": "PrimeNG TreeSelect with single selection and expanded view"
-    },
-    "PrimeNG TreeSelect Checkbox": {
-        "prefix": "p-treeselect-checkbox",
-        "body": [
-            "<p-treeselect [options]=\"${1:nodes}\" [(ngModel)]=\"${2:selectedNodes}\" placeholder=\"${3:Select Items}\" [selectionMode]=\"'checkbox'\" class=\"md:w-80 w-full\" />"
-        ],
-        "description": "PrimeNG TreeSelect with checkbox selection"
-    },
-    "PrimeNG TreeSelect Filter": {
-        "prefix": "p-treeselect-filter",
-        "body": [
-            "<p-treeselect [options]=\"${1:nodes}\" [(ngModel)]=\"${2:selectedNode}\" placeholder=\"${3:Select Item}\" [filter]=\"true\" class=\"md:w-80 w-full\" />"
-        ],
-        "description": "PrimeNG TreeSelect with filter"
-    },
-    "PrimeNG TreeSelect Templated": {
-        "prefix": "p-treeselect-templated",
-        "body": [
-            "<p-treeselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" [panelStyle]=\"{ 'width': '30rem' }\" class=\"md:w-80 w-full\">",
-            "    <ng-template pTemplate=\"value\" let-value>",
-            "        <div class=\"flex items-center gap-2\">",
-            "            <ng-container *ngIf=\"value && value.data\">",
-            "                <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + value.data.code.toLowerCase()\" style=\"width: 18px\" />",
-            "                <div>{{ value.label }}</div>",
-            "            </ng-container>",
-            "            <ng-container *ngIf=\"!value || !value.data\">",
-            "                ${3:Select Item}",
-            "            </ng-container>",
-            "        </div>",
-            "    </ng-template>",
-            "    <ng-template pTemplate=\"item\" let-option>",
-            "        <div class=\"flex items-center gap-2\">",
-            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + option.data.code.toLowerCase()\" style=\"width: 18px\" />",
-            "            <div>{{ option.label }}</div>",
-            "        </div>",
-            "    </ng-template>",
-            "</p-treeselect>"
-        ],
-        "description": "PrimeNG TreeSelect with custom templating"
-    },
-    "PrimeNG TreeSelect Disabled": {
-        "prefix": "p-treeselect-disabled",
-        "body": [
-            "<p-treeselect [options]=\"${1:nodes}\" [(ngModel)]=\"${2:selectedNode}\" placeholder=\"${3:Select Item}\" [disabled]=\"true\" class=\"md:w-80 w-full\" />"
-        ],
-        "description": "PrimeNG TreeSelect in disabled state"
-    },
+{    
     "PrimeNG TreeSelect Import": {
-        "prefix": "p-treeselect-import",
+        "prefix": "primeng-treeselect-import",
         "body": [
-            "import { TreeSelectModule } from 'primeng/treeselect';"
+            "import { TreeSelectModule } from 'primeng/treeselect';",
         ],
-        "description": "Imports PrimeNG TreeSelectModule in TypeScript"
-    }
+        "description": "PrimeNG TreeSelect Import"
+    },
+        "PrimeNG TreeSelect Basic": {
+            "prefix": "p-treeselect-basic",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNode}\"",
+                "    placeholder=\"${3:Select Item}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "Basic PrimeNG TreeSelect component"
+        },
+        "PrimeNG TreeSelect Reactive": {
+            "prefix": "p-treeselect-reactive",
+            "body": [
+                "<p-treeselect",
+                "    formControlName=\"${1:formControlName}\"",
+                "    [options]=\"${2:nodes}\"",
+                "    placeholder=\"${3:Select Item}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "TreeSelect with Reactive Forms integration"
+        },
+        "PrimeNG TreeSelect Multiple": {
+            "prefix": "p-treeselect-multiple",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNodes}\"",
+                "    selectionMode=\"multiple\"",
+                "    [metaKeySelection]=\"${3:false}\"",
+                "    placeholder=\"${4:Select Items}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "TreeSelect with multiple selection support"
+        },
+        "PrimeNG TreeSelect Checkbox": {
+            "prefix": "p-treeselect-checkbox",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNodes}\"",
+                "    selectionMode=\"checkbox\"",
+                "    display=\"chip\"",
+                "    [metaKeySelection]=\"${3:false}\"",
+                "    placeholder=\"${4:Select Items}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "TreeSelect with checkbox selection mode"
+        },
+        "PrimeNG TreeSelect Virtual Scroll": {
+            "prefix": "p-treeselect-virtual",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNode}\"",
+                "    [virtualScroll]=\"${3:true}\"",
+                "    [virtualScrollItemSize]=\"${4:46}\"",
+                "    [virtualScrollOptions]=\"{scrollHeight: '${5:200px}'}\"",
+                "    placeholder=\"${6:Select Item}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "TreeSelect with virtual scrolling support"
+        },
+        "PrimeNG TreeSelect Lazy": {
+            "prefix": "p-treeselect-lazy",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNode}\"",
+                "    [loading]=\"${3:loading}\"",
+                "    (onNodeExpand)=\"${4:onNodeExpand($event)}\"",
+                "    placeholder=\"${5:Select Item}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "TreeSelect with lazy loading support"
+        },
+        "PrimeNG TreeSelect Filter": {
+            "prefix": "p-treeselect-filter",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNode}\"",
+                "    [filter]=\"${3:true}\"",
+                "    [filterInputAutoFocus]=\"${4:true}\"",
+                "    placeholder=\"${5:Select Item}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "TreeSelect with filtering support"
+        },
+        "PrimeNG TreeSelect Template": {
+            "prefix": "p-treeselect-template",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNode}\"",
+                "    placeholder=\"${3:Select Item}\">",
+                "    <ng-template #dropdownicon>",
+                "        <i class=\"pi pi-search\"></i>",
+                "    </ng-template>",
+                "    <ng-template #header>",
+                "        <div class=\"font-medium px-3 py-2\">Available Files</div>",
+                "    </ng-template>",
+                "    <ng-template #footer>",
+                "        <div class=\"px-3 pt-1 pb-2 flex justify-between\">",
+                "            <p-button label=\"Add New\" severity=\"secondary\" text size=\"small\" icon=\"pi pi-plus\" />",
+                "            <p-button label=\"Remove All\" severity=\"danger\" text size=\"small\" icon=\"pi pi-minus\" />",
+                "        </div>",
+                "    </ng-template>",
+                "</p-treeselect>"
+            ],
+            "description": "TreeSelect with custom templates"
+        },
+        "PrimeNG TreeSelect Disabled": {
+            "prefix": "p-treeselect-disabled",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNode}\"",
+                "    placeholder=\"${3:Select Item}\"",
+                "    [disabled]=\"true\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "Disabled TreeSelect"
+        },
+        "PrimeNG TreeSelect Filled": {
+            "prefix": "p-treeselect-filled",
+            "body": [
+                "<p-treeselect",
+                "    [options]=\"${1:nodes}\"",
+                "    [(ngModel)]=\"${2:selectedNode}\"",
+                "    variant=\"filled\"",
+                "    placeholder=\"${3:Select Item}\"",
+                "    class=\"md:w-80 w-full\"",
+                "    containerStyleClass=\"w-full\">"
+            ],
+            "description": "TreeSelect with filled style"
+        }
 }

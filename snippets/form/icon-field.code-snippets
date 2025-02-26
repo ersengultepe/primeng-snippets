@@ -1,98 +1,97 @@
 {
-    "PrimeNG IconField Search Right": {
-        "prefix": "p-iconfield-search-right",
-        "body": [
-            "<p-iconfield>",
-            "    <p-inputicon styleClass=\"pi pi-search\" />",
-            "    <input type=\"text\" pInputText placeholder=\"${1:Search}\" />",
-            "</p-iconfield>"
-        ],
-        "description": "PrimeNG IconField with search icon on the right"
-    },
-    "PrimeNG IconField Spinner Right": {
-        "prefix": "p-iconfield-spinner-right",
-        "body": [
-            "<p-iconfield>",
-            "    <input type=\"text\" pInputText />",
-            "    <p-inputicon styleClass=\"pi pi-spinner pi-spin\" />",
-            "</p-iconfield>"
-        ],
-        "description": "PrimeNG IconField with spinning icon on the right"
-    },
-    "PrimeNG IconField SVG Left": {
-        "prefix": "p-iconfield-svg-left",
-        "body": [
-            "<p-iconfield iconPosition=\"left\">",
-            "    <p-inputicon>",
-            "        <svg width=\"20\" height=\"20\" viewBox=\"0 0 35 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
-            "            <path d=\"${1:M15.1934 0V0V0L0.0391235 5.38288L2.35052 25.3417L15.1934 32.427V32.427V32.427L28.0364 25.3417L30.3478 5.38288L15.1934 0Z}\" fill=\"var(--p-primary-color)\" />",
-            "            <path d=\"${2:M19.6399 15.3776L18.1861 15.0547L19.3169 16.6695V21.6755L23.1938 18.4458V12.9554L21.4169 13.6013L19.6399 15.3776Z}\" fill=\"var(--p-text-color)\" />",
-            "        </svg>",
-            "    </p-inputicon>",
-            "    <input type=\"text\" pInputText placeholder=\"${3:Search}\" />",
-            "</p-iconfield>"
-        ],
-        "description": "PrimeNG IconField with custom SVG icon on the left"
-    },
-    "PrimeNG IconField FloatLabel Over": {
-        "prefix": "p-iconfield-float-over",
-        "body": [
-            "<p-floatlabel>",
-            "    <p-iconfield>",
-            "        <p-inputicon class=\"pi pi-search\" />",
-            "        <input pInputText id=\"${1:over_label}\" [(ngModel)]=\"${2:value1}\" autocomplete=\"off\" />",
-            "    </p-iconfield>",
-            "    <label for=\"${1:over_label}\">${3:Over Label}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG IconField with FloatLabel (Over variant)"
-    },
-    "PrimeNG IconField FloatLabel In": {
-        "prefix": "p-iconfield-float-in",
-        "body": [
-            "<p-floatlabel variant=\"in\">",
-            "    <p-iconfield>",
-            "        <p-inputicon class=\"pi pi-search\" />",
-            "        <input pInputText id=\"${1:in_label}\" [(ngModel)]=\"${2:value2}\" autocomplete=\"off\" />",
-            "    </p-iconfield>",
-            "    <label for=\"${1:in_label}\">${3:In Label}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG IconField with FloatLabel (In variant)"
-    },
-    "PrimeNG IconField FloatLabel On": {
-        "prefix": "p-iconfield-float-on",
-        "body": [
-            "<p-floatlabel variant=\"on\">",
-            "    <p-iconfield>",
-            "        <p-inputicon class=\"pi pi-search\" />",
-            "        <input pInputText id=\"${1:on_label}\" [(ngModel)]=\"${2:value3}\" autocomplete=\"off\" />",
-            "    </p-iconfield>",
-            "    <label for=\"${1:on_label}\">${3:On Label}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG IconField with FloatLabel (On variant)"
-    },
-    "PrimeNG IconField IftaLabel": {
-        "prefix": "p-iconfield-ifta",
-        "body": [
-            "<p-iftalabel>",
-            "    <p-iconfield>",
-            "        <p-inputicon class=\"pi pi-user\" />",
-            "        <input pInputText id=\"${1:username}\" [(ngModel)]=\"${2:value}\" autocomplete=\"off\" />",
-            "    </p-iconfield>",
-            "    <label for=\"${1:username}\">${3:Username}</label>",
-            "</p-iftalabel>"
-        ],
-        "description": "PrimeNG IconField with IftaLabel for infield top-aligned label"
-    },
-    "PrimeNG IconField Imports": {
+    "PrimeNG IconField Import": {
         "prefix": "p-iconfield-import",
         "body": [
             "import { IconFieldModule } from 'primeng/iconfield';",
-            "import { InputIconModule } from 'primeng/inputicon';",
-            "import { InputTextModule } from 'primeng/inputtext';"
+            "import { InputIconModule } from 'primeng/inputicon';"
         ],
-        "description": "Imports for PrimeNG IconField, InputIcon, and InputText modules"
+        "description": "Import statements for PrimeNG IconField modules"
+    },
+    "PrimeNG IconField Basic": {
+        "prefix": "p-iconfield-basic",
+        "body": [
+            "<p-iconfield>",
+            "    <p-inputicon styleClass=\"pi pi-${1:search}\" />",
+            "    <input type=\"text\" pInputText placeholder=\"${2:Search}\" />",
+            "</p-iconfield>"
+        ],
+        "description": "Basic IconField with search icon"
+    },
+    "PrimeNG IconField Template": {
+        "prefix": "p-iconfield-template",
+        "body": [
+            "<p-iconfield iconPosition=\"${1:left}\">",
+            "    <p-inputicon>",
+            "        <svg width=\"20\" height=\"20\" viewBox=\"0 0 35 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "            <path d=\"${2:path1}\" fill=\"var(--p-primary-color)\" />",
+            "            <path d=\"${3:path2}\" fill=\"var(--p-text-color)\" />",
+            "        </svg>",
+            "    </p-inputicon>",
+            "    <input type=\"text\" pInputText placeholder=\"${4:Search}\" />",
+            "</p-iconfield>"
+        ],
+        "description": "IconField with custom SVG icon"
+    },
+    "PrimeNG FloatLabel Over": {
+        "prefix": "p-floatlabel-over",
+        "body": [
+            "<p-floatlabel>",
+            "    <p-iconfield>",
+            "        <p-inputicon class=\"pi pi-${1:search}\" />",
+            "        <input pInputText id=\"${2:label_id}\" [(ngModel)]=\"${3:value1}\" autocomplete=\"off\" />",
+            "    </p-iconfield>",
+            "    <label for=\"${2:label_id}\">${4:Label}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "FloatLabel with over variant"
+    },
+    "PrimeNG FloatLabel In": {
+        "prefix": "p-floatlabel-in",
+        "body": [
+            "<p-floatlabel variant=\"in\">",
+            "    <p-iconfield>",
+            "        <p-inputicon class=\"pi pi-${1:search}\" />",
+            "        <input pInputText id=\"${2:label_id}\" [(ngModel)]=\"${3:value2}\" autocomplete=\"off\" />",
+            "    </p-iconfield>",
+            "    <label for=\"${2:label_id}\">${4:Label}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "FloatLabel with in variant"
+    },
+    "PrimeNG FloatLabel On": {
+        "prefix": "p-floatlabel-on",
+        "body": [
+            "<p-floatlabel variant=\"on\">",
+            "    <p-iconfield>",
+            "        <p-inputicon class=\"pi pi-${1:search}\" />",
+            "        <input pInputText id=\"${2:label_id}\" [(ngModel)]=\"${3:value3}\" autocomplete=\"off\" />",
+            "    </p-iconfield>",
+            "    <label for=\"${2:label_id}\">${4:Label}</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "FloatLabel with on variant"
+    },
+    "PrimeNG IconField IftaLabel": {
+        "prefix": "p-iconfield-iftalabel",
+        "body": [
+            "<p-iftalabel>",
+            "    <p-iconfield>",
+            "        <p-inputicon class=\"pi pi-${1:user}\" />",
+            "        <input pInputText id=\"${2:username}\" [(ngModel)]=\"${3:value}\" autocomplete=\"off\" />",
+            "    </p-iconfield>",
+            "    <label for=\"${2:username}\">${4:Username}</label>",
+            "</p-iftalabel>"
+        ],
+        "description": "IconField with infield top-aligned label"
+    },
+    "PrimeNG IconField Sizes": {
+        "prefix": "p-iconfield-sizes",
+        "body": [
+            "<p-iconfield>",
+            "    <p-inputicon class=\"pi pi-${1:search}\" />",
+            "    <input pInputText [(ngModel)]=\"${2:value1}\" placeholder=\"${3:Size}\" size=\"${4:small}\" />",
+            "</p-iconfield>"
+        ],
+        "description": "IconField with different sizes"
     }
 }

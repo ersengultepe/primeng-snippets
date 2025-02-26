@@ -1,50 +1,161 @@
 {
     "PrimeNG MultiSelect Basic": {
-        "prefix": "p-multiSelect-basic",
+        "prefix": "p-multiselect-basic",
         "body": [
-            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" optionLabel=\"${3:name}\" placeholder=\"${4:Select Items}\"></p-multiSelect>"
+            "<p-multiselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" optionLabel=\"${3:name}\" placeholder=\"${4:Select Cities}\" [maxSelectedLabels]=\"${5:3}\" styleClass=\"${6:w-full md:w-80}\" />"
         ],
         "description": "PrimeNG MultiSelect with basic usage"
     },
-    "PrimeNG MultiSelect Filter": {
-        "prefix": "p-multiSelect-filter",
+    "PrimeNG MultiSelect Reactive Forms Snippet": {
+        "prefix": "p-multiSelect-reactive-forms",
         "body": [
-            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" [filter]=\"true\" filterPlaceholder=\"${3:Search}\"></p-multiSelect>"
+            "<form [formGroup]=\"${1:formGroup}\" class=\"${2:card flex justify-center}\">",
+            "    <p-multiselect [options]=\"${3:cities}\" formControlName=\"${4:selectedCities}\" optionLabel=\"${5:name}\" placeholder=\"${6:Select Cities}\" [maxSelectedLabels]=\"${7:3}\" styleClass=\"${8:w-full md:w-80}\" />",
+            "</form>"
         ],
-        "description": "PrimeNG MultiSelect with filter functionality"
+        "description": "PrimeNG MultiSelect Reactive Forms Snippet"
     },
-    "PrimeNG MultiSelect Disabled": {
-        "prefix": "p-multiSelect-disabled",
+    "PrimeNG Chips Snippet": {
+        "prefix": "p-multiSelect-chips",
         "body": [
-            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" [disabled]=\"${3:true}\"></p-multiSelect>"
+            "<p-multiselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" placeholder=\"${3:Select Cities}\" optionLabel=\"${4:name}\" display=\"${5:chip}\" styleClass=\"${6:w-full md:w-80}\" />"
         ],
-        "description": "PrimeNG MultiSelect in disabled state"
+        "description": "PrimeNG Chips Snippet"
     },
-    "PrimeNG MultiSelect Custom Templates": {
-        "prefix": "p-multiSelect-template",
+    "PrimeNG MultiSelect Group": {
+        "prefix": "p-multiselect-group",
         "body": [
-            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\">",
-            "    <ng-template pTemplate=\"item\" let-item>",
-            "        <div class=\"flex align-items-center\">",
-            "            <span>{{ item.name }}</span>",
+            "<p-multiselect [options]=\"${1:groupedCities}\" [group]=\"${2:true}\" [(ngModel)]=\"${3:selectedCities}\" placeholder=\"${4:Select Cities}\" scrollHeight=\"${5:250px}\" display=\"${6:chip}\" styleClass=\"${7:w-full md:w-80}\">",
+            "    <ng-template let-group pTemplate=\"group\">",
+            "        <div class=\"${8:flex items-center}\">",
+            "            <img src=\"${9:https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png}\" [class]=\"${10:'mr-2 flag flag-' + group.value}\" style=\"${11:width: 20px}\" />",
+            "            <span>{{ ${12:group.label} }}</span>",
             "        </div>",
             "    </ng-template>",
-            "</p-multiSelect>"
+            "</p-multiselect>"
         ],
-        "description": "PrimeNG MultiSelect with custom item template"
+        "description": "PrimeNG MultiSelect Group"
     },
-    "PrimeNG MultiSelect OnChange Event": {
-        "prefix": "p-multiSelect-onChange",
+    "PrimeNG MultiSelect Template": {
+        "prefix": "p-multiselect-template",
         "body": [
-            "<p-multiSelect [(ngModel)]=\"${1:selectedItems}\" [options]=\"${2:items}\" (onChange)=\"${3:onItemsChange($event)}\"></p-multiSelect>"
+            "<p-multiselect [options]=\"${1:countries}\" [(ngModel)]=\"${2:selectedCountries}\" placeholder=\"${3:Select Countries}\" optionLabel=\"${4:name}\" styleClass=\"${5:w-full md:w-80}\" display=\"${6:chip}\">",
+            "    <ng-template let-country pTemplate=\"item\">",
+            "        <div class=\"${7:flex items-center gap-2}\">",
+            "            <img src=\"${8:https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png}\" [class]=\"${9:'flag flag-' + country.code.toLowerCase()}\" style=\"${10:width: 18px}\" />",
+            "            <div>{{ ${11:country.name} }}</div>",
+            "        </div>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"dropdownicon\">",
+            "        <i class=\"${12:pi pi-map}\"></i>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"filtericon\">",
+            "        <i class=\"${13:pi pi-map-marker}\"></i>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"header\">",
+            "        <div class=\"${14:font-medium px-3 py-2}\">{{ ${15:Available Countries} }}</div>",
+            "    </ng-template>",
+            "    <ng-template pTemplate=\"footer\">",
+            "        <div class=\"${16:p-3 flex justify-between}\">",
+            "            <p-button label=\"${17:Add New}\" severity=\"${18:secondary}\" text=\"${19:true}\" size=\"${20:small}\" icon=\"${21:pi pi-plus}\" />",
+            "            <p-button label=\"${22:Remove All}\" severity=\"${23:danger}\" text=\"${24:true}\" size=\"${25:small}\" icon=\"${26:pi pi-times}\" />",
+            "        </div>",
+            "    </ng-template>",
+            "</p-multiselect>"
         ],
-        "description": "PrimeNG MultiSelect with onChange event"
+        "description": "PrimeNG MultiSelect Template"
     },
     "PrimeNG MultiSelect Import": {
         "prefix": "p-multiSelect-import",
         "body": [
-            "import { MultiSelectModule } from 'primeng/multiselect';"
+            "import { ${1:MultiSelectModule} } from '${2:primeng/multiselect}';"
         ],
         "description": "PrimeNG MultiSelect Import Snippet"
+    },
+    "PrimeNG MultiSelect Filter": {
+        "prefix": "p-multiselect-filter",
+        "body": [
+            "<p-multiselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" [filter]=\"${3:true}\" optionLabel=\"${4:name}\" placeholder=\"${5:Select Cities}\" [maxSelectedLabels]=\"${6:3}\" styleClass=\"${7:w-full md:w-80}\" />"
+        ],
+        "description": "PrimeNG MultiSelect with filter functionality"
+    },
+    "PrimeNG MultiSelect Loading State": {
+        "prefix": "p-multiselect-loading-state",
+        "body": [
+            "<p-multiselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" [loading]=\"${3:true}\" optionLabel=\"${4:name}\" placeholder=\"${5:Loading...}\" styleClass=\"${6:w-full md:w-80}\" />"
+        ],
+        "description": "Loading state can be used loading property."
+    },
+    "PrimeNG MultiSelect VirtualScroll": {
+        "prefix": "p-multiselect-loading-state",
+        "body": [
+            "<p-multiselect [options]=\"${1:items}\" [showToggleAll]=\"${2:true}\" [selectAll]=\"${3:selectAll}\" [(ngModel)]=\"${4:selectedItems}\" optionLabel=\"${5:label}\" [virtualScroll]=\"${6:true}\" [virtualScrollItemSize]=\"${7:43}\" class=\"${8:multiselect-custom-virtual-scroll}\" placeholder=\"${9:Select Cities}\" (onSelectAllChange)=\"${10:onSelectAllChange($event)}\" [maxSelectedLabels]=\"${11:3}\" styleClass=\"${12:w-full md:w-80}\" #${13:ms}>",
+            "    <ng-template pTemplate=\"headercheckboxicon\" let-allSelected let-partialSelected=\"partialSelected\">",
+            "        <i class=\"${14:pi pi-check}\" *ngIf=\"${15:allSelected}\"></i>",
+            "        <i class=\"${16:pi pi-minus}\" *ngIf=\"${17:partialSelected}\" [ngStyle]=\"${18:{ color: 'var(--text-color)' }}\"></i>",
+            "    </ng-template>",
+            "</p-multiselect>"
+        ],
+        "description": "VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time."
+    },
+    "PrimeNG MultiSelect Float Label": {
+        "prefix": "p-multiselect-float-label",
+        "body": [
+            "<p-floatLabel class=\"${1:w-full md:w-80}\">",
+            "    <p-multiselect id=\"${2:over_label}\" [(ngModel)]=\"${3:value1}\" [options]=\"${4:cities}\" optionLabel=\"${5:name}\" filter=\"${6:true}\" [maxSelectedLabels]=\"${7:3}\" styleClass=\"${8:w-full}\" />",
+            "    <label for=\"${9:over_label}\">${10:Over Label}</label>",
+            "</p-floatLabel>",
+            "",
+            "<p-floatLabel class=\"${11:w-full md:w-80}\" variant=\"${12:in}\">",
+            "    <p-multiselect id=\"${13:in_label}\" [(ngModel)]=\"${14:value2}\" [options]=\"${15:cities}\" optionLabel=\"${16:name}\" filter=\"${17:true}\" [maxSelectedLabels]=\"${18:3}\" styleClass=\"${19:w-full}\" />",
+            "    <label for=\"${20:in_label}\">${21:In Label}</label>",
+            "</p-floatLabel>",
+            "",
+            "<p-floatLabel class=\"${22:w-full md:w-80}\" variant=\"${23:on}\">",
+            "    <p-multiselect id=\"${24:on_label}\" [(ngModel)]=\"${25:value3}\" [options]=\"${26:cities}\" optionLabel=\"${27:name}\" filter=\"${28:true}\" [maxSelectedLabels]=\"${29:3}\" styleClass=\"${30:w-full}\" />",
+            "    <label for=\"${31:on_label}\">${32:On Label}</label>",
+            "</p-floatLabel>"
+        ],
+        "description": "A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information."
+    },
+    "PrimeNG MultiSelect Ifta Label": {
+        "prefix": "p-multiselect-ifta-label",
+        "body": [
+            "<p-iftaLabel class=\"${1:w-full md:w-80}\">",
+            "    <p-multiselect [(ngModel)]=\"${2:selectedCities}\" inputId=\"${3:ms_cities}\" [options]=\"${4:cities}\" optionLabel=\"${5:name}\" [filter]=\"${6:true}\" [maxSelectedLabels]=\"${7:3}\" styleClass=\"${8:w-full}\" />",
+            "    <label for=\"${9:ms_cities}\">${10:Cities}</label>",
+            "</p-iftaLabel>"
+        ],
+        "description": "IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information."
+    },
+    "PrimeNG MultiSelect Sizes": {
+        "prefix": "p-multiselect-sizes",
+        "body": [
+            "<p-multiselect [(ngModel)]=\"${1:value1}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\" [maxSelectedLabels]=\"${4:3}\" styleClass=\"${5:w-full md:w-80}\" size=\"${6:small}\" placeholder=\"${7:Small}\" />",
+            "<p-multiselect [(ngModel)]=\"${8:value2}\" [options]=\"${9:cities}\" optionLabel=\"${10:name}\" [maxSelectedLabels]=\"${11:3}\" styleClass=\"${12:w-full md:w-80}\" placeholder=\"${13:Normal}\" />",
+            "<p-multiselect [(ngModel)]=\"${14:value3}\" [options]=\"${15:cities}\" optionLabel=\"${16:name}\" [maxSelectedLabels]=\"${17:3}\" styleClass=\"${18:w-full md:w-80}\" size=\"${19:large}\" placeholder=\"${20:Large}\" />"
+        ],
+        "description": "MultiSelect provides small and large sizes as alternatives to the base."
+    },
+    "PrimeNG MultiSelect Filled": {
+        "prefix": "p-multiselect-filled",
+        "body": [
+            "<p-multiselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" variant=\"${3:filled}\" optionLabel=\"${4:name}\" placeholder=\"${5:Select Cities}\" [maxSelectedLabels]=\"${6:3}\" styleClass=\"${7:w-full md:w-80}\" />"
+        ],
+        "description": "Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style."
+    },
+    "PrimeNG MultiSelect Invalid": {
+        "prefix": "p-multiselect-invalid",
+        "body": [
+            "<p-multiselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" class=\"${3:ng-dirty ng-invalid}\" optionLabel=\"${4:name}\" [maxSelectedLabels]=\"${5:3}\" styleClass=\"${6:w-full md:w-80}\" />"
+        ],
+        "description": "Invalid state style is added using the ng-invalid and ng-dirty class to indicate a failed validation."
+    },
+    "PrimeNG MultiSelect Disabled": {
+        "prefix": "p-multiselect-disabled",
+        "body": [
+            "<p-multiselect [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCities}\" [disabled]=\"${3:true}\" optionLabel=\"${4:name}\" styleClass=\"${5:w-full md:w-80}\" />"
+        ],
+        "description": "When disabled is present, the element cannot be edited and focused."
     }
 }

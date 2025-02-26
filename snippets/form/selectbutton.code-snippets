@@ -1,50 +1,59 @@
 {
-    "PrimeNG SelectButton Basic": {
-        "prefix": "p-selectButton-basic",
-        "body": [
-            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\" optionLabel=\"${3:label}\"></p-selectButton>"
-        ],
-        "description": "PrimeNG SelectButton with basic usage"
-    },
-    "PrimeNG SelectButton Multiple": {
-        "prefix": "p-selectButton-multiple",
-        "body": [
-            "<p-selectButton [(ngModel)]=\"${1:selectedOptions}\" [options]=\"${2:options}\" optionLabel=\"${3:label}\" [multiple]=\"true\"></p-selectButton>"
-        ],
-        "description": "PrimeNG SelectButton with multiple selection"
-    },
-    "PrimeNG SelectButton Disabled": {
-        "prefix": "p-selectButton-disabled",
-        "body": [
-            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\" [disabled]=\"${3:true}\"></p-selectButton>"
-        ],
-        "description": "PrimeNG SelectButton in disabled state"
-    },
-    "PrimeNG SelectButton Custom Templates": {
-        "prefix": "p-selectButton-template",
-        "body": [
-            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\">",
-            "    <ng-template pTemplate=\"item\" let-option>",
-            "        <div class=\"flex align-items-center\">",
-            "            <span>{{ option.label }}</span>",
-            "        </div>",
-            "    </ng-template>",
-            "</p-selectButton>"
-        ],
-        "description": "PrimeNG SelectButton with custom item template"
-    },
-    "PrimeNG SelectButton OnChange Event": {
-        "prefix": "p-selectButton-onChange",
-        "body": [
-            "<p-selectButton [(ngModel)]=\"${1:selectedOption}\" [options]=\"${2:options}\" (onChange)=\"${3:onOptionChange($event)}\"></p-selectButton>"
-        ],
-        "description": "PrimeNG SelectButton with onChange event"
-    },
     "PrimeNG SelectButton Import": {
-        "prefix": "p-selectButton-import",
+        "prefix": "p-selectbutton-import",
         "body": [
             "import { SelectButtonModule } from 'primeng/selectbutton';"
-        ],
-        "description": "Imports PrimeNG SelectButton in TypeScript"
+        ]
+    },
+    "PrimeNG SelectButton Basic": {
+        "prefix": "p-selectbutton-basic",
+        "body": [
+            "<p-selectbutton [options]=\"${1:stateOptions}\" [(ngModel)]=\"${2:value}\" optionLabel=\"label\" optionValue=\"value\" aria-labelledby=\"basic\" />"
+        ]
+    },
+    "PrimeNG SelectButton Reactive Forms": {
+        "prefix": "p-selectbutton-reactive",
+        "body": [
+            "<form [formGroup]=\"${1:formGroup}\">",
+            "    <p-selectbutton [options]=\"${2:stateOptions}\" formControlName=\"${3:value}\" optionLabel=\"label\" optionValue=\"value\" />",
+            "</form>"
+        ]
+    },
+    "PrimeNG SelectButton Multiple": {
+        "prefix": "p-selectbutton-multiple",
+        "body": [
+            "<p-selectbutton [options]=\"${1:paymentOptions}\" [(ngModel)]=\"${2:value}\" [multiple]=\"true\" optionLabel=\"name\" optionValue=\"value\" />"
+        ]
+    },
+    "PrimeNG SelectButton Template": {
+        "prefix": "p-selectbutton-template",
+        "body": [
+            "<p-selectbutton [options]=\"${1:justifyOptions}\" [(ngModel)]=\"${2:value}\" optionLabel=\"justify\">",
+            "    <ng-template #item let-item>",
+            "        <i [class]=\"item.icon\"></i>",
+            "    </ng-template>",
+            "</p-selectbutton>"
+        ]
+    },
+    "PrimeNG SelectButton Sizes": {
+        "prefix": "p-selectbutton-sizes",
+        "body": [
+            "<p-selectbutton [(ngModel)]=\"${1:value1}\" [options]=\"${2:options}\" size=\"small\" />",
+            "<p-selectbutton [(ngModel)]=\"${3:value2}\" [options]=\"${2:options}\" />",
+            "<p-selectbutton [(ngModel)]=\"${4:value3}\" [options]=\"${2:options}\" size=\"large\" />"
+        ]
+    },
+    "PrimeNG SelectButton Invalid": {
+        "prefix": "p-selectbutton-invalid",
+        "body": [
+            "<p-selectbutton [options]=\"${1:stateOptions}\" [(ngModel)]=\"${2:value}\" optionLabel=\"label\" optionValue=\"value\" class=\"ng-invalid ng-dirty\" />"
+        ]
+    },
+    "PrimeNG SelectButton Disabled": {
+        "prefix": "p-selectbutton-disabled",
+        "body": [
+            "<p-selectbutton [options]=\"${1:stateOptions}\" [(ngModel)]=\"${2:value1}\" optionLabel=\"label\" optionValue=\"value\" [disabled]=\"true\" />",
+            "<p-selectbutton [options]=\"${3:stateOptions2}\" [(ngModel)]=\"${4:value2}\" optionLabel=\"label\" optionValue=\"value\" optionDisabled=\"constant\" />"
+        ]
     }
 }

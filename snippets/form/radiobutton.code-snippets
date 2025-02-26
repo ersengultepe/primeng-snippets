@@ -1,61 +1,99 @@
 {
-    "PrimeNG RadioButton Basic": {
-        "prefix": "p-radiobutton-basic",
-        "body": [
-            "<div class=\"flex flex-wrap gap-3\">",
-            "    <div class=\"flex items-center\">",
-            "        <p-radiobutton inputId=\"${1:option1}\" name=\"${2:option}\" value=\"${3:Option1}\" [(ngModel)]=\"${4:selectedOption}\" />",
-            "        <label for=\"${1:option1}\" class=\"ml-2\">${3:Option1}</label>",
-            "    </div>",
-            "    <div class=\"flex items-center\">",
-            "        <p-radiobutton inputId=\"${5:option2}\" name=\"${2:option}\" value=\"${6:Option2}\" [(ngModel)]=\"${4:selectedOption}\" />",
-            "        <label for=\"${5:option2}\" class=\"ml-2\">${6:Option2}</label>",
-            "    </div>",
-            "    <div class=\"flex items-center\">",
-            "        <p-radiobutton inputId=\"${7:option3}\" name=\"${2:option}\" value=\"${8:Option3}\" [(ngModel)]=\"${4:selectedOption}\" />",
-            "        <label for=\"${7:option3}\" class=\"ml-2\">${8:Option3}</label>",
-            "    </div>",
-            "</div>"
-        ],
-        "description": "Basic PrimeNG RadioButton group"
-    },
-    "PrimeNG RadioButton Disabled": {
-        "prefix": "p-radiobutton-disabled",
-        "body": [
-            "<div class=\"flex flex-wrap gap-3\">",
-            "    <div class=\"flex items-center\">",
-            "        <p-radiobutton inputId=\"${1:option1}\" name=\"${2:option}\" value=\"${3:Option1}\" [(ngModel)]=\"${4:selectedOption}\" [disabled]=\"true\" />",
-            "        <label for=\"${1:option1}\" class=\"ml-2\">${3:Option1}</label>",
-            "    </div>",
-            "    <div class=\"flex items-center\">",
-            "        <p-radiobutton inputId=\"${5:option2}\" name=\"${2:option}\" value=\"${6:Option2}\" [(ngModel)]=\"${4:selectedOption}\" [disabled]=\"true\" />",
-            "        <label for=\"${5:option2}\" class=\"ml-2\">${6:Option2}</label>",
-            "    </div>",
-            "</div>"
-        ],
-        "description": "PrimeNG RadioButton group with disabled state"
-    },
-    "PrimeNG RadioButton Invalid": {
-        "prefix": "p-radiobutton-invalid",
-        "body": [
-            "<div class=\"flex flex-wrap gap-3\">",
-            "    <div class=\"flex items-center\">",
-            "        <p-radiobutton inputId=\"${1:option1}\" name=\"${2:option}\" value=\"${3:Option1}\" [(ngModel)]=\"${4:selectedOption}\" class=\"ng-invalid ng-dirty\" />",
-            "        <label for=\"${1:option1}\" class=\"ml-2\">${3:Option1}</label>",
-            "    </div>",
-            "    <div class=\"flex items-center\">",
-            "        <p-radiobutton inputId=\"${5:option2}\" name=\"${2:option}\" value=\"${6:Option2}\" [(ngModel)]=\"${4:selectedOption}\" />",
-            "        <label for=\"${5:option2}\" class=\"ml-2\">${6:Option2}</label>",
-            "    </div>",
-            "</div>"
-        ],
-        "description": "PrimeNG RadioButton group with invalid state styling"
-    },
     "PrimeNG RadioButton Import": {
         "prefix": "p-radiobutton-import",
         "body": [
             "import { RadioButtonModule } from 'primeng/radiobutton';"
         ],
         "description": "Imports PrimeNG RadioButtonModule in TypeScript"
+    },
+    "PrimeNG RadioButton Group": {
+        "prefix": "p-radiobutton-group",
+        "body": [
+            "<div class=\"flex flex-wrap gap-4\">",
+            "    <div class=\"flex items-center\">",
+            "        <p-radiobutton name=\"${1:pizza}\" value=\"${2:Cheese}\" [(ngModel)]=\"${3:ingredient}\" inputId=\"${4:ingredient1}\" />",
+            "        <label for=\"${4:ingredient1}\" class=\"ml-2\">${2:Cheese}</label>",
+            "    </div>",
+            "    <div class=\"flex items-center\">",
+            "        <p-radiobutton name=\"${1:pizza}\" value=\"${5:Mushroom}\" [(ngModel)]=\"${3:ingredient}\" inputId=\"${6:ingredient2}\" />",
+            "        <label for=\"${6:ingredient2}\" class=\"ml-2\">${5:Mushroom}</label>",
+            "    </div>",
+            "    <div class=\"flex items-center\">",
+            "        <p-radiobutton name=\"${1:pizza}\" value=\"${7:Pepper}\" [(ngModel)]=\"${3:ingredient}\" inputId=\"${8:ingredient3}\" />",
+            "        <label for=\"${8:ingredient3}\" class=\"ml-2\">${7:Pepper}</label>",
+            "    </div>",
+            "    <div class=\"flex items-center\">",
+            "        <p-radiobutton name=\"${1:pizza}\" value=\"${9:Onion}\" [(ngModel)]=\"${3:ingredient}\" inputId=\"${10:ingredient4}\" />",
+            "        <label for=\"${10:ingredient4}\" class=\"ml-2\">${9:Onion}</label>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "PrimeNG RadioButton group with ngModel binding"
+    },
+    "PrimeNG RadioButton Reactive Forms": {
+        "prefix": "p-radiobutton-reactive",
+        "body": [
+            "<form class=\"flex flex-col gap-4\" [formGroup]=\"${1:formGroup}\">",
+            "    <div *ngFor=\"let category of ${2:categories}\" class=\"field-checkbox\">",
+            "        <p-radiobutton [inputId]=\"category.key\" [value]=\"category\" formControlName=\"${3:selectedCategory}\" />",
+            "        <label [for]=\"category.key\" class=\"ml-2\">{{ category.name }}</label>",
+            "    </div>",
+            "</form>"
+        ],
+        "description": "PrimeNG RadioButton used with reactive forms"
+    },
+    "PrimeNG RadioButton Dynamic": {
+        "prefix": "p-radiobutton-dynamic",
+        "body": [
+            "<div class=\"flex flex-col gap-4\">",
+            "    <div *ngFor=\"let category of ${1:categories}\" class=\"field-checkbox\">",
+            "        <p-radiobutton [inputId]=\"category.key\" name=\"${2:category}\" [value]=\"category\" [(ngModel)]=\"${3:selectedCategory}\" />",
+            "        <label [for]=\"category.key\" class=\"ml-2\">{{ category.name }}</label>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "PrimeNG RadioButton dynamically generated from a list"
+    },
+    "PrimeNG RadioButton Filled": {
+        "prefix": "p-radiobutton-filled",
+        "body": [
+            "<p-radiobutton [(ngModel)]=\"${1:checked}\" variant=\"filled\" />"
+        ],
+        "description": "PrimeNG RadioButton with filled variant"
+    },
+    "PrimeNG RadioButton Sizes": {
+        "prefix": "p-radiobutton-sizes",
+        "body": [
+            "<div class=\"flex flex-wrap gap-4\">",
+            "    <div class=\"flex items-center gap-2\">",
+            "        <p-radiobutton [(ngModel)]=\"${1:size}\" inputId=\"size_small\" name=\"${2:size}\" value=\"Small\" size=\"small\" />",
+            "        <label for=\"size_small\" class=\"text-sm\">Small</label>",
+            "    </div>",
+            "    <div class=\"flex items-center gap-2\">",
+            "        <p-radiobutton [(ngModel)]=\"${1:size}\" inputId=\"size_normal\" name=\"${2:size}\" value=\"Normal\" />",
+            "        <label for=\"size_normal\">Normal</label>",
+            "    </div>",
+            "    <div class=\"flex items-center gap-2\">",
+            "        <p-radiobutton [(ngModel)]=\"${1:size}\" inputId=\"size_large\" name=\"${2:size}\" value=\"Large\" size=\"large\" />",
+            "        <label for=\"size_large\" class=\"text-lg\">Large</label>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "PrimeNG RadioButton with different sizes"
+    },
+    "PrimeNG RadioButton Invalid": {
+        "prefix": "p-radiobutton-invalid",
+        "body": [
+            "<p-radiobutton class=\"ng-invalid ng-dirty\" />"
+        ],
+        "description": "PrimeNG RadioButton in invalid state"
+    },
+    "PrimeNG RadioButton Disabled": {
+        "prefix": "p-radiobutton-disabled",
+        "body": [
+            "<p-radiobutton [(ngModel)]=\"${1:value}\" [value]=\"${2:1}\" [disabled]=\"true\" />",
+            "<p-radiobutton [(ngModel)]=\"${1:value}\" [value]=\"${3:2}\" [disabled]=\"true\" />"
+        ],
+        "description": "PrimeNG RadioButton in disabled state"
     }
 }

@@ -35,7 +35,7 @@
         "description": "PrimeNG ToggleButton with onChange event"
     },
     "PrimeNG ToggleButton Import": {
-        "prefix": "p-toggleButton-import",
+        "prefix": "p-togglebutton-import",
         "body": [
             "import { ToggleButtonModule } from 'primeng/togglebutton';"
         ],

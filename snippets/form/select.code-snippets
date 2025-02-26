@@ -1,122 +1,172 @@
 {
+    "PrimeNG Select Import": {
+        "prefix": "p-select-import",
+        "body": [
+            "import { SelectModule } from 'primeng/select';"
+        ]
+    },
     "PrimeNG Select Basic": {
         "prefix": "p-select-basic",
         "body": [
-            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"${3:Select a City}\" class=\"w-full md:w-56\" />"
-        ],
-        "description": "Basic PrimeNG Select component"
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" optionLabel=\"name\" placeholder=\"Select a City\" class=\"w-full md:w-56\" />"
+        ]
     },
-    "PrimeNG Select Grouped": {
-        "prefix": "p-select-grouped",
+    "PrimeNG Select Reactive Forms": {
+        "prefix": "p-select-reactive",
         "body": [
-            "<p-select [options]=\"${1:groupedCities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"${3:Select a City}\" [group]=\"true\" class=\"w-full md:w-56\">",
-            "    <ng-template let-group pTemplate=\"group\">",
+            "<form [formGroup]=\"${1:formGroup}\" class=\"card flex justify-center\">",
+            "    <p-select formControlName=\"${2:selectedCity}\" [options]=\"${3:cities}\" optionLabel=\"name\" placeholder=\"Select a City\" class=\"w-full md:w-56\" />",
+            "</form>"
+        ]
+    },
+    "PrimeNG Select Checkmark": {
+        "prefix": "p-select-checkmark",
+        "body": [
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" [checkmark]=\"true\" optionLabel=\"name\" [showClear]=\"true\" placeholder=\"Select a City\" class=\"w-full md:w-56\" />"
+        ]
+    },
+    "PrimeNG Select Editable": {
+        "prefix": "p-select-editable",
+        "body": [
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"Select a City\" [editable]=\"true\" optionLabel=\"name\" class=\"w-full md:w-56\" />"
+        ]
+    },
+    "PrimeNG Select Group": {
+        "prefix": "p-select-group",
+        "body": [
+            "<p-select [options]=\"${1:groupedCities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"Select a City\" [group]=\"true\" class=\"w-full md:w-56\">",
+            "    <ng-template let-group #group>",
             "        <div class=\"flex items-center\">",
             "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'mr-2 flag flag-' + group.value\" style=\"width: 20px\" />",
             "            <span>{{ group.label }}</span>",
             "        </div>",
             "    </ng-template>",
             "</p-select>"
-        ],
-        "description": "PrimeNG Select with grouped options"
+        ]
     },
-    "PrimeNG Select Templated": {
-        "prefix": "p-select-templated",
+    "PrimeNG Select Template": {
+        "prefix": "p-select-template",
         "body": [
-            "<p-select [options]=\"${1:countries}\" [(ngModel)]=\"${2:selectedCountry}\" optionLabel=\"name\" placeholder=\"${3:Select a country}\" class=\"w-full md:w-56\">",
-            "    <ng-template pTemplate=\"selectedItem\" let-selectedOption>",
+            "<p-select [options]=\"${1:countries}\" [(ngModel)]=\"${2:selectedCountry}\" optionLabel=\"name\" placeholder=\"Select a country\" class=\"w-full md:w-56\">",
+            "    <ng-template #selectedItem let-selectedOption>",
             "        <div class=\"flex items-center gap-2\" *ngIf=\"selectedOption\">",
             "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + selectedOption.code.toLowerCase()\" style=\"width: 18px\" />",
             "            <div>{{ selectedOption.name }}</div>",
             "        </div>",
             "    </ng-template>",
-            "    <ng-template let-country pTemplate=\"item\">",
+            "    <ng-template let-country #item>",
             "        <div class=\"flex items-center gap-2\">",
             "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + country.code.toLowerCase()\" style=\"width: 18px\" />",
             "            <div>{{ country.name }}</div>",
             "        </div>",
             "    </ng-template>",
-            "</p-select>"
-        ],
-        "description": "PrimeNG Select with custom templating"
-    },
-    "PrimeNG Select Filter": {
-        "prefix": "p-select-filter",
-        "body": [
-            "<p-select [options]=\"${1:countries}\" [(ngModel)]=\"${2:selectedCountry}\" optionLabel=\"name\" [filter]=\"true\" filterBy=\"name\" [showClear]=\"true\" placeholder=\"${3:Select a Country}\" class=\"w-full md:w-56\">",
-            "    <ng-template pTemplate=\"selectedItem\" let-selectedOption>",
-            "        <div class=\"flex items-center gap-2\">",
-            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + selectedOption.code.toLowerCase()\" style=\"width: 18px\" />",
-            "            <div>{{ selectedOption.name }}</div>",
-            "        </div>",
-            "    </ng-template>",
-            "    <ng-template let-country pTemplate=\"item\">",
-            "        <div class=\"flex items-center gap-2\">",
-            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + country.code.toLowerCase()\" style=\"width: 18px\" />",
-            "            <div>{{ country.name }}</div>",
-            "        </div>",
-            "    </ng-template>",
-            "</p-select>"
-        ],
-        "description": "PrimeNG Select with filtering and clear option"
-    },
-    "PrimeNG Select Custom Templates": {
-        "prefix": "p-select-custom",
-        "body": [
-            "<p-select [options]=\"${1:countries}\" [(ngModel)]=\"${2:selectedCountry}\" optionLabel=\"name\" placeholder=\"${3:Select a country}\" class=\"w-full md:w-56\">",
-            "    <ng-template pTemplate=\"selectedItem\" let-selectedOption>",
-            "        <div class=\"flex items-center gap-2\" *ngIf=\"selectedOption\">",
-            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + selectedOption.code.toLowerCase()\" style=\"width: 18px\" />",
-            "            <div>{{ selectedOption.name }}</div>",
-            "        </div>",
-            "    </ng-template>",
-            "    <ng-template let-country pTemplate=\"item\">",
-            "        <div class=\"flex items-center gap-2\">",
-            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + country.code.toLowerCase()\" style=\"width: 18px\" />",
-            "            <div>{{ country.name }}</div>",
-            "        </div>",
-            "    </ng-template>",
-            "    <ng-template pTemplate=\"dropdownicon\">",
+            "    <ng-template #dropdownicon>",
             "        <i class=\"pi pi-map\"></i>",
             "    </ng-template>",
-            "    <ng-template pTemplate=\"header\">",
+            "    <ng-template #header>",
             "        <div class=\"font-medium p-3\">Available Countries</div>",
             "    </ng-template>",
-            "    <ng-template pTemplate=\"footer\">",
+            "    <ng-template #footer>",
             "        <div class=\"p-3\">",
             "            <p-button label=\"Add New\" fluid severity=\"secondary\" text size=\"small\" icon=\"pi pi-plus\" />",
             "        </div>",
             "    </ng-template>",
             "</p-select>"
-        ],
-        "description": "PrimeNG Select with custom dropdown icon, header, and footer"
+        ]
     },
-    "PrimeNG Select Disabled": {
-        "prefix": "p-select-disabled",
+    "PrimeNG Select Filter": {
+        "prefix": "p-select-filter",
         "body": [
-            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"${3:Select a City}\" [disabled]=\"true\" class=\"w-full md:w-56\" />"
-        ],
-        "description": "PrimeNG Select in disabled state"
+            "<p-select [options]=\"${1:countries}\" [(ngModel)]=\"${2:selectedCountry}\" optionLabel=\"name\" [filter]=\"true\" filterBy=\"name\" [showClear]=\"true\" placeholder=\"Select a Country\" class=\"w-full md:w-56\">",
+            "    <ng-template #selectedItem let-selectedOption>",
+            "        <div class=\"flex items-center gap-2\">",
+            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + selectedCountry.code.toLowerCase()\" style=\"width: 18px\" />",
+            "            <div>{{ selectedOption.name }}</div>",
+            "        </div>",
+            "    </ng-template>",
+            "    <ng-template let-country #item>",
+            "        <div class=\"flex items-center gap-2\">",
+            "            <img src=\"https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png\" [class]=\"'flag flag-' + country.code.toLowerCase()\" style=\"width: 18px\" />",
+            "            <div>{{ country.name }}</div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-select>"
+        ]
+    },
+    "PrimeNG Select Clear Icon": {
+        "prefix": "p-select-clear",
+        "body": [
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" optionLabel=\"name\" [showClear]=\"true\" placeholder=\"Select a City\" class=\"w-full md:w-56\" />"
+        ]
+    },
+    "PrimeNG Select Loading State": {
+        "prefix": "p-select-loading",
+        "body": [
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" [loading]=\"true\" optionLabel=\"name\" placeholder=\"Loading...\" class=\"w-full md:w-56\" />"
+        ]
+    },
+    "PrimeNG Select Virtual Scroll": {
+        "prefix": "p-select-virtual-scroll",
+        "body": [
+            "<p-select [options]=\"${1:items}\" [(ngModel)]=\"${2:selectedItem}\" placeholder=\"Select Item\" [virtualScroll]=\"true\" [virtualScrollItemSize]=\"38\" class=\"w-full md:w-56\" />"
+        ]
+    },
+    "PrimeNG Select Lazy Virtual Scroll": {
+        "prefix": "p-select-lazy-virtual-scroll",
+        "body": [
+            "<p-select [options]=\"${1:items}\" [(ngModel)]=\"${2:selectedItem}\" placeholder=\"Select Item\" [virtualScroll]=\"true\" [virtualScrollItemSize]=\"38\" [virtualScrollOptions]=\"${3:options}\" class=\"w-full md:w-56\" />"
+        ]
+    },
+    "PrimeNG Select Filled": {
+        "prefix": "p-select-filled",
+        "body": [
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" variant=\"filled\" optionLabel=\"name\" placeholder=\"Select a City\" class=\"w-full md:w-56\" />"
+        ]
+    },
+    "PrimeNG Select Float Label": {
+        "prefix": "p-select-float-label",
+        "body": [
+            "<p-floatlabel class=\"w-full md:w-56\">",
+            "    <p-select [(ngModel)]=\"${1:value1}\" inputId=\"over_label\" [options]=\"${2:cities}\" optionLabel=\"name\" styleClass=\"w-full\" />",
+            "    <label for=\"over_label\">Over Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel class=\"w-full md:w-56\" variant=\"in\">",
+            "    <p-select [(ngModel)]=\"${3:value2}\" inputId=\"in_label\" [options]=\"${2:cities}\" optionLabel=\"name\" styleClass=\"w-full\" variant=\"filled\" />",
+            "    <label for=\"in_label\">In Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel class=\"w-full md:w-56\" variant=\"on\">",
+            "    <p-select [(ngModel)]=\"${4:value3}\" inputId=\"on_label\" [options]=\"${2:cities}\" optionLabel=\"name\" styleClass=\"w-full\" />",
+            "    <label for=\"on_label\">On Label</label>",
+            "</p-floatlabel>"
+        ]
+    },
+    "PrimeNG Select Ifta Label": {
+        "prefix": "p-select-ifta-label",
+        "body": [
+            "<p-iftalabel class=\"w-full md:w-56\">",
+            "    <p-select [(ngModel)]=\"${1:selectedCity}\" inputId=\"dd-city\" [options]=\"${2:cities}\" optionLabel=\"name\" styleClass=\"w-full\" />",
+            "    <label for=\"dd-city\">City</label>",
+            "</p-iftalabel>"
+        ]
+    },
+    "PrimeNG Select Sizes": {
+        "prefix": "p-select-sizes",
+        "body": [
+            "<p-select [(ngModel)]=\"${1:value1}\" [options]=\"${2:cities}\" optionLabel=\"name\" size=\"small\" placeholder=\"Small\" class=\"w-full md:w-56\" />",
+            "<p-select [(ngModel)]=\"${3:value2}\" [options]=\"${2:cities}\" optionLabel=\"name\" placeholder=\"Normal\" class=\"w-full md:w-56\" />",
+            "<p-select [(ngModel)]=\"${4:value3}\" [options]=\"${2:cities}\" optionLabel=\"name\" size=\"large\" placeholder=\"Large\" class=\"w-full md:w-56\" />"
+        ]
     },
     "PrimeNG Select Invalid": {
         "prefix": "p-select-invalid",
         "body": [
-            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"${3:Select a City}\" class=\"ng-invalid ng-dirty w-full md:w-56\" />"
-        ],
-        "description": "PrimeNG Select with invalid state styling"
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" optionLabel=\"name\" [showClear]=\"true\" placeholder=\"Select a City\" class=\"ng-dirty ng-invalid w-full md:w-56\" />"
+        ]
     },
-    "PrimeNG Select Loading": {
-        "prefix": "p-select-loading",
+    "PrimeNG Select Disabled": {
+        "prefix": "p-select-disabled",
         "body": [
-            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"${3:Select a City}\" [loading]=\"true\" class=\"w-full md:w-56\" />"
-        ],
-        "description": "PrimeNG Select with loading state"
-    },
-    "PrimeNG Select Import": {
-        "prefix": "p-select-import",
-        "body": [
-            "import { SelectModule } from 'primeng/select';"
-        ],
-        "description": "Imports PrimeNG SelectModule in TypeScript"
+            "<p-select [options]=\"${1:cities}\" [(ngModel)]=\"${2:selectedCity}\" placeholder=\"Select a City\" optionLabel=\"name\" [disabled]=\"true\" class=\"w-full md:w-56\" />"
+        ]
     }
 }

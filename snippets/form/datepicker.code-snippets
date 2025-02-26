@@ -1,51 +1,180 @@
 {
     "PrimeNG DatePicker Import": {
-        "prefix": "p-datePicker-import",
+        "prefix": "p-datepicker-import",
         "body": [
             "import { DatePickerModule } from 'primeng/datepicker';"
         ],
-        "description": "PrimeNG DatePicker Import Snippet"
+        "description": "Imports PrimeNG DatePickerModule in TypeScript"
     },
     "PrimeNG DatePicker Basic": {
-        "prefix": "p-datePicker-basic",
+        "prefix": "p-datepicker-basic",
         "body": [
-            "<p-calendar [(ngModel)]=\"${1:date}\" dateFormat=\"${2:dd/mm/yy}\"></p-calendar>"
+            "<p-datepicker [(ngModel)]=\"${1:date}\" />"
         ],
-        "description": "PrimeNG DatePicker with basic usage"
+        "description": "Basic PrimeNG DatePicker component with ngModel binding"
     },
-    "PrimeNG DatePicker Inline": {
-        "prefix": "p-datePicker-inline",
+    "PrimeNG DatePicker Reactive Forms": {
+        "prefix": "p-datepicker-reactive",
         "body": [
-            "<p-calendar [(ngModel)]=\"${1:date}\" [inline]=\"true\"></p-calendar>"
+            "<form [formGroup]=\"${1:formGroup}\">",
+            "    <p-datepicker formControlName=\"${2:date}\" />",
+            "</form>"
         ],
-        "description": "PrimeNG DatePicker in inline mode"
+        "description": "PrimeNG DatePicker used with reactive forms"
     },
-    "PrimeNG DatePicker Disabled": {
-        "prefix": "p-datePicker-disabled",
+    "PrimeNG DatePicker Format": {
+        "prefix": "p-datepicker-format",
         "body": [
-            "<p-calendar [(ngModel)]=\"${1:date}\" [disabled]=\"${2:true}\"></p-calendar>"
+            "<p-datepicker [(ngModel)]=\"${1:date}\" dateFormat=\"dd.mm.yy\" />"
         ],
-        "description": "PrimeNG DatePicker in disabled state"
+        "description": "PrimeNG DatePicker with custom date format"
+    },
+    "PrimeNG DatePicker Icon": {
+        "prefix": "p-datepicker-icon",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date1}\" [showIcon]=\"true\" inputId=\"buttondisplay\" [showOnFocus]=\"false\" />",
+            "<p-datepicker [(ngModel)]=\"${2:date2}\" [iconDisplay]=\"'input'\" [showIcon]=\"true\" inputId=\"icondisplay\" />",
+            "<p-datepicker [(ngModel)]=\"${3:date3}\" [iconDisplay]=\"'input'\" [showIcon]=\"true\" [timeOnly]=\"true\" inputId=\"templatedisplay\">",
+            "    <ng-template #inputicon let-clickCallBack=\"clickCallBack\">",
+            "        <i class=\"pi pi-clock\" (click)=\"clickCallBack($event)\"></i>",
+            "    </ng-template>",
+            "</p-datepicker>"
+        ],
+        "description": "PrimeNG DatePicker with icon display options"
+    },
+    "PrimeNG DatePicker Min/Max": {
+        "prefix": "p-datepicker-min-max",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date}\" [minDate]=\"${2:minDate}\" [maxDate]=\"${3:maxDate}\" [readonlyInput]=\"true\" />"
+        ],
+        "description": "PrimeNG DatePicker with min and max date boundaries"
+    },
+    "PrimeNG DatePicker Multiple": {
+        "prefix": "p-datepicker-multiple",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:dates}\" selectionMode=\"multiple\" [readonlyInput]=\"true\" />"
+        ],
+        "description": "PrimeNG DatePicker with multiple date selection"
     },
     "PrimeNG DatePicker Range": {
-        "prefix": "p-datePicker-range",
+        "prefix": "p-datepicker-range",
         "body": [
-            "<p-calendar [(ngModel)]=\"${1:dates}\" selectionMode=\"range\" [readonlyInput]=\"true\"></p-calendar>"
+            "<p-datepicker [(ngModel)]=\"${1:rangeDates}\" selectionMode=\"range\" [readonlyInput]=\"true\" />"
         ],
         "description": "PrimeNG DatePicker with range selection"
     },
-    "PrimeNG DatePicker Time": {
-        "prefix": "p-datePicker-time",
+    "PrimeNG DatePicker Button Bar": {
+        "prefix": "p-datepicker-button-bar",
         "body": [
-            "<p-calendar [(ngModel)]=\"${1:date}\" [showTime]=\"true\" [showSeconds]=\"true\"></p-calendar>"
+            "<p-datepicker [(ngModel)]=\"${1:date}\" [showButtonBar]=\"true\" />"
+        ],
+        "description": "PrimeNG DatePicker with button bar"
+    },
+    "PrimeNG DatePicker Time": {
+        "prefix": "p-datepicker-time",
+        "body": [
+            "<p-datepicker inputId=\"calendar-12h\" [(ngModel)]=\"${1:datetime12h}\" [showTime]=\"true\" [hourFormat]=\"12\" />",
+            "<p-datepicker inputId=\"calendar-24h\" [(ngModel)]=\"${2:datetime24h}\" [showTime]=\"true\" [hourFormat]=\"24\" />",
+            "<p-datepicker inputId=\"calendar-timeonly\" [(ngModel)]=\"${3:time}\" [timeOnly]=\"true\" />"
         ],
         "description": "PrimeNG DatePicker with time selection"
     },
-    "PrimeNG DatePicker OnChange Event": {
-        "prefix": "p-datePicker-onChange",
+    "PrimeNG DatePicker Month Picker": {
+        "prefix": "p-datepicker-month",
         "body": [
-            "<p-calendar [(ngModel)]=\"${1:date}\" (onSelect)=\"${2:onDateSelect($event)}\"></p-calendar>"
+            "<p-datepicker [(ngModel)]=\"${1:date}\" view=\"month\" dateFormat=\"mm/yy\" [readonlyInput]=\"true\" />"
         ],
-        "description": "PrimeNG DatePicker with onChange event"
+        "description": "PrimeNG DatePicker with month picker"
+    },
+    "PrimeNG DatePicker Year Picker": {
+        "prefix": "p-datepicker-year",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date}\" view=\"year\" dateFormat=\"yy\" />"
+        ],
+        "description": "PrimeNG DatePicker with year picker"
+    },
+    "PrimeNG DatePicker Multiple Months": {
+        "prefix": "p-datepicker-multiple-months",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date}\" [numberOfMonths]=\"2\" />"
+        ],
+        "description": "PrimeNG DatePicker with multiple months display"
+    },
+    "PrimeNG DatePicker Date Template": {
+        "prefix": "p-datepicker-date-template",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date}\">",
+            "    <ng-template #date let-date>",
+            "        <strong *ngIf=\"date.day > 10 && date.day < 15; else elseBlock\" style=\"text-decoration: line-through\">{{ date.day }}</strong>",
+            "        <ng-template #elseBlock>{{ date.day }}</ng-template>",
+            "    </ng-template>",
+            "</p-datepicker>"
+        ],
+        "description": "PrimeNG DatePicker with custom date template"
+    },
+    "PrimeNG DatePicker Inline": {
+        "prefix": "p-datepicker-inline",
+        "body": [
+            "<p-datepicker class=\"max-w-full\" [(ngModel)]=\"${1:date}\" [inline]=\"true\" [showWeek]=\"true\" />"
+        ],
+        "description": "PrimeNG DatePicker with inline display"
+    },
+    "PrimeNG DatePicker Float Label": {
+        "prefix": "p-datepicker-float-label",
+        "body": [
+            "<p-floatlabel>",
+            "    <p-datepicker [(ngModel)]=\"${1:value1}\" inputId=\"over_label\" showIcon iconDisplay=\"input\" />",
+            "    <label for=\"over_label\">Over Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"in\">",
+            "    <p-datepicker [(ngModel)]=\"${2:value2}\" inputId=\"in_label\" showIcon iconDisplay=\"input\" />",
+            "    <label for=\"in_label\">In Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"on\">",
+            "    <p-datepicker [(ngModel)]=\"${3:value3}\" inputId=\"on_label\" showIcon iconDisplay=\"input\" />",
+            "    <label for=\"on_label\">On Label</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG DatePicker with float label variations"
+    },
+    "PrimeNG DatePicker Ifta Label": {
+        "prefix": "p-datepicker-ifta-label",
+        "body": [
+            "<p-iftalabel>",
+            "    <p-datepicker [(ngModel)]=\"${1:value}\" inputId=\"date_input\" showIcon iconDisplay=\"input\" />",
+            "    <label for=\"date_input\">Date</label>",
+            "</p-iftalabel>"
+        ],
+        "description": "PrimeNG DatePicker with IftaLabel"
+    },
+    "PrimeNG DatePicker Sizes": {
+        "prefix": "p-datepicker-sizes",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:value1}\" size=\"small\" placeholder=\"Small\" showIcon iconDisplay=\"input\" />",
+            "<p-datepicker [(ngModel)]=\"${2:value2}\" placeholder=\"Normal\" showIcon iconDisplay=\"input\" />",
+            "<p-datepicker [(ngModel)]=\"${3:value3}\" size=\"large\" placeholder=\"Large\" showIcon iconDisplay=\"input\" />"
+        ],
+        "description": "PrimeNG DatePicker with different sizes"
+    },
+    "PrimeNG DatePicker Filled": {
+        "prefix": "p-datepicker-filled",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date}\" variant=\"filled\" />"
+        ],
+        "description": "PrimeNG DatePicker with filled variant"
+    },
+    "PrimeNG DatePicker Invalid": {
+        "prefix": "p-datepicker-invalid",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date}\" class=\"ng-invalid ng-dirty\" />"
+        ],
+        "description": "PrimeNG DatePicker in invalid state"
+    },
+    "PrimeNG DatePicker Disabled": {
+        "prefix": "p-datepicker-disabled",
+        "body": [
+            "<p-datepicker [(ngModel)]=\"${1:date}\" [disabled]=\"true\" />"
+        ],
+        "description": "PrimeNG DatePicker in disabled state"
     }
 }

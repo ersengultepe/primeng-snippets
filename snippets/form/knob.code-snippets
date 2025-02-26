@@ -1,45 +1,86 @@
 {
+    "PrimeNG Knob Import": {
+        "prefix": "p-knob-import",
+        "body": [
+            "import { KnobModule } from 'primeng/knob';"
+        ],
+        "description": "Imports PrimeNG KnobModule in TypeScript"
+    },
     "PrimeNG Knob Basic": {
         "prefix": "p-knob-basic",
         "body": [
             "<p-knob [(ngModel)]=\"${1:value}\" />"
         ],
-        "description": "Basic PrimeNG Knob"
+        "description": "Basic PrimeNG Knob component with ngModel binding"
     },
-    "PrimeNG Knob MinMax": {
-        "prefix": "p-knob-minmax",
+    "PrimeNG Knob Reactive Forms": {
+        "prefix": "p-knob-reactive",
+        "body": [
+            "<form [formGroup]=\"${1:formGroup}\">",
+            "    <p-knob formControlName=\"${2:value}\" />",
+            "</form>"
+        ],
+        "description": "PrimeNG Knob used with reactive forms"
+    },
+    "PrimeNG Knob Min/Max": {
+        "prefix": "p-knob-min-max",
         "body": [
             "<p-knob [(ngModel)]=\"${1:value}\" [min]=\"${2:-50}\" [max]=\"${3:50}\" />"
         ],
-        "description": "PrimeNG Knob with min and max values"
+        "description": "PrimeNG Knob with min and max boundaries"
     },
     "PrimeNG Knob Step": {
         "prefix": "p-knob-step",
         "body": [
             "<p-knob [(ngModel)]=\"${1:value}\" [step]=\"${2:10}\" />"
         ],
-        "description": "PrimeNG Knob with step increment"
+        "description": "PrimeNG Knob with step size"
+    },
+    "PrimeNG Knob Template": {
+        "prefix": "p-knob-template",
+        "body": [
+            "<p-knob [(ngModel)]=\"${1:value}\" valueTemplate=\"{value}%\" />"
+        ],
+        "description": "PrimeNG Knob with custom label template"
+    },
+    "PrimeNG Knob Stroke": {
+        "prefix": "p-knob-stroke",
+        "body": [
+            "<p-knob [(ngModel)]=\"${1:value}\" [strokeWidth]=\"${2:5}\" />"
+        ],
+        "description": "PrimeNG Knob with custom stroke width"
     },
     "PrimeNG Knob Size": {
         "prefix": "p-knob-size",
         "body": [
-            "<p-knob [(ngModel)]=\"${1:value}\" [size]=\"${2:150}\" />"
+            "<p-knob [(ngModel)]=\"${1:value}\" [size]=\"${2:200}\" />"
         ],
         "description": "PrimeNG Knob with custom size"
     },
-    "PrimeNG Knob Colors": {
-        "prefix": "p-knob-colors",
+    "PrimeNG Knob Color": {
+        "prefix": "p-knob-color",
         "body": [
-            "<p-knob [(ngModel)]=\"${1:value}\" valueColor=\"${2:red}\" rangeColor=\"${3:gray}\" />"
+            "<p-knob [(ngModel)]=\"${1:value}\" valueColor=\"${2:SlateGray}\" rangeColor=\"${3:MediumTurquoise}\" />"
         ],
         "description": "PrimeNG Knob with custom colors"
+    },
+    "PrimeNG Knob Reactive": {
+        "prefix": "p-knob-reactive",
+        "body": [
+            "<p-knob [(ngModel)]=\"${1:value}\" size=\"150\" readonly=\"true\" />",
+            "<div class=\"flex gap-2\">",
+            "    <p-button icon=\"pi pi-plus\" (click)=\"${1:value} = ${1:value}+1\" [disabled]=\"${1:value} >= 100\" />",
+            "    <p-button icon=\"pi pi-minus\" (click)=\"${1:value} = ${1:value}-1\" [disabled]=\"${1:value} <= 0\" />",
+            "</div>"
+        ],
+        "description": "PrimeNG Knob with custom controls"
     },
     "PrimeNG Knob ReadOnly": {
         "prefix": "p-knob-readonly",
         "body": [
             "<p-knob [(ngModel)]=\"${1:value}\" [readonly]=\"true\" />"
         ],
-        "description": "PrimeNG Knob in readonly mode"
+        "description": "PrimeNG Knob in read-only state"
     },
     "PrimeNG Knob Disabled": {
         "prefix": "p-knob-disabled",
@@ -47,26 +88,5 @@
             "<p-knob [(ngModel)]=\"${1:value}\" [disabled]=\"true\" />"
         ],
         "description": "PrimeNG Knob in disabled state"
-    },
-    "PrimeNG Knob Custom Template": {
-        "prefix": "p-knob-custom",
-        "body": [
-            "<p-knob [(ngModel)]=\"${1:value}\" [size]=\"${2:150}\" [min]=\"${3:0}\" [max]=\"${4:100}\">",
-            "    <ng-template pTemplate=\"value\">",
-            "        <div class=\"text-center\">",
-            "            <span class=\"text-xl font-bold\">{{ ${1:value} }}</span>",
-            "            <p class=\"m-0\">%</p>",
-            "        </div>",
-            "    </ng-template>",
-            "</p-knob>"
-        ],
-        "description": "PrimeNG Knob with custom value template"
-    },
-    "PrimeNG Knob Import": {
-        "prefix": "p-knob-import",
-        "body": [
-            "import { KnobModule } from 'primeng/knob';"
-        ],
-        "description": "Imports PrimeNG KnobModule in TypeScript"
     }
 }

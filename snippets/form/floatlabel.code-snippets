@@ -1,59 +1,51 @@
 {
-    "PrimeNG FloatLabel Over": {
-        "prefix": "p-floatlabel-over",
-        "body": [
-            "<p-floatlabel>",
-            "    <input id=\"${1:floatlabel}\" type=\"text\" pInputText [(ngModel)]=\"${2:value}\" />",
-            "    <label for=\"${1:floatlabel}\">${3:Username}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG FloatLabel with over variant"
-    },
-    "PrimeNG FloatLabel In": {
-        "prefix": "p-floatlabel-in",
-        "body": [
-            "<p-floatlabel variant=\"in\">",
-            "    <input id=\"${1:floatlabel}\" type=\"text\" pInputText [(ngModel)]=\"${2:value}\" />",
-            "    <label for=\"${1:floatlabel}\">${3:Username}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG FloatLabel with in variant"
-    },
-    "PrimeNG FloatLabel On": {
-        "prefix": "p-floatlabel-on",
-        "body": [
-            "<p-floatlabel variant=\"on\">",
-            "    <input id=\"${1:floatlabel}\" type=\"text\" pInputText [(ngModel)]=\"${2:value}\" />",
-            "    <label for=\"${1:floatlabel}\">${3:Username}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG FloatLabel with on variant"
-    },
-    "PrimeNG FloatLabel Textarea": {
-        "prefix": "p-floatlabel-textarea",
-        "body": [
-            "<p-floatlabel>",
-            "    <textarea id=\"${1:floatlabel}\" rows=\"5\" cols=\"30\" pTextarea [(ngModel)]=\"${2:value}\"></textarea>",
-            "    <label for=\"${1:floatlabel}\">${3:Comments}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG FloatLabel with Textarea"
-    },
-    "PrimeNG FloatLabel Dropdown": {
-        "prefix": "p-floatlabel-dropdown",
-        "body": [
-            "<p-floatlabel>",
-            "    <p-dropdown id=\"${1:dropdown}\" [options]=\"${2:cities}\" [(ngModel)]=\"${3:selectedCity}\" optionLabel=\"name\"></p-dropdown>",
-            "    <label for=\"${1:dropdown}\">${4:Select a City}</label>",
-            "</p-floatlabel>"
-        ],
-        "description": "PrimeNG FloatLabel with Dropdown"
-    },
     "PrimeNG FloatLabel Import": {
         "prefix": "p-floatlabel-import",
         "body": [
             "import { FloatLabelModule } from 'primeng/floatlabel';"
         ],
         "description": "Imports PrimeNG FloatLabelModule in TypeScript"
-    }    
+    },
+    "PrimeNG FloatLabel Basic": {
+        "prefix": "p-floatlabel-basic",
+        "body": [
+            "<p-floatlabel>",
+            "    <input id=\"username\" pInputText [(ngModel)]=\"${1:value}\" />",
+            "    <label for=\"username\">Username</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "Basic PrimeNG FloatLabel component with ngModel binding"
+    },
+    "PrimeNG FloatLabel Variants": {
+        "prefix": "p-floatlabel-variants",
+        "body": [
+            "<p-floatlabel variant=\"in\">",
+            "    <input pInputText id=\"in_label\" [(ngModel)]=\"${1:value1}\" autocomplete=\"off\" />",
+            "    <label for=\"in_label\">In Label</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"on\">",
+            "    <input pInputText id=\"on_label\" [(ngModel)]=\"${2:value2}\" autocomplete=\"off\" />",
+            "    <label for=\"on_label\">On Label</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG FloatLabel component with variant options"
+    },
+    "PrimeNG FloatLabel Invalid": {
+        "prefix": "p-floatlabel-invalid",
+        "body": [
+            "<p-floatlabel>",
+            "    <input pInputText id=\"value1\" [(ngModel)]=\"${1:value1}\" class=\"ng-dirty ng-invalid\" />",
+            "    <label for=\"value1\">Username</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"in\">",
+            "    <input pInputText id=\"value2\" [(ngModel)]=\"${2:value2}\" class=\"ng-dirty ng-invalid\" />",
+            "    <label for=\"value2\">Username</label>",
+            "</p-floatlabel>",
+            "<p-floatlabel variant=\"on\">",
+            "    <input pInputText id=\"value3\" [(ngModel)]=\"${3:value3}\" class=\"ng-dirty ng-invalid\" />",
+            "    <label for=\"value3\">Username</label>",
+            "</p-floatlabel>"
+        ],
+        "description": "PrimeNG FloatLabel component in invalid state"
+    }
 }

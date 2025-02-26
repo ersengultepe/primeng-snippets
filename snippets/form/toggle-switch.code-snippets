@@ -1,37 +1,45 @@
 {
-    "PrimeNG ToggleSwitch Basic": {
-        "prefix": "p-toggleSwitch-basic",
+    "PrimeNG ToggleSwitchModule Import": {
+        "prefix": "primeng-toggleswitch-imports",
         "body": [
-            "<p-toggleSwitch [(ngModel)]=\"${1:checked}\"></p-toggleSwitch>"
+            "import { ToggleSwitchModule } from 'primeng/toggleswitch';",
         ],
-        "description": "PrimeNG ToggleSwitch with basic usage"
+        "description": "PrimeNG ToggleSwitchModule Import"
+    },
+    "PrimeNG ToggleSwitch Basic": {
+        "prefix": "p-toggleswitch-basic",
+        "body": ["<p-toggleswitch [(ngModel)]=\"${1:checked}\" />"],
+        "description": "Basic ToggleSwitch with two-way binding"
+    },
+    "PrimeNG ToggleSwitch Reactive": {
+        "prefix": "p-toggleswitch-reactive",
+        "body": ["<p-toggleswitch formControlName=\"${1:checked}\" />"],
+        "description": "ToggleSwitch with reactive forms integration"
+    },
+    "PrimeNG ToggleSwitch Preselection": {
+        "prefix": "p-toggleswitch-preselection",
+        "body": ["<p-toggleswitch [(ngModel)]=\"${1:checked}\" />"],
+        "description": "ToggleSwitch with initial state binding"
+    },
+    "PrimeNG ToggleSwitch Invalid": {
+        "prefix": "p-toggleswitch-invalid",
+        "body": ["<p-toggleswitch [(ngModel)]=\"${1:checked}\" class=\"ng-dirty ng-invalid\" />"],
+        "description": "ToggleSwitch with validation error state"
+    },
+    "PrimeNG ToggleSwitch Template": {
+        "prefix": "p-toggleswitch-template",
+        "body": [
+            "<p-toggleswitch [(ngModel)]=\"${1:checked}\">",
+            "    <ng-template #handle let-checked=\"checked\">",
+            "        <i [ngClass]=[\"!text-xs\", \"pi\", checked ? \"pi-check\" : \"pi-times\"]></i>",
+            "    </ng-template>",
+            "</p-toggleswitch>"
+        ],
+        "description": "ToggleSwitch with custom handle template"
     },
     "PrimeNG ToggleSwitch Disabled": {
-        "prefix": "p-toggleSwitch-disabled",
-        "body": [
-            "<p-toggleSwitch [(ngModel)]=\"${1:checked}\" [disabled]=\"${2:true}\"></p-toggleSwitch>"
-        ],
-        "description": "PrimeNG ToggleSwitch in disabled state"
-    },
-    "PrimeNG ToggleSwitch Custom Labels": {
-        "prefix": "p-toggleSwitch-labels",
-        "body": [
-            "<p-toggleSwitch onLabel=\"${1:Yes}\" offLabel=\"${2:No}\" [(ngModel)]=\"${3:checked}\"></p-toggleSwitch>"
-        ],
-        "description": "PrimeNG ToggleSwitch with custom on/off labels"
-    },
-    "PrimeNG ToggleSwitch Styled": {
-        "prefix": "p-toggleSwitch-styled",
-        "body": [
-            "<p-toggleSwitch [(ngModel)]=\"${1:checked}\" styleClass=\"${2:custom-switch}\"></p-toggleSwitch>"
-        ],
-        "description": "PrimeNG ToggleSwitch with custom styles"
-    },
-    "PrimeNG ToggleSwitch Import": {
-        "prefix": "p-toggleSwitch-import",
-        "body": [
-            "import { ToggleSwitchModule } from 'primeng/toggleswitch';"
-        ],
-        "description": "Imports PrimeNG ToggleSwitch in TypeScript"
+        "prefix": "p-toggleswitch-disabled",
+        "body": ["<p-toggleswitch [(ngModel)]=\"${1:checked}\" [disabled]=\"true\" />"],
+        "description": "ToggleSwitch with disabled state"
     }
 }
