@@ -1,0 +1,56 @@
+{
+    "PrimeNG Fieldset Import": {
+        "prefix": "p-fieldset-import",
+        "body": [
+            "import { FieldsetModule } from 'primeng/fieldset';"
+        ],
+        "description": "Imports PrimeNG FieldsetModule in TypeScript"
+    },
+    "PrimeNG Fieldset Basic": {
+        "prefix": "p-fieldset-basic",
+        "body": [
+            "import { FieldsetModule } from 'primeng/fieldset';",
+            "",
+            "<p-fieldset legend=\"${1:Header}\">",
+            "    <p class=\"m-0\">",
+            "        ${2:Lorem ipsum dolor sit amet...}",
+            "    </p>",
+            "</p-fieldset>"
+        ],
+        "description": "Basic PrimeNG Fieldset component with a legend"
+    },
+    "PrimeNG Fieldset Toggleable": {
+        "prefix": "p-fieldset-toggleable",
+        "body": [
+            "import { FieldsetModule } from 'primeng/fieldset';",
+            "",
+            "<p-fieldset legend=\"${1:Header}\" [toggleable]=\"true\">",
+            "    <p>",
+            "        ${2:Lorem ipsum dolor sit amet...}",
+            "    </p>",
+            "</p-fieldset>"
+        ],
+        "description": "PrimeNG Fieldset with toggleable content"
+    },
+    "PrimeNG Fieldset Template": {
+        "prefix": "p-fieldset-template",
+        "body": [
+            "import { FieldsetModule } from 'primeng/fieldset';",
+            "",
+            "<p-fieldset>",
+            "    <ng-template #header>",
+            "        <div class=\"flex items-center gap-2 px-2\">",
+            "            <p-avatar",
+            "                image=\"${1:https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png}\"",
+            "                shape=\"circle\" />",
+            "            <span class=\"font-bold\">${2:Amy Elsner}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "    <p class=\"m-0\">",
+            "        ${3:Lorem ipsum dolor sit amet...}",
+            "    </p>",
+            "</p-fieldset>"
+        ],
+        "description": "PrimeNG Fieldset with custom header template including avatar"
+    }
+}

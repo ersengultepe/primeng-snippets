@@ -1,0 +1,67 @@
+{
+    "PrimeNG Panel Import": {
+        "prefix": "p-panel-import",
+        "body": [
+            "import { PanelModule } from 'primeng/panel';"
+        ],
+        "description": "Imports PrimeNG PanelModule in TypeScript"
+    },
+    "PrimeNG Panel Basic": {
+        "prefix": "p-panel-basic",
+        "body": [
+            "import { PanelModule } from 'primeng/panel';",
+            "",
+            "<p-panel header=\"${1:Header}\">",
+            "    <p class=\"m-0\">",
+            "        ${2:Lorem ipsum dolor sit amet...}",
+            "    </p>",
+            "</p-panel>"
+        ],
+        "description": "Basic PrimeNG Panel component with a header and content"
+    },
+    "PrimeNG Panel Toggleable": {
+        "prefix": "p-panel-toggleable",
+        "body": [
+            "import { PanelModule } from 'primeng/panel';",
+            "",
+            "<p-panel header=\"${1:Header}\" [toggleable]=\"true\">",
+            "    <p class=\"m-0\">",
+            "        ${2:Lorem ipsum dolor sit amet...}",
+            "    </p>",
+            "</p-panel>"
+        ],
+        "description": "PrimeNG Panel with toggleable content"
+    },
+    "PrimeNG Panel Template": {
+        "prefix": "p-panel-template",
+        "body": [
+            "import { PanelModule } from 'primeng/panel';",
+            "",
+            "<p-panel [toggleable]=\"true\">",
+            "    <ng-template #header>",
+            "        <div class=\"flex items-center gap-2\">",
+            "            <p-avatar image=\"${1:https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png}\" shape=\"circle\" />",
+            "            <span class=\"font-bold\">${2:Amy Elsner}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "    <ng-template #footer>",
+            "        <div class=\"flex flex-wrap items-center justify-between gap-4\">",
+            "            <div class=\"flex items-center gap-2\">",
+            "                <p-button icon=\"pi pi-user\" rounded text></p-button>",
+            "                <p-button icon=\"pi pi-bookmark\" severity=\"secondary\" rounded text></p-button>",
+            "            </div>",
+            "            <span class=\"text-surface-500 dark:text-surface-400\">${3:Updated 2 hours ago}</span>",
+            "        </div>",
+            "    </ng-template>",
+            "    <ng-template #icons>",
+            "        <p-button icon=\"pi pi-cog\" severity=\"secondary\" rounded text (click)=\"menu.toggle($event)\" />",
+            "        <p-menu #menu id=\"config_menu\" [model]=\"items\" [popup]=\"true\" />",
+            "    </ng-template>",
+            "    <p class=\"m-0\">",
+            "        ${4:Lorem ipsum dolor sit amet, consectetur adipiscing elit...}",
+            "    </p>",
+            "</p-panel>"
+        ],
+        "description": "PrimeNG Panel with custom header, footer, and icons templates"
+    }
+}

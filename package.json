@@ -16,7 +16,7 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "1.1.1",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.10.0"
   },
@@ -339,14 +339,102 @@
       {
         "language": "typescript",
         "path": "./snippets/data/treetable.code-snippets"
-      },{
+      },
+      {
         "language": "html",
         "path": "./snippets/data/virtualscroller.code-snippets"
       },
       {
         "language": "typescript",
         "path": "./snippets/data/virtualscroller.code-snippets"
+      },
+
+
+
+      {
+        "language": "html",
+        "path": "./snippets/panel/accordion.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/accordion.code-snippets"
+      },
+
+      {
+        "language": "html",
+        "path": "./snippets/panel/card.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/card.code-snippets"
+      },
+
+      {
+        "language": "html",
+        "path": "./snippets/panel/divider.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/divider.code-snippets"
+      },
+
+      {
+        "language": "html",
+        "path": "./snippets/panel/fieldset.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/fieldset.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/panel/panel.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/panel.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/panel/scrollpanel.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/scrollpanel.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/panel/splitter.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/splitter.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/panel/stepper.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/stepper.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/panel/tabs.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/tabs.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/panel/toolbar.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/panel/toolbar.code-snippets"
       }
+      
     ]
   }
 }

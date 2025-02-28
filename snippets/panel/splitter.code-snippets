@@ -1,0 +1,87 @@
+{
+    "PrimeNG Splitter Import": {
+        "prefix": "p-splitter-import",
+        "body": [
+            "import { SplitterModule } from 'primeng/splitter';"
+        ],
+        "description": "Imports PrimeNG SplitterModule in TypeScript"
+    },
+    "PrimeNG Splitter Horizontal": {
+        "prefix": "p-splitter-horizontal",
+        "body": [
+            "import { SplitterModule } from 'primeng/splitter';",
+            "",
+            "<p-splitter [style]=\"{ height: '${1:300px}' }\" styleClass=\"mb-8\">",
+            "    <ng-template #panel>",
+            "        <div class=\"flex items-center justify-center h-full\">${2:Panel 1}</div>",
+            "    </ng-template>",
+            "    <ng-template #panel>",
+            "        <div class=\"flex items-center justify-center h-full\">${3:Panel 2}</div>",
+            "    </ng-template>",
+            "</p-splitter>"
+        ],
+        "description": "PrimeNG Splitter with horizontal layout"
+    },
+    "PrimeNG Splitter Size": {
+        "prefix": "p-splitter-size",
+        "body": [
+            "import { SplitterModule } from 'primeng/splitter';",
+            "",
+            "<p-splitter [panelSizes]=\"[${4:25}, ${5:75}]\" [style]=\"{ height: '${1:300px}' }\" styleClass=\"mb-8\">",
+            "    <ng-template #panel>",
+            "        <div class=\"flex items-center justify-center h-full\">${2:Panel 1}</div>",
+            "    </ng-template>",
+            "    <ng-template #panel>",
+            "        <div class=\"flex items-center justify-center h-full\">${3:Panel 2}</div>",
+            "    </ng-template>",
+            "</p-splitter>"
+        ],
+        "description": "PrimeNG Splitter with custom panel sizes"
+    },
+    "PrimeNG Splitter Vertical": {
+        "prefix": "p-splitter-vertical",
+        "body": [
+            "import { SplitterModule } from 'primeng/splitter';",
+            "",
+            "<p-splitter [style]=\"{ height: '${1:300px}' }\" styleClass=\"mb-8\" layout=\"vertical\">",
+            "    <ng-template #panel>",
+            "        <div class=\"flex items-center justify-center h-full\">${2:Panel 1}</div>",
+            "    </ng-template>",
+            "    <ng-template #panel>",
+            "        <div class=\"flex items-center justify-center h-full\">${3:Panel 2}</div>",
+            "    </ng-template>",
+            "</p-splitter>"
+        ],
+        "description": "PrimeNG Splitter with vertical layout"
+    },
+    "PrimeNG Splitter Nested": {
+        "prefix": "p-splitter-nested",
+        "body": [
+            "import { SplitterModule } from 'primeng/splitter';",
+            "",
+            "<p-splitter [style]=\"{ height: '${1:300px}' }\" [panelSizes]=\"[${2:20}, ${3:80}]\" [minSizes]=\"[${4:10}, ${5:0}]\" styleClass=\"mb-8\">",
+            "    <ng-template #panel>",
+            "        <div class=\"col flex items-center justify-center\">${6:Panel 1}</div>",
+            "    </ng-template>",
+            "    <ng-template #panel>",
+            "        <p-splitter layout=\"vertical\" [panelSizes]=\"[${7:50}, ${8:50}]\">",
+            "            <ng-template #panel>",
+            "                <div style=\"flex-grow: 1;\" class=\"flex items-center justify-center\">${9:Panel 2}</div>",
+            "            </ng-template>",
+            "            <ng-template #panel>",
+            "                <p-splitter [panelSizes]=\"[${10:20}, ${11:80}]\">",
+            "                    <ng-template #panel>",
+            "                        <div class=\"col flex items-center justify-center\">${12:Panel 3}</div>",
+            "                    </ng-template>",
+            "                    <ng-template #panel>",
+            "                        <div class=\"col flex items-center justify-center\">${13:Panel 4}</div>",
+            "                    </ng-template>",
+            "                </p-splitter>",
+            "            </ng-template>",
+            "        </p-splitter>",
+            "    </ng-template>",
+            "</p-splitter>"
+        ],
+        "description": "PrimeNG Splitter with nested layout for advanced panel arrangements"
+    }
+}

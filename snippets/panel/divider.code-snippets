@@ -1,0 +1,133 @@
+{
+    "PrimeNG Divider Import": {
+        "prefix": "p-divider-import",
+        "body": [
+            "import { DividerModule } from 'primeng/divider';"
+        ],
+        "description": "Imports PrimeNG DividerModule in TypeScript"
+    },
+    "PrimeNG Divider Basic": {
+        "prefix": "p-divider-basic",
+        "body": [
+            "import { DividerModule } from 'primeng/divider';",
+            "",
+            "<p>",
+            "    ${1:Lorem ipsum dolor sit amet...}",
+            "</p>",
+            "<p-divider />",
+            "<p>",
+            "    ${2:Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...}",
+            "</p>",
+            "<p-divider />",
+            "<p>",
+            "    ${3:At vero eos et accusamus et iusto odio dignissimos...}",
+            "</p>",
+            "<p-divider />",
+            "<p>",
+            "    ${4:Temporibus autem quibusdam et aut officiis...}",
+            "</p>"
+        ],
+        "description": "Basic PrimeNG Divider to separate content sections"
+    },
+    "PrimeNG Divider Type": {
+        "prefix": "p-divider-type",
+        "body": [
+            "import { DividerModule } from 'primeng/divider';",
+            "",
+            "<p>",
+            "    ${1:Lorem ipsum dolor sit amet...}",
+            "</p>",
+            "<p-divider type=\"solid\" />",
+            "<p>",
+            "    ${2:Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...}",
+            "</p>",
+            "<p-divider type=\"dotted\" />",
+            "<p>",
+            "    ${3:At vero eos et accusamus et iusto odio dignissimos...}",
+            "</p>",
+            "<p-divider type=\"dashed\" />",
+            "<p>",
+            "    ${4:Temporibus autem quibusdam et aut officiis...}",
+            "</p>"
+        ],
+        "description": "PrimeNG Divider with different border styles (solid, dotted, dashed)"
+    },
+    "PrimeNG Divider Vertical": {
+        "prefix": "p-divider-vertical",
+        "body": [
+            "import { DividerModule } from 'primeng/divider';",
+            "",
+            "<p>",
+            "    ${1:Lorem ipsum dolor sit amet...}",
+            "</p>",
+            "<p-divider layout=\"vertical\" />",
+            "<p>",
+            "    ${2:Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...}",
+            "</p>",
+            "<p-divider layout=\"vertical\" />",
+            "<p>",
+            "    ${3:At vero eos et accusamus et iusto odio dignissimos...}",
+            "</p>"
+        ],
+        "description": "PrimeNG Divider in vertical layout"
+    },
+    "PrimeNG Divider Content": {
+        "prefix": "p-divider-content",
+        "body": [
+            "import { DividerModule } from 'primeng/divider';",
+            "",
+            "<p class=\"m-0\">",
+            "    ${1:Lorem ipsum dolor sit amet...}",
+            "</p>",
+            "<p-divider align=\"left\" type=\"solid\">",
+            "    <b>${2:Left}</b>",
+            "</p-divider>",
+            "<p class=\"m-0\">",
+            "    ${3:Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...}",
+            "</p>",
+            "<p-divider align=\"center\" type=\"dotted\">",
+            "    <b>${4:Center}</b>",
+            "</p-divider>",
+            "<p class=\"m-0\">",
+            "    ${5:At vero eos et accusamus et iusto odio dignissimos...}",
+            "</p>",
+            "<p-divider align=\"right\" type=\"dashed\">",
+            "    <b>${6:Right}</b>",
+            "</p-divider>",
+            "<p class=\"m-0\">",
+            "    ${7:Temporibus autem quibusdam et aut officiis...}",
+            "</p>"
+        ],
+        "description": "PrimeNG Divider with content aligned left, center, and right"
+    },
+    "PrimeNG Divider Login": {
+        "prefix": "p-divider-login",
+        "body": [
+            "import { DividerModule } from 'primeng/divider';",
+            "",
+            "<div class=\"flex flex-col md:flex-row\">",
+            "    <div class=\"w-full md:w-5/12 flex flex-col items-center justify-center gap-3 py-5\">",
+            "        <div class=\"flex flex-col gap-2\">",
+            "            <label for=\"username\">${1:Username}</label>",
+            "            <input pInputText id=\"username\" type=\"text\" />",
+            "        </div>",
+            "        <div class=\"flex flex-col gap-2\">",
+            "            <label for=\"password\">${2:Password}</label>",
+            "            <input pInputText id=\"password\" type=\"password\" />",
+            "        </div>",
+            "        <div class=\"flex\">",
+            "            <p-button label=\"${3:Login}\" icon=\"pi pi-user\" class=\"w-full max-w-[17.35rem]\" styleClass=\"w-full mx-auto\" />",
+            "        </div>",
+            "    </div>",
+            "    <div class=\"w-full md:w-2/12\">",
+            "        <p-divider layout=\"vertical\" class=\"!hidden md:!flex\"><b>${4:OR}</b></p-divider>",
+            "        <p-divider layout=\"horizontal\" class=\"!flex md:!hidden\" align=\"center\"><b>${4:OR}</b></p-divider>",
+            "    </div>",
+            "    <div class=\"w-full md:w-5/12 flex items-center justify-center py-5\">",
+            "        <p-button label=\"${5:Sign Up}\" icon=\"pi pi-user-plus\" severity=\"success\" class=\"w-full max-w-[17.35rem]\" styleClass=\"w-full mx-auto\" />",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "PrimeNG Divider used in a responsive login form layout"
+    }
+}
