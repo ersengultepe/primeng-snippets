@@ -6,7 +6,7 @@ This extension for Visual Studio Code includes a lot of primeNG elements that al
 Currently snippets for **form**, **button**, **data**,  **panel**, **overlay** and **file** elements are available, but will be updated frequently for other primeNG elements. 
 Stay tuned !!!
 
-> Panel Elements Added 
+> Overlay and File Elements Added 
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
