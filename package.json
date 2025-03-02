@@ -16,7 +16,7 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "1.2.0",
+  "version": "1.3.0",
   "engines": {
     "vscode": "^1.10.0"
   },
@@ -433,6 +433,71 @@
       {
         "language": "typescript",
         "path": "./snippets/panel/toolbar.code-snippets"
+      },
+
+      {
+        "language": "html",
+        "path": "./snippets/overlay/confirmdialog.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/overlay/confirmdialog.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/overlay/confirmpopup.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/overlay/confirmpopup.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/overlay/dialog.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/overlay/dialog.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/overlay/drawer.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/overlay/drawer.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/overlay/dynamicdialog.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/overlay/dynamicdialog.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/overlay/popover.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/overlay/popover.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/overlay/tooltip.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/overlay/tooltip.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/file/upload.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/file/upload.code-snippets"
       }
       
     ]

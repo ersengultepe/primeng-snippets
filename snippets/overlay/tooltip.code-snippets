@@ -1,0 +1,89 @@
+{
+    "PrimeNG Tooltip Import": {
+        "prefix": "p-tooltip-import",
+        "body": [
+            "import { TooltipModule } from 'primeng/tooltip';"
+        ],
+        "description": "Imports PrimeNG TooltipModule in TypeScript"
+    },
+    "PrimeNG Tooltip Position": {
+        "prefix": "p-tooltip-position",
+        "body": [
+            "import { TooltipModule } from 'primeng/tooltip';",
+            "",
+            "<input type=\"text\" pInputText pTooltip=\"${1:Enter your username}\" tooltipPosition=\"right\" placeholder=\"${2:Right}\" />",
+            "<input type=\"text\" pInputText pTooltip=\"${1:Enter your username}\" tooltipPosition=\"top\" placeholder=\"${3:Top}\" />",
+            "<input type=\"text\" pInputText pTooltip=\"${1:Enter your username}\" tooltipPosition=\"bottom\" placeholder=\"${4:Bottom}\" />",
+            "<input type=\"text\" pInputText pTooltip=\"${1:Enter your username}\" tooltipPosition=\"left\" placeholder=\"${5:Left}\" />"
+        ],
+        "description": "PrimeNG Tooltip with different position options (right, top, bottom, left)"
+    },
+    "PrimeNG Tooltip Event": {
+        "prefix": "p-tooltip-event",
+        "body": [
+            "import { TooltipModule } from 'primeng/tooltip';",
+            "",
+            "<input type=\"text\" pInputText pTooltip=\"${1:Enter your username}\" tooltipEvent=\"focus\" placeholder=\"${2:focus to display tooltip}\" />"
+        ],
+        "description": "PrimeNG Tooltip displayed on focus event"
+    },
+    "PrimeNG Tooltip Auto Hide": {
+        "prefix": "p-tooltip-autohide",
+        "body": [
+            "import { TooltipModule } from 'primeng/tooltip';",
+            "",
+            "<input type=\"text\" pInputText pTooltip=\"${1:Enter your username}\" [autoHide]=\"false\" placeholder=\"${2:autoHide: false}\" />",
+            "<input type=\"text\" pInputText pTooltip=\"${1:Enter your username}\" placeholder=\"${3:autoHide: true}\" />"
+        ],
+        "description": "PrimeNG Tooltip with autoHide option (true/false)"
+    },
+    "PrimeNG Tooltip Delay": {
+        "prefix": "p-tooltip-delay",
+        "body": [
+            "import { TooltipModule } from 'primeng/tooltip';",
+            "",
+            "<p-button pTooltip=\"${1:Confirm to proceed}\" showDelay=\"${2:1000}\" hideDelay=\"${3:300}\" label=\"${4:Save}\" />"
+        ],
+        "description": "PrimeNG Tooltip with show and hide delays"
+    },
+    "PrimeNG Tooltip Custom": {
+        "prefix": "p-tooltip-custom",
+        "body": [
+            "import { TooltipModule } from 'primeng/tooltip';",
+            "",
+            "<p-button [pTooltip]=\"tooltipContent\" severity=\"secondary\" tooltipPosition=\"${1:bottom}\" label=\"${2:Button}\" />",
+            "<ng-template #tooltipContent>",
+            "    <div class=\"flex items-center\">",
+            "        <svg width=\"31\" height=\"33\" viewBox=\"0 0 31 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"mr-2\">",
+            "            <path d=\"...\" fill=\"var(--p-primary-color)\" />",
+            "        </svg>",
+            "        <span> <b>${3:PrimeNG}</b> ${4:rocks!} </span>",
+            "    </div>",
+            "</ng-template>"
+        ],
+        "description": "PrimeNG Tooltip with custom TemplateRef content"
+    },
+    "PrimeNG Tooltip Options": {
+        "prefix": "p-tooltip-options",
+        "body": [
+            "import { Component } from '@angular/core';",
+            "import { TooltipModule } from 'primeng/tooltip';",
+            "",
+            "@Component({",
+            "    templateUrl: './${1:tooltipdemo.html}',",
+            "})",
+            "export class ${2:TooltipDemo} {",
+            "    tooltipOptions = {",
+            "        tooltipPosition: '${3:top}',",
+            "        tooltipEvent: '${4:hover}',",
+            "        showDelay: ${5:500},",
+            "        hideDelay: ${6:200}",
+            "    };",
+            "}",
+            "",
+            "<!-- ${1:tooltipdemo.html} -->",
+            "<input type=\"text\" pInputText pTooltip=\"${7:Enter your username}\" [tooltipOptions]=\"tooltipOptions\" placeholder=\"${8:hover to display tooltip}\" />"
+        ],
+        "description": "PrimeNG Tooltip with custom tooltipOptions configuration"
+    }
+}

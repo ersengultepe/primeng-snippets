@@ -1,0 +1,88 @@
+{
+    "PrimeNG ConfirmDialog Import": {
+        "prefix": "p-confirmdialog-import",
+        "body": [
+            "import { ConfirmDialogModule } from 'primeng/confirmdialog';"
+        ],
+        "description": "Imports PrimeNG ConfirmDialogModule in TypeScript"
+    },
+    "PrimeNG ConfirmDialog Basic": {
+        "prefix": "p-confirmdialog-basic",
+        "body": [
+            "import { ConfirmDialogModule } from 'primeng/confirmdialog';",
+            "",
+            "<p-toast />",
+            "<p-confirmdialog />",
+            "<p-button (click)=\"confirm1($event)\" label=\"${1:Save}\" [outlined]=\"true\" />",
+            "<p-button (click)=\"confirm2($event)\" label=\"${2:Delete}\" severity=\"danger\" [outlined]=\"true\" />"
+        ],
+        "description": "Basic PrimeNG ConfirmDialog with toast and buttons"
+    },
+    "PrimeNG ConfirmDialog Position": {
+        "prefix": "p-confirmdialog-position",
+        "body": [
+            "import { ConfirmDialogModule } from 'primeng/confirmdialog';",
+            "",
+            "<p-toast />",
+            "<p-confirmdialog key=\"positionDialog\" [position]=\"position\" />",
+            "<div class=\"flex flex-wrap justify-center gap-2 mb-4\">",
+            "    <p-button (click)=\"confirmPosition('left')\" icon=\"pi pi-arrow-right\" label=\"${1:Left}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "    <p-button (click)=\"confirmPosition('right')\" icon=\"pi pi-arrow-left\" label=\"${2:Right}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "</div>",
+            "<div class=\"flex flex-wrap justify-center gap-2 mb-4\">",
+            "    <p-button (click)=\"confirmPosition('topleft')\" icon=\"pi pi-arrow-down\" label=\"${3:TopLeft}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "    <p-button (click)=\"confirmPosition('top')\" icon=\"pi pi-arrow-down\" label=\"${4:Top}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "    <p-button (click)=\"confirmPosition('topright')\" icon=\"pi pi-arrow-down\" label=\"${5:TopRight}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "</div>",
+            "<div class=\"flex flex-wrap justify-center gap-2\">",
+            "    <p-button (click)=\"confirmPosition('bottomleft')\" icon=\"pi pi-arrow-up\" label=\"${6:BottomLeft}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "    <p-button (click)=\"confirmPosition('bottom')\" icon=\"pi pi-arrow-up\" label=\"${7:Bottom}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "    <p-button (click)=\"confirmPosition('bottomright')\" icon=\"pi pi-arrow-up\" label=\"${8:BottomRight}\" severity=\"secondary\" styleClass=\"min-w-40\" />",
+            "</div>"
+        ],
+        "description": "PrimeNG ConfirmDialog with position options and buttons"
+    },
+    "PrimeNG ConfirmDialog Template": {
+        "prefix": "p-confirmdialog-template",
+        "body": [
+            "import { ConfirmDialogModule } from 'primeng/confirmdialog';",
+            "",
+            "<p-toast />",
+            "<p-confirmdialog>",
+            "    <ng-template #message let-message>",
+            "        <div class=\"flex flex-col items-center w-full gap-4 border-b border-surface-200 dark:border-surface-700\">",
+            "            <i [ngClass]=\"message.icon\" class=\"!text-6xl text-primary-500\"></i>",
+            "            <p>{{ message.message }}</p>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-confirmdialog>",
+            "<p-button (click)=\"confirm()\" label=\"${1:Save}\" />"
+        ],
+        "description": "PrimeNG ConfirmDialog with custom message template"
+    },
+    "PrimeNG ConfirmDialog Headless": {
+        "prefix": "p-confirmdialog-headless",
+        "body": [
+            "import { ConfirmDialogModule } from 'primeng/confirmdialog';",
+            "",
+            "<p-toast />",
+            "<p-confirmdialog #cd>",
+            "    <ng-template #headless let-message let-onAccept=\"onAccept\" let-onReject=\"onReject\">",
+            "        <div class=\"flex flex-col items-center p-8 bg-surface-0 dark:bg-surface-900 rounded\">",
+            "            <div class=\"rounded-full bg-primary text-primary-contrast inline-flex justify-center items-center h-24 w-24 -mt-20\">",
+            "                <i class=\"pi pi-question !text-5xl\"></i>",
+            "            </div>",
+            "            <span class=\"font-bold text-2xl block mb-2 mt-6\">{{ message.header }}</span>",
+            "            <p class=\"mb-0\">{{ message.message }}</p>",
+            "            <div class=\"flex items-center gap-2 mt-6\">",
+            "                <p-button label=\"${1:Save}\" (onClick)=\"onAccept()\" styleClass=\"w-32\"></p-button>",
+            "                <p-button label=\"${2:Cancel}\" [outlined]=\"true\" (onClick)=\"onReject()\" styleClass=\"w-32\"></p-button>",
+            "            </div>",
+            "        </div>",
+            "    </ng-template>",
+            "</p-confirmdialog>",
+            "<p-button (click)=\"confirm()\" label=\"${1:Save}\"/>"
+        ],
+        "description": "PrimeNG ConfirmDialog with headless mode and custom UI"
+    }
+}
