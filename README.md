@@ -3,7 +3,7 @@
 **Created for PrimeNG Quickly release**
 
 This extension for Visual Studio Code includes a lot of primeNG elements that allow you to quickly add snippets in Typescript and HTML files if you install PrimeNG in your Angular applications.
-Currently snippets for **form**, **button**, **data** and **panel** elements are available, but will be updated frequently for other primeNG elements. 
+Currently snippets for **form**, **button**, **data**,  **panel**, **overlay** and **file** elements are available, but will be updated frequently for other primeNG elements. 
 Stay tuned !!!
 
 > Panel Elements Added 
@@ -95,9 +95,17 @@ Button, SpeedDial, SplitButton
 `Data Components`
 DataView, OrderList, OrgChart, Paginator, PickList, Table, TimeLine, Tree, TreeTable, VirtualScroller
 
-### Snippets for the following components will be added very soon.
-*Panel, Overlay, File, Menu, Chart, Messages, Media, Misc*
+`Panel Components`
+Accordion, Card, Divider, Fielset, Panel, ScrollPanel, Splitter, Stepper, Tabs, Toolbar
 
+`Overlay`
+ConfirmDialog, ConfirmPopup, Dialog, Drawer, DynamicDialog, Popover, Tooltip
+
+`File`
+Upload
+
+### Snippets for the following components will be added very soon.
+* Menu, Chart, Messages, Media, Misc
 
 ## Extension Installation
 
