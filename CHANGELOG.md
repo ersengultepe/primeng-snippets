@@ -4,6 +4,11 @@ All notable changes to the "primeng-snippets" extension will be documented in th
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+# 1.4.0
+Menu and Chart Elements added.
+
+* [Fix(menu and chart elements added) ] (https://github.com/ersengultepe/primeng-snippets/commit/0ab3c1baf8cce7c1046abed5a3029e2c547dee25)
+
 # 1.3.0
 File and Overlay Elements added.
 

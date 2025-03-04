@@ -1,0 +1,85 @@
+{
+    "PrimeNG Breadcrumb Import": {
+        "prefix": "p-breadcrumb-import",
+        "body": [
+            "import { BreadcrumbModule } from 'primeng/breadcrumb';"
+        ],
+        "description": "Imports PrimeNG BreadcrumbModule in TypeScript"
+    },
+    "PrimeNG Breadcrumb Basic": {
+        "prefix": "p-breadcrumb-basic",
+        "body": [
+            "import { BreadcrumbModule } from 'primeng/breadcrumb';",
+            "import { MenuItem } from 'primeng/api';",
+            "",
+            "<p-breadcrumb class=\"max-w-full\" [model]=\"items\" [home]=\"home\" />",
+            "",
+            "// In TypeScript file",
+            "items: MenuItem[] = [",
+            "    { label: '${1:Electronics}' },",
+            "    { label: '${2:Computer}' },",
+            "    { label: '${3:Accessories}' },",
+            "    { label: '${4:Keyboard}' },",
+            "    { label: '${5:Wireless}' }",
+            "];",
+            "home: MenuItem = { icon: 'pi pi-home', url: '${6:/home}' };"
+        ],
+        "description": "Basic PrimeNG Breadcrumb with static items and home"
+    },
+    "PrimeNG Breadcrumb Template": {
+        "prefix": "p-breadcrumb-template",
+        "body": [
+            "import { BreadcrumbModule } from 'primeng/breadcrumb';",
+            "import { MenuItem } from 'primeng/api';",
+            "",
+            "<p-breadcrumb class=\"max-w-full\" [model]=\"items\" [home]=\"home\">",
+            "    <ng-template #item let-item>",
+            "        <a class=\"cursor-pointer\" [routerLink]=\"item.url\">",
+            "            <i [class]=\"item.icon\"></i>",
+            "        </a>",
+            "    </ng-template>",
+            "    <ng-template #separator> ${1:/} </ng-template>",
+            "</p-breadcrumb>",
+            "",
+            "// In TypeScript file",
+            "items: MenuItem[] = [",
+            "    { icon: '${2:pi pi-desktop}', url: '${3:/electronics}' },",
+            "    { icon: '${4:pi pi-computer}', url: '${5:/computer}' },",
+            "    { icon: '${6:pi pi-keyboard}', url: '${7:/keyboard}' }",
+            "];",
+            "home: MenuItem = { icon: 'pi pi-home', url: '${8:/home}' };"
+        ],
+        "description": "PrimeNG Breadcrumb with custom item and separator templates"
+    },
+    "PrimeNG Breadcrumb Router": {
+        "prefix": "p-breadcrumb-router",
+        "body": [
+            "import { BreadcrumbModule } from 'primeng/breadcrumb';",
+            "import { MenuItem } from 'primeng/api';",
+            "",
+            "<p-breadcrumb class=\"max-w-full\" [model]=\"items\">",
+            "    <ng-template #item let-item>",
+            "        <ng-container *ngIf=\"item.route; else elseBlock\">",
+            "            <a [routerLink]=\"item.route\" class=\"p-breadcrumb-item-link\">",
+            "                <span [ngClass]=\"[item.icon ? item.icon : '', 'text-color']\"></span>",
+            "                <span class=\"text-primary font-semibold\">{{ item.label }}</span>",
+            "            </a>",
+            "        </ng-container>",
+            "        <ng-template #elseBlock>",
+            "            <a [href]=\"item.url\">",
+            "                <span class=\"text-color\">{{ item.label }}</span>",
+            "            </a>",
+            "        </ng-template>",
+            "    </ng-template>",
+            "</p-breadcrumb>",
+            "",
+            "// In TypeScript file",
+            "items: MenuItem[] = [",
+            "    { label: '${1:Components}', route: '${2:/components}' },",
+            "    { label: '${3:Form}', route: '${4:/form}' },",
+            "    { label: '${5:InputText}', route: '${6:/inputtext}' }",
+            "];"
+        ],
+        "description": "PrimeNG Breadcrumb with routerLink navigation"
+    }
+}

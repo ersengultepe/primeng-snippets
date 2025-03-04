@@ -16,7 +16,7 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "1.3.1",
+  "version": "1.4.0",
   "engines": {
     "vscode": "^1.10.0"
   },
@@ -498,6 +498,85 @@
       {
         "language": "typescript",
         "path": "./snippets/file/upload.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/breadcrumb.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/breadcrumb.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/contextmenu.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/contextmenu.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/dock.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/dock.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/menu.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/menu.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/menubar.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/menubar.code-snippets"
+      },{
+        "language": "html",
+        "path": "./snippets/menu/megamenu.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/megamenu.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/panelmenu.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/panelmenu.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/steps.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/steps.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/menu/tieredmemu.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/menu/tieredmenu.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/chart/chart.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/chart/chart.code-snippets"
       }
       
     ]
